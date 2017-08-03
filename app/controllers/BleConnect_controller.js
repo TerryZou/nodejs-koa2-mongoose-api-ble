@@ -19,13 +19,13 @@ exports.ble_connect_query = async(ctx, next) => {
 		//验证参数是否正确
 		if(isgo &&jsUtil.isNullOrEmpty(flag) ) {
 			result.status = codes.paramerror;
-			result.status.details="参数flag不能缺少或为空！";
+			result.status.details="参数 flag 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
 		if(isgo &&jsUtil.isNullOrEmpty(name) ) {
 			result.status = codes.paramerror;
-			result.status.details="参数name不能缺少或为空！";
+			result.status.details="参数 name 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
