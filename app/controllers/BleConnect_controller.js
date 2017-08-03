@@ -17,39 +17,39 @@ exports.ble_connect_query = async(ctx, next) => {
 		var userid = ctx.request.body.userid;
 		var isgo = true;
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(flag) ) {
+		if(isgo && jsUtil.isNullOrEmpty(flag)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 flag 不能缺少或为空！";
+			result.status.details = "参数 flag 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(name) ) {
+		if(isgo && jsUtil.isNullOrEmpty(name)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 name 不能缺少或为空！";
+			result.status.details = "参数 name 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(userid) ) {
+		if(isgo && jsUtil.isNullOrEmpty(userid)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 userid 不能缺少或为空！";
+			result.status.details = "参数 userid 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(mac) ) {
+		if(isgo && jsUtil.isNullOrEmpty(mac)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 mac 不能缺少或为空！";
+			result.status.details = "参数 mac 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(mobile) ) {
+		if(isgo && jsUtil.isNullOrEmpty(mobile)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 mobile 不能缺少或为空！";
+			result.status.details = "参数 mobile 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(mi) ) {
+		if(isgo && jsUtil.isNullOrEmpty(mi)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 mi 不能缺少或为空！";
+			result.status.details = "参数 mi 不能缺少或为空！";
 			isgo = false;
 		}
 		if(isgo) {
@@ -94,18 +94,42 @@ exports.ble_connect_export = async(ctx, next) => {
 		var userid = ctx.request.body.userid;
 		var isgo = true;
 		//验证参数是否正确
-		if(isgo &&
-			(
-				jsUtil.isNullOrEmpty(flag) ||
-				jsUtil.isNullOrEmpty(name) ||
-				jsUtil.isNullOrEmpty(mi) ||
-				jsUtil.isNullOrEmpty(mobile) ||
-				jsUtil.isNullOrEmpty(mac) ||
-				jsUtil.isNullOrEmpty(userid)
-			)) {
+		if(isgo && jsUtil.isNullOrEmpty(flag)) {
 			result.status = codes.paramerror;
+			result.status.details = "参数 flag 不能缺少或为空！";
 			isgo = false;
 		}
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(name)) {
+			result.status = codes.paramerror;
+			result.status.details = "参数 name 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(userid)) {
+			result.status = codes.paramerror;
+			result.status.details = "参数 userid 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(mac)) {
+			result.status = codes.paramerror;
+			result.status.details = "参数 mac 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(mobile)) {
+			result.status = codes.paramerror;
+			result.status.details = "参数 mobile 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(mi)) {
+			result.status = codes.paramerror;
+			result.status.details = "参数 mi 不能缺少或为空！";
+			isgo = false;
+		}
+
 		if(isgo) {
 			var data = await BleConnect.exportRecords({
 				mac: mac,
@@ -152,17 +176,45 @@ exports.ble_connect_result = async(ctx, next) => {
 		var connect_num = ctx.request.body.connect_num;
 		var isgo = true;
 		//验证参数是否正确
-		if(isgo &&
-			(
-				jsUtil.isNullOrEmpty(flag) ||
-				jsUtil.isNullOrEmpty(name) ||
-				jsUtil.isNullOrEmpty(mi) ||
-				jsUtil.isNullOrEmpty(mobile) ||
-				jsUtil.isNullOrEmpty(mac) ||
-				jsUtil.isNullOrEmpty(connect_num) ||
-				jsUtil.isNullOrEmpty(userid)
-			)) {
+		if(isgo &&jsUtil.isNullOrEmpty(flag) ) {
 			result.status = codes.paramerror;
+			result.status.details="参数 flag 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(name) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 name 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(userid) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 userid 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(mac) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 mac 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(mobile) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 mobile 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(mi) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 mi 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(connect_num) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 connect_num 不能缺少或为空！";
 			isgo = false;
 		}
 		if(isgo) {
@@ -219,16 +271,45 @@ exports.ble_connect_result_export = async(ctx, next) => {
 		var connect_num = ctx.request.body.connect_num;
 		var isgo = true;
 		//验证参数是否正确
-		if(isgo && (
-				jsUtil.isNullOrEmpty(flag) ||
-				jsUtil.isNullOrEmpty(mac) ||
-				jsUtil.isNullOrEmpty(connect_num) ||
-				jsUtil.isNullOrEmpty(name) ||
-				jsUtil.isNullOrEmpty(mi) ||
-				jsUtil.isNullOrEmpty(mobile) ||
-				jsUtil.isNullOrEmpty(userid)
-			)) {
+		if(isgo &&jsUtil.isNullOrEmpty(flag) ) {
 			result.status = codes.paramerror;
+			result.status.details="参数 flag 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(name) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 name 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(userid) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 userid 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(mac) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 mac 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(mobile) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 mobile 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(mi) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 mi 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(connect_num) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 connect_num 不能缺少或为空！";
 			isgo = false;
 		}
 		if(isgo) {

@@ -11,8 +11,10 @@ exports.ble_env_query = async(ctx, next) => {
 	var isgo = true;
 	try {
 		var userid = ctx.request.body.userid;
-		if(isgo && jsUtil.isNullOrEmpty(userid)) {
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(userid) ) {
 			result.status = codes.paramerror;
+			result.status.details="参数 userid 不能缺少或为空！";
 			isgo = false;
 		}
 		if(isgo) {
@@ -45,10 +47,16 @@ exports.ble_device_query = async(ctx, next) => {
 	try {
 		var userid = ctx.request.body.userid;
 		var flag = ctx.request.body.flag;
-		if(isgo && (
-				jsUtil.isNullOrEmpty(userid) ||
-				jsUtil.isNullOrEmpty(flag))) {
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(userid) ) {
 			result.status = codes.paramerror;
+			result.status.details="参数 userid 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(flag) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 flag 不能缺少或为空！";
 			isgo = false;
 		}
 		if(isgo) {

@@ -10,10 +10,15 @@ exports.ble_get_distance = async(ctx, next) => {
 	var result = new Object();
 	try {
 		var userid = ctx.request.body.userid;
-		//验证用id不能为空
-		if(jsUtil.isNullOrEmpty(userid)) {
+		var isgo=true;
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(userid)) {
 			result.status = codes.paramerror;
-		} else {
+			result.status.details = "参数 userid 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证用id不能为空
+		if(isgo)  {
 			var data = await DistanceInfo.getByUserId(userid);
 			switch(data.status) {
 				case 1:
@@ -43,9 +48,16 @@ exports.ble_set_distance = async(ctx, next) => {
 	try {
 		var distance = ctx.request.body.distance;
 		var userid = ctx.request.body.userid;
-		//验证用户名和密码不能为空
-		if(isgo && (jsUtil.isNullOrEmpty(distance) || jsUtil.isNullOrEmpty(userid))) {
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(userid)) {
 			result.status = codes.paramerror;
+			result.status.details = "参数 userid 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(distance)) {
+			result.status = codes.paramerror;
+			result.status.details = "参数 distance 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证是否存在
@@ -97,8 +109,16 @@ exports.ble_del_distance = async(ctx, next) => {
 	try {
 		var distance = ctx.request.body.distance;
 		var userid = ctx.request.body.userid;
-		if(isgo && (jsUtil.isNullOrEmpty(distance) || jsUtil.isNullOrEmpty(userid))) {
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(userid)) {
 			result.status = codes.paramerror;
+			result.status.details = "参数 userid 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(distance)) {
+			result.status = codes.paramerror;
+			result.status.details = "参数 distance 不能缺少或为空！";
 			isgo = false;
 		}
 		if(isgo) {

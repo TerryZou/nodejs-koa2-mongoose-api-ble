@@ -12,9 +12,16 @@ exports.login = async(ctx, next) => {
 	try {
 		var username = ctx.request.body.username;
 		var password = ctx.request.body.password;
-		//验证用户名和密码不能为空
-		if(isgo && (jsUtil.isNullOrEmpty(username) || jsUtil.isNullOrEmpty(password))) {
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(username)) {
 			result.status = codes.paramerror;
+			result.status.details = "参数 username 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(password)) {
+			result.status = codes.paramerror;
+			result.status.details = "参数 password 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证用户名是否存在
@@ -64,9 +71,16 @@ exports.register = async(ctx, next) => {
 	try {
 		var username = ctx.request.body.username;
 		var password = ctx.request.body.password;
-		//验证用户名和密码不能为空
-		if(isgo && (jsUtil.isNullOrEmpty(username) || jsUtil.isNullOrEmpty(password))) {
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(username)) {
 			result.status = codes.paramerror;
+			result.status.details = "参数 username 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(password)) {
+			result.status = codes.paramerror;
+			result.status.details = "参数 password 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证用户名是否存在
@@ -78,7 +92,6 @@ exports.register = async(ctx, next) => {
 					isgo = false;
 					break;
 				case 0:
-
 					break;
 				case -1:
 					result.status = codes.syserror;

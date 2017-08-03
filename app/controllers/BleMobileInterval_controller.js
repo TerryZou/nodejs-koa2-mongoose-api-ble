@@ -17,17 +17,46 @@ exports.ble_add_mobile = async(ctx, next) => {
 		var connect_window = ctx.request.body.connect_window;
 		var connect_min_interval = ctx.request.body.connect_min_interval;
 		var connect_max_interval = ctx.request.body.connect_max_interval;
-		//验证用户名和密码不能为空
-		if(isgo && (
-				jsUtil.isNullOrEmpty(mobile) ||
-				jsUtil.isNullOrEmpty(scan_interval) ||
-				jsUtil.isNullOrEmpty(scan_window) ||
-				jsUtil.isNullOrEmpty(connect_interval) ||
-				jsUtil.isNullOrEmpty(connect_window) ||
-				jsUtil.isNullOrEmpty(connect_min_interval) ||
-				jsUtil.isNullOrEmpty(connect_max_interval)
-			)) {
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(mobile) ) {
 			result.status = codes.paramerror;
+			result.status.details="参数 mobile 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(scan_interval) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 scan_interval 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(scan_window) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 scan_window 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(connect_interval) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 connect_interval 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(connect_window) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 connect_window 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(connect_min_interval) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 connect_min_interval 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(connect_max_interval) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 connect_max_interval 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证是否存在
@@ -113,11 +142,16 @@ exports.ble_get_scan_mobile = async(ctx, next) => {
 	try {
 		var scan_interval = ctx.request.body.scan_interval;
 		var scan_window = ctx.request.body.scan_window;
-		//验证用户名和密码不能为空
-		if(isgo && (jsUtil.isNullOrEmpty(scan_interval) ||
-				jsUtil.isNullOrEmpty(scan_window)
-			)) {
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(scan_interval) ) {
 			result.status = codes.paramerror;
+			result.status.details="参数 scan_interval 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(scan_window) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 scan_window 不能缺少或为空！";
 			isgo = false;
 		}
 		if(isgo) {
@@ -184,14 +218,28 @@ exports.ble_get_connect_mobile = async(ctx, next) => {
 		var connect_window = ctx.request.body.connect_window;
 		var connect_min_interval = ctx.request.body.connect_min_interval;
 		var connect_max_interval = ctx.request.body.connect_max_interval;
-		//验证用户名和密码不能为空
-		if(isgo && (
-				jsUtil.isNullOrEmpty(connect_interval) ||
-				jsUtil.isNullOrEmpty(connect_window) ||
-				jsUtil.isNullOrEmpty(connect_min_interval) ||
-				jsUtil.isNullOrEmpty(connect_max_interval)
-			)) {
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(connect_interval) ) {
 			result.status = codes.paramerror;
+			result.status.details="参数 connect_interval 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(connect_window) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 connect_window 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(connect_min_interval) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 connect_min_interval 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(connect_max_interval) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 connect_max_interval 不能缺少或为空！";
 			isgo = false;
 		}
 		if(isgo) {
