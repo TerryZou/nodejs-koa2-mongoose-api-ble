@@ -11,6 +11,7 @@ const dict = {
 				msg: "登录成功",
 				sub_code: "login_success",
 				sub_msg: "登录成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			pwderror: {
@@ -18,6 +19,7 @@ const dict = {
 				msg: "密码错误",
 				sub_code: "login_faild_pwderror",
 				sub_msg: "登录失败，密码错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			notexist: {
@@ -25,6 +27,7 @@ const dict = {
 				msg: "账户不存在",
 				sub_code: "login_faild_notexist",
 				sub_msg: "登录失败，用户名错误或者不存在",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -32,6 +35,7 @@ const dict = {
 				msg: "参数有误",
 				sub_code: "login_faild_paramerror",
 				sub_msg: "登录失败，登录信息参数有误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -39,6 +43,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "login_faild_syserror",
 				sub_msg: "登录失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -55,6 +60,7 @@ const dict = {
 				msg: "注册成功",
 				sub_code: "register_success",
 				sub_msg: "注册成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			exist: {
@@ -62,6 +68,7 @@ const dict = {
 				msg: "用户名已存在",
 				sub_code: "register_faild_exist",
 				sub_msg: "注册失败，用户名已存在",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -69,6 +76,7 @@ const dict = {
 				msg: "参数有误",
 				sub_code: "register_faild_paramerror",
 				sub_msg: "注册失败，注册信息参数有误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -76,6 +84,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "register_faild_syserror",
 				sub_msg: "注册失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -91,6 +100,7 @@ const dict = {
 				msg: "查询成功",
 				sub_code: "connect_query_success",
 				sub_msg: "查询连接测试记录成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -98,6 +108,7 @@ const dict = {
 				msg: "参数有误",
 				sub_code: "connect_query_faild_paramerror",
 				sub_msg: "查询连接测试记录失败，查询参数有误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -105,6 +116,7 @@ const dict = {
 				msg: "没有数据",
 				sub_code: "connect_query_faild_nodata",
 				sub_msg: "查询连接测试记录失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -112,6 +124,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "connect_query_faild_syserror",
 				sub_msg: "查询连接测试记录失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -127,6 +140,7 @@ const dict = {
 				msg: "导出成功",
 				sub_code: "connect_export_success",
 				sub_msg: "导出连接测试记录成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -134,6 +148,7 @@ const dict = {
 				msg: "参数有误",
 				sub_code: "connect_export_faild_paramerror",
 				sub_msg: "导出连接测试记录失败，参数有误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -141,6 +156,7 @@ const dict = {
 				msg: "无数据",
 				sub_code: "connect_export_faild_nodata",
 				sub_msg: "导出连接测试记录失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			exporterror: {
@@ -148,6 +164,7 @@ const dict = {
 				msg: "导出失败",
 				sub_code: "connect_export_faild_exporterror",
 				sub_msg: "导出连接测试记录失败，文件生成失败",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -155,6 +172,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "connect_export_faild_syserror",
 				sub_msg: "导出连接测试记录失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -170,6 +188,7 @@ const dict = {
 				msg: "查询成功",
 				sub_code: "connect_result_success",
 				sub_msg: "查询连接测试结论成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -177,6 +196,7 @@ const dict = {
 				msg: "参数有误",
 				sub_code: "connect_result_faild_paramerror",
 				sub_msg: "查询连接测试结论失败，查询参数有误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -184,6 +204,7 @@ const dict = {
 				msg: "无数据",
 				sub_code: "connect_result_faild_nodata",
 				sub_msg: "查询连接测试结论失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -191,6 +212,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "connect_result_faild_syserror",
 				sub_msg: "查询连接测试结论失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -206,6 +228,7 @@ const dict = {
 				msg: "导出成功",
 				sub_code: "connect_result_export_success",
 				sub_msg: "导出连接测试结论成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -213,6 +236,7 @@ const dict = {
 				msg: "导出失败",
 				sub_code: "connect_result_exportt_faild_paramerror",
 				sub_msg: "导出连接测试结论失败，导出参数有误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -220,6 +244,7 @@ const dict = {
 				msg: "无数据",
 				sub_code: "connect_result_export_faild_nodata",
 				sub_msg: "导出连接测试结论失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			exporterror: {
@@ -227,6 +252,7 @@ const dict = {
 				msg: "导出失败",
 				sub_code: "connect_result_export_faild_exporterror",
 				sub_msg: "导出连接测试结论失败，文件生成失败",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -234,6 +260,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "connect_result_export_faild_syserror",
 				sub_msg: "导出连接测试结论失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -249,6 +276,7 @@ const dict = {
 				msg: "查询成功",
 				sub_code: "scan_query_success",
 				sub_msg: "查询扫描测试记录成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -256,6 +284,7 @@ const dict = {
 				msg: "查询失败",
 				sub_code: "scan_query_faild_paramerror",
 				sub_msg: "查询扫描测试记录失败，查询参数有误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -263,6 +292,7 @@ const dict = {
 				msg: "无数据",
 				sub_code: "scan_query_faild_nodata",
 				sub_msg: "查询扫描测试记录失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -270,6 +300,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "scan_query_faild_syserror",
 				sub_msg: "查询扫描测试记录失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -285,6 +316,7 @@ const dict = {
 				msg: "导出成功",
 				sub_code: "scan_export_success",
 				sub_msg: "导出扫描测试记录成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -292,6 +324,7 @@ const dict = {
 				msg: "导出失败",
 				sub_code: "scan_export_faild_paramerror",
 				sub_msg: "导出扫描测试记录失败，导出参数有误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -299,6 +332,7 @@ const dict = {
 				msg: "无数据",
 				sub_code: "scan_export_faild_nodata",
 				sub_msg: "导出扫描测试记录失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			exporterror: {
@@ -306,6 +340,7 @@ const dict = {
 				msg: "导出失败",
 				sub_code: "scan_export_faild_exporterror",
 				sub_msg: "导出扫描测试记录失败，文件生成失败",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -313,6 +348,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "scan_export_faild_syserror",
 				sub_msg: "导出扫描测试记录失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -328,6 +364,7 @@ const dict = {
 				msg: "查询成功",
 				sub_code: "scan_result_success",
 				sub_msg: "查询扫描测试结论成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -335,6 +372,7 @@ const dict = {
 				msg: "查询失败",
 				sub_code: "scan_result_faild_paramerror",
 				sub_msg: "查询扫描测试结论失败，查询参数有误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -342,6 +380,7 @@ const dict = {
 				msg: "无数据",
 				sub_code: "scan_result_faild_nodata",
 				sub_msg: "查询扫描测试结论失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -349,6 +388,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "scan_result_faild_syserror",
 				sub_msg: "查询扫描测试结论失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -364,6 +404,7 @@ const dict = {
 				msg: "导出成功",
 				sub_code: "scan_result_export_success",
 				sub_msg: "查询扫描测试结果成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -371,6 +412,7 @@ const dict = {
 				msg: "导出失败",
 				sub_code: "scan_result_export_faild_paramerror",
 				sub_msg: "导出扫描测试结果失败，查询参数有误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -378,6 +420,7 @@ const dict = {
 				msg: "无数据",
 				sub_code: "scan_result_export_faild_nodata",
 				sub_msg: "导出扫描测试结果失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			exporterror: {
@@ -385,6 +428,7 @@ const dict = {
 				msg: "导出失败",
 				sub_code: "scan_result_export_faild_exporterror",
 				sub_msg: "导出扫描测试结果失败，文件生成失败",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -392,6 +436,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "scan_result_export_faild_syserror",
 				sub_msg: "导出扫描测试结果失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -407,6 +452,7 @@ const dict = {
 				msg: "查询成功",
 				sub_code: "scan_query_success",
 				sub_msg: "查询新增扫描记录成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -414,6 +460,7 @@ const dict = {
 				msg: "查询失败",
 				sub_code: "scan_query_faild_paramerror",
 				sub_msg: "查询新增扫描记录失败，查询参数有误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -421,6 +468,7 @@ const dict = {
 				msg: "无数据",
 				sub_code: "scan_query_faild_nodata",
 				sub_msg: "查询新增扫描记录失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -428,6 +476,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "scan_query_faild_syserror",
 				sub_msg: "查询新增扫描记录失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -444,6 +493,7 @@ const dict = {
 				msg: "获取成功",
 				sub_code: "baseconfig_get_url_success",
 				sub_msg: "获取url成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -451,6 +501,7 @@ const dict = {
 				msg: "参数有误",
 				sub_code: "baseconfig_get_url_faild_paramerror",
 				sub_msg: "获取url失败，参数有误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -458,6 +509,7 @@ const dict = {
 				msg: "无数据",
 				sub_code: "baseconfig_get_url_faild_nodata",
 				sub_msg: "获取url失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -465,6 +517,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "baseconfig_get_url_faild_syserror",
 				sub_msg: "获取url失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -481,6 +534,7 @@ const dict = {
 				msg: "修改成功",
 				sub_code: "baseconfig_set_url_success",
 				sub_msg: "修改url成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -488,6 +542,7 @@ const dict = {
 				msg: "修改失败",
 				sub_code: "baseconfig_set_url_faild_paramerror",
 				sub_msg: "修改url失败，修改参数有误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 
@@ -496,6 +551,7 @@ const dict = {
 				msg: "修改失败",
 				sub_code: "baseconfig_set_url_faild_nochange",
 				sub_msg: "修改url失败，没有数据被修改",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -503,6 +559,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "baseconfig_set_url_faild_syserror",
 				sub_msg: "修改url失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -519,6 +576,7 @@ const dict = {
 				msg: "获取成功",
 				sub_code: "get_distance_success",
 				sub_msg: "获取距离数据成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -526,6 +584,7 @@ const dict = {
 				msg: "参数有误",
 				sub_code: "get_distance_faild_paramerror",
 				sub_msg: "获取距离数据失败，查询参数有误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -533,6 +592,7 @@ const dict = {
 				msg: "无数据",
 				sub_code: "get_distance_faild_nodata",
 				sub_msg: "获取距离数据失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -540,6 +600,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "get_distance_faild_syserror",
 				sub_msg: "获取距离数据失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -555,6 +616,7 @@ const dict = {
 				msg: "新增成功",
 				sub_code: "distance_set_success",
 				sub_msg: "新增距离数据成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			exist: {
@@ -562,6 +624,7 @@ const dict = {
 				msg: "数据已存在",
 				sub_code: "distance_set_faild_exist",
 				sub_msg: "新增距离数据失败，数据已存在",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -569,6 +632,7 @@ const dict = {
 				msg: "参数有误",
 				sub_code: "distance_set_faild_paramerror",
 				sub_msg: "新增距离数据失败，参数有误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -576,6 +640,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "distance_set_faild_syserror",
 				sub_msg: "新增距离数据失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -591,6 +656,7 @@ const dict = {
 				msg: "删除成功",
 				sub_code: "distance_del_success",
 				sub_msg: "删除距离数据成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			noexist: {
@@ -598,6 +664,7 @@ const dict = {
 				msg: "数据不存在",
 				sub_code: "distance_del_faild_exist",
 				sub_msg: "删除距离数据失败，该数据不存在",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -605,6 +672,7 @@ const dict = {
 				msg: "参数有误",
 				sub_code: "distance_del_faild_paramerror",
 				sub_msg: "删除距离数据失败，参数不正确",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -612,6 +680,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "distance_del_faild_syserror",
 				sub_msg: "删除距离数据失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -629,6 +698,7 @@ const dict = {
 				msg: "添加成功",
 				sub_code: "mobile_add_success",
 				sub_msg: "添加手机成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -636,6 +706,7 @@ const dict = {
 				msg: "参数有误",
 				sub_code: "mobile_add_faild_paramerror",
 				sub_msg: "添加手机失败，添加参数不能为空",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			exist: {
@@ -643,6 +714,7 @@ const dict = {
 				msg: "数据已存在",
 				sub_code: "mobile_add_faild_exist",
 				sub_msg: "添加手机失败，该手机已存在",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -650,6 +722,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "mobile_add_faild_syserror",
 				sub_msg: "添加手机失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -666,6 +739,7 @@ const dict = {
 				msg: "获取成功",
 				sub_code: "scan_get_success",
 				sub_msg: "获取扫描参数成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -673,6 +747,7 @@ const dict = {
 				msg: "无数据",
 				sub_code: "scan_get_faild_nodata",
 				sub_msg: "获取扫描参数失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -680,6 +755,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "scan_set_faild_syserror",
 				sub_msg: "获取扫描参数失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -695,6 +771,7 @@ const dict = {
 				msg: "获取成功",
 				sub_code: "scan_mobile_get_success",
 				sub_msg: "获取扫描手机型号成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -702,6 +779,7 @@ const dict = {
 				msg: "参数错误",
 				sub_code: "scan_mobile_get_paramerror",
 				sub_msg: "获取扫描手机型号失败，参数错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -709,6 +787,7 @@ const dict = {
 				msg: "无数据",
 				sub_code: "scan_mobile_get_faild_nodata",
 				sub_msg: "获取扫描手机型号失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -716,6 +795,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "scan_mobile_set_faild_syserror",
 				sub_msg: "获取扫描手机型号失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -732,6 +812,7 @@ const dict = {
 				msg: "获取成功",
 				sub_code: "connect_get_success",
 				sub_msg: "获取连接参数成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -739,6 +820,7 @@ const dict = {
 				msg: "无数据",
 				sub_code: "connect_get_faild_nodata",
 				sub_msg: "获取连接参数失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -746,6 +828,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "connect_get_faild_syserror",
 				sub_msg: "获取连接参数失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -761,6 +844,7 @@ const dict = {
 				msg: "获取成功",
 				sub_code: "connect_mobile_get_success",
 				sub_msg: "获取连接手机型号成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -768,6 +852,7 @@ const dict = {
 				msg: "参数错误",
 				sub_code: "connect_mobile_get_faild_paramerror",
 				sub_msg: "获取连接手机型号失败，参数错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -775,6 +860,7 @@ const dict = {
 				msg: "无数据",
 				sub_code: "connect_mobile_get_faild_nodata",
 				sub_msg: "获取连接手机型号失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -782,6 +868,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "connect_mobile_get_faild_syserror",
 				sub_msg: "获取连接手机型号失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -797,6 +884,7 @@ const dict = {
 				msg: "查询成功",
 				sub_code: "env_query_success",
 				sub_msg: "获取各个用户对应测试环境列表成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -804,6 +892,7 @@ const dict = {
 				msg: "参数错误",
 				sub_code: "env_query_faild_paramerror",
 				sub_msg: "获取各个用户对应测试环境列表失败，参数错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -811,6 +900,7 @@ const dict = {
 				msg: "无数据",
 				sub_code: "env_query_faild_nodata",
 				sub_msg: "获取各个用户对应测试环境列表失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
@@ -818,6 +908,7 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "cenv_query_faild_syserror",
 				sub_msg: "获取各个用户对应测试环境列表失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
@@ -833,6 +924,7 @@ const dict = {
 				msg: "查询成功",
 				sub_code: "device_query_success",
 				sub_msg: "获取设备测试设备列表成功",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			paramerror: {
@@ -840,6 +932,7 @@ const dict = {
 				msg: "参数错误",
 				sub_code: "device_query_faild_paramerror",
 				sub_msg: "获取设备测试设备列表失败，参数错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			nodata: {
@@ -847,13 +940,15 @@ const dict = {
 				msg: "无数据",
 				sub_code: "device_query_faild_nodata",
 				sub_msg: "获取设备测试设备列表失败，没有数据",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			},
 			syserror: {
 				code: -1,
 				msg: "系统错误",
 				sub_code: "device_query_faild_syserror",
-				sub_msg: "获取设备测试设备列表失败，系统错误",
+				s: "获取设备测试设备列表失败，系统错误",
+				details:"",
 				timestamp: new Date().getTime().toString()
 			}
 		}
