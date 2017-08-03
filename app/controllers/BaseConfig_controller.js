@@ -8,12 +8,16 @@ const BaseConfig = require("../bll/BaseConfig_bll");
 exports.get_url = async(ctx, next) => {
 	var codes = apiCode.baseconfig_get_url.codes;
 	var result = new Object();
+	var isgo=true;
 	try {
 		var userid = ctx.request.body.userid;
-		//验证用id不能为空
-		if(jsUtil.isNullOrEmpty(userid)) {
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(userid)) {
 			result.status = codes.paramerror;
-		} else {
+			result.status.details = "参数 userid 不能缺少或为空！";
+			isgo = false;
+		}
+		if(isgo)  {
 			var data = await BaseConfig.getByUserId(userid);
 			switch(data.status) {
 				case 1:
@@ -39,20 +43,31 @@ exports.get_url = async(ctx, next) => {
 exports.set_url = async(ctx, next) => {
 	var codes = apiCode.baseconfig_set_url.codes;
 	var result = new Object();
+	var isgo=true;
 	try {
 		var userid = ctx.request.body.userid;
 		var port = ctx.request.body.port;
 		var host = ctx.request.body.host;
-		console.log(userid);
-		console.log(port);
-		console.log(host);
-		//验证用id不能为空
-		if(jsUtil.isNullOrEmpty(userid) ||
-			jsUtil.isNullOrEmpty(port) ||
-			jsUtil.isNullOrEmpty(host)
-		) {
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(userid)) {
 			result.status = codes.paramerror;
-		} else {
+			result.status.details = "参数 userid 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(port)) {
+			result.status = codes.paramerror;
+			result.status.details = "参数 port 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(host)) {
+			result.status = codes.paramerror;
+			result.status.details = "参数 host 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证用id不能为空
+		if(isgo) {
 			var data = await BaseConfig.updateByUserId(userid, {
 				"host": host,
 				"port": port
