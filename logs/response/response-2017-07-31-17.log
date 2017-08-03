@@ -1,0 +1,26 @@
+[2017-07-31 17:39:36.326] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/config/ble_env_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 14
+response status: 200
+response body: 
+{"data":[{"_id":{"flag":""}},{"_id":{"flag":"01"}},{"_id":{"flag":"test1"}},{"_id":{"flag":"test"}}],"status":{"code":5050100,"msg":"查询成功","sub_code":"env_query_success","sub_msg":"获取各个用户对应测试环境列表成功","timestamp":"1501493536425"},"isf":false}
+*************** response log end ***************
+
+[2017-07-31 17:40:05.122] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/config/ble_device_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"userid":"5937ac8b34ab5a8460df3a6b","flag":"test"}
+response time: 4
+response status: 200
+response body: 
+{"data":[{"_id":{"name":"BP5S 11070","mac":"00:40:32:0b:55:d0"}},{"_id":{"name":"honor zero-68D","mac":"a4:b4:76:5e:b6:8d"}},{"_id":{"name":"BP5S 11070","mac":"00:4d:32:0d:6e:cc"}},{"_id":{"name":"BP5S 11070","mac":"00:4d:32:0d:6e:99"}},{"_id":{"name":"AM3S","mac":"01:4d:32:00:00:01"}},{"_id":{"name":"BP5S 11070","mac":"00:4d:32:0d:6e:da"}},{"_id":{"name":"BP5S 11070","mac":"00:4d:32:0d:6f:0a"}},{"_id":{"name":"BP Monitor","mac":"20:c3:8f:ec:c8:a5"}}],"status":{"code":5050200,"msg":"查询成功","sub_code":"device_query_success","sub_msg":"获取设备测试设备列表成功","timestamp":"1501493536425"},"isf":false}
+*************** response log end ***************
+

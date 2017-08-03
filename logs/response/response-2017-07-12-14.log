@@ -1,0 +1,52 @@
+[2017-07-12 14:48:13.428] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/ble/ble_get_distance
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 9
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"get_faild_syserror","sub_msg":"获取失败，系统错误","timestamp":"1499842027159"},"isf":false}
+*************** response log end ***************
+
+[2017-07-12 14:49:36.304] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/ble/ble_get_distance
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 7
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"get_faild_syserror","sub_msg":"获取失败，系统错误","timestamp":"1499842170460"},"isf":false}
+*************** response log end ***************
+
+[2017-07-12 14:50:22.453] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/ble/ble_get_distance
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 14
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"get_faild_syserror","sub_msg":"获取失败，系统错误","timestamp":"1499842216998"},"isf":false}
+*************** response log end ***************
+
+[2017-07-12 14:50:52.077] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/ble/ble_get_distance
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 69
+response status: 200
+response body: 
+{"data":[{"_id":"5955c82a6fd33e2a07c33fdd","distance":5,"userid":"5937ac8b34ab5a8460df3a6b"}],"status":{"code":0,"msg":"获取成功","sub_code":"get_success","sub_msg":"获取成功","timestamp":"1499842247826"},"isf":false}
+*************** response log end ***************
+

@@ -1,0 +1,130 @@
+[2017-07-04 14:06:20.897] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"12345","userid":""}
+response time: 18637
+response status: 200
+response body: 
+{"data":[{"_id":"12345","avg_connect":798,"min_connect":529,"max_connect":1067,"avg_scan":735.5,"min_scan":387,"max_scan":1084,"avg_rssi":-68.5,"min_rssi":-69,"max_rssi":-68}],"status":{"code":0,"msg":"查询成功","sub_code":"query_success","sub_msg":"查询成功","timestamp":"1499138229829"},"isf":false}
+*************** response log end ***************
+
+[2017-07-04 14:43:53.452] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"2011-03","userid":""}
+response time: 280
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1499150612422"},"isf":false}
+*************** response log end ***************
+
+[2017-07-04 14:45:02.582] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"2011-03","userid":""}
+response time: 95
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1499150697417"},"isf":false}
+*************** response log end ***************
+
+[2017-07-04 14:46:05.310] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"2011-03","userid":""}
+response time: 133
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1499150761355"},"isf":false}
+*************** response log end ***************
+
+[2017-07-04 14:47:21.580] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"2011-03","userid":""}
+response time: 62
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1499150837067"},"isf":false}
+*************** response log end ***************
+
+[2017-07-04 14:48:23.431] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"2011-03","userid":""}
+response time: 52
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1499150900836"},"isf":false}
+*************** response log end ***************
+
+[2017-07-04 14:51:41.867] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"2011-03","userid":""}
+response time: 68
+response status: 200
+response body: 
+{"data":[{"_id":"2011-03","avg_connect":2418.9375,"min_connect":249,"max_connect":10965,"avg_scan":2786.9375,"min_scan":269,"max_scan":17433,"avg_rssi":-76.20833333333333,"min_rssi":-83,"max_rssi":-71}],"status":{"code":0,"msg":"查询成功","sub_code":"query_success","sub_msg":"查询成功","timestamp":"1499151099119"},"isf":false}
+*************** response log end ***************
+
+[2017-07-04 14:54:26.191] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"2011-03","userid":""}
+response time: 100
+response status: 200
+response body: 
+{"data":[{"_id":"2011-03","avg_connect":2418.9375,"min_connect":249,"max_connect":10965,"avg_scan":2786.9375,"min_scan":269,"max_scan":17433,"avg_rssi":-76.20833333333333,"min_rssi":-83,"max_rssi":-71}],"status":{"code":0,"msg":"查询成功","sub_code":"query_success","sub_msg":"查询成功","timestamp":"1499151261435"},"isf":false}
+*************** response log end ***************
+
+[2017-07-04 14:55:57.994] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"2011-03","userid":""}
+response time: 70
+response status: 200
+response body: 
+{"data":[{"_id":"2011-03","avg_connect":2418.9375,"min_connect":249,"max_connect":10965,"avg_scan":2786.9375,"min_scan":269,"max_scan":17433,"avg_rssi":-76.20833333333333,"min_rssi":-83,"max_rssi":-71}],"status":{"code":0,"msg":"查询成功","sub_code":"query_success","sub_msg":"查询成功","timestamp":"1499151348490"},"isf":false}
+*************** response log end ***************
+
+[2017-07-04 14:59:27.357] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"2011-03","userid":""}
+response time: 53
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1499151560035"},"isf":false}
+*************** response log end ***************
+

@@ -1,0 +1,13 @@
+[2017-07-14 15:13:56.997] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/ble/ble_get_scan
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{}
+response time: 52
+response status: 200
+response body: 
+{"data":[{"_id":{}},{"_id":{"scan_interval":"5000","scan_window":"5000"}},{"_id":{"scan_interval":"0","scan_window":"0"}},{"_id":{"scan_interval":"0080","scan_window":"0018"}},{"_id":{"scan_interval":"8000","scan_window":"8000"}},{"_id":{"scan_interval":"0018","scan_window":"0018"}},{"_id":{"scan_interval":"0016","scan_window":"0016"}}],"status":{"code":0,"msg":"添加成功","sub_code":"add_success","sub_msg":"添加成功","timestamp":"1500016427084"},"isf":false}
+*************** response log end ***************
+

@@ -1,0 +1,215 @@
+[2017-07-14 10:00:04.041] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 5286
+response status: 200
+response body: 
+{"data":[{"name":"iHealth HS4SDC7F","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","flag":"A7 1m","scan_success_rate":0.005,"connect_success_rate":1,"disconnect_success_rate":1,"ledc_failed_number":0,"scan_failed_number":0,"success_rate":0.005,"avg_connect":136.97,"min_connect":4,"max_connect":745,"avg_scan":35.84,"min_scan":16,"max_scan":546,"avg_rssi":-62.84,"min_rssi":-69,"max_rssi":-57,"var_connect":313016.7201065462,"var_scan":75008.07109968987,"var_rssi":64.52164422468388}],"status":{"code":0,"msg":"查询成功","sub_code":"query_success","sub_msg":"查询成功","timestamp":"1499997583477"},"isf":false}
+*************** response log end ***************
+
+[2017-07-14 10:00:16.741] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 4
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"导出失败","sub_code":"export_faild_paramerror","sub_msg":"导出失败，导出参数有误","timestamp":"1499997583477"},"isf":false}
+*************** response log end ***************
+
+[2017-07-14 10:00:16.839] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /undefined
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 63
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-14 10:00:16.874] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /favicon.ico
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 10
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-14 10:00:57.621] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 9
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"导出失败","sub_code":"export_faild_paramerror","sub_msg":"导出失败，导出参数有误","timestamp":"1499997649044"},"isf":false}
+*************** response log end ***************
+
+[2017-07-14 10:00:57.668] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /undefined
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 8
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-14 10:02:06.316] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 216
+response status: 200
+response body: 
+{"data":"/files/excel/1499997726275.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1499997722200"},"isf":false}
+*************** response log end ***************
+
+[2017-07-14 10:02:06.370] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  //files/excel/1499997726275.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 12
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"F:\\koa\\koaproject\\files\\excel\\1499997726275.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-14 10:02:17.045] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"00:4D:32:07:91:9C","name":"","mi":"1.5","mobile":"","flag":"11","userid":""}
+response time: 270
+response status: 200
+response body: 
+{"data":[],"status":{"code":0,"msg":"查询成功","sub_code":"query_success","sub_msg":"查询成功","timestamp":"1499997722200"},"isf":false}
+*************** response log end ***************
+
+[2017-07-14 10:02:59.281] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":""}
+response time: 3
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"查询失败","sub_code":"query_faild_paramerror","sub_msg":"查询失败，查询参数有误","timestamp":"1499997722200"},"isf":false}
+*************** response log end ***************
+
+[2017-07-14 10:04:20.890] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":""}
+response time: 44
+response status: 200
+response body: 
+{"data":[{"_id":"595ed61f1722865d2b232943","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-68,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137699304,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b232944","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-92,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137700143,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b232945","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-66,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137713237,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b232946","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-91,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137716830,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b232947","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-68,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137724309,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b232948","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-97,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137724406,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b232949","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-60,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137736027,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b23294a","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-98,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137737034,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b23294b","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-66,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137747783,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b23294c","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-93,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137748146,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b23294d","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-65,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137759518,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b23294e","mac":"ea84a156-d208-4be5-8ab8-613fb92d23cd","name":"mb_L+8p6nzY","RSSI":-96,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137760794,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b23294f","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-92,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137761277,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b232950","mac":"2d1f69e7-627b-4b53-be1d-fca1c0bd4094","name":"mb_fPPkL8js","RSSI":-97,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137763076,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b232951","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-65,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137773193,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b232952","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-92,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137773888,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b232953","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-65,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137784286,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b232954","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-94,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137789068,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b232955","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-66,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137795310,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b232956","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-93,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137795643,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b232957","mac":"ea84a156-d208-4be5-8ab8-613fb92d23cd","name":"mb_L+8p6nzY","RSSI":-96,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137805207,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b232958","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-71,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137807642,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b232959","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-95,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137808268,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed61f1722865d2b23295a","mac":"2d1f69e7-627b-4b53-be1d-fca1c0bd4094","name":"mb_fPPkL8js","RSSI":-99,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137810004,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23295b","mac":"ea84a156-d208-4be5-8ab8-613fb92d23cd","name":"mb_L+8p6nzY","RSSI":-95,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137810765,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23295c","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-63,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137819312,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23295d","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-89,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137821403,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23295e","mac":"2d1f69e7-627b-4b53-be1d-fca1c0bd4094","name":"mb_fPPkL8js","RSSI":-96,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137829679,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23295f","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-92,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137831513,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232960","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-65,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137831705,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232961","mac":"ea84a156-d208-4be5-8ab8-613fb92d23cd","name":"mb_L+8p6nzY","RSSI":-97,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137840567,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232962","mac":"2d1f69e7-627b-4b53-be1d-fca1c0bd4094","name":"mb_fPPkL8js","RSSI":-96,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137841787,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232963","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-65,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137843423,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232964","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-92,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137844143,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232965","mac":"2d1f69e7-627b-4b53-be1d-fca1c0bd4094","name":"mb_fPPkL8js","RSSI":-97,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137844806,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232966","mac":"ea84a156-d208-4be5-8ab8-613fb92d23cd","name":"mb_L+8p6nzY","RSSI":-93,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137847628,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232967","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-63,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137855795,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232968","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-91,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137857278,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232969","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-62,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137867547,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23296a","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-90,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137871427,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23296b","mac":"2d1f69e7-627b-4b53-be1d-fca1c0bd4094","name":"mb_fPPkL8js","RSSI":-97,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137879118,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23296c","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-69,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137879875,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23296d","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-94,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137880999,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23296e","mac":"ea84a156-d208-4be5-8ab8-613fb92d23cd","name":"mb_L+8p6nzY","RSSI":-94,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137890548,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23296f","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-62,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137891546,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232970","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-97,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137895119,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232971","mac":"2d1f69e7-627b-4b53-be1d-fca1c0bd4094","name":"mb_fPPkL8js","RSSI":-94,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137898314,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232972","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-95,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137903729,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232973","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-68,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137905169,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232974","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-89,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137915366,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232975","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-64,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137915588,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232976","mac":"2d1f69e7-627b-4b53-be1d-fca1c0bd4094","name":"mb_fPPkL8js","RSSI":-93,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137915964,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232977","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-64,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137927916,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232978","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-93,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137929517,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232979","mac":"2d1f69e7-627b-4b53-be1d-fca1c0bd4094","name":"mb_fPPkL8js","RSSI":-95,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137939232,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23297a","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-61,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137939589,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23297b","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-93,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137939606,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23297c","mac":"2d1f69e7-627b-4b53-be1d-fca1c0bd4094","name":"mb_fPPkL8js","RSSI":-95,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137942765,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23297d","mac":"ea84a156-d208-4be5-8ab8-613fb92d23cd","name":"mb_L+8p6nzY","RSSI":-92,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137946547,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23297e","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-69,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137951923,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23297f","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-94,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137952747,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232980","mac":"ea84a156-d208-4be5-8ab8-613fb92d23cd","name":"mb_L+8p6nzY","RSSI":-96,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137955132,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232981","mac":"2d1f69e7-627b-4b53-be1d-fca1c0bd4094","name":"mb_fPPkL8js","RSSI":-94,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137956422,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232982","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-95,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137963347,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232983","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-68,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137963639,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232984","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-63,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137975357,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232985","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-92,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137975477,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232986","mac":"ea84a156-d208-4be5-8ab8-613fb92d23cd","name":"mb_L+8p6nzY","RSSI":-95,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137976826,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232987","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-69,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137988388,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232988","mac":"ea84a156-d208-4be5-8ab8-613fb92d23cd","name":"mb_L+8p6nzY","RSSI":-93,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137988422,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b232989","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-94,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137990143,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23298a","mac":"b0489dac-720b-4f73-be0a-1504d20aee04","name":"iHealth HS4SDC7F","RSSI":-64,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499137999490,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23298b","mac":"ec2dae0e-1df6-4365-88d8-3f46c34c59bc","name":"mb_NOTKLOTY","RSSI":-91,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499138000764,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23298c","mac":"ea84a156-d208-4be5-8ab8-613fb92d23cd","name":"mb_L+8p6nzY","RSSI":-94,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499138001028,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23298d","mac":"d1acf8e5-a35d-4391-867a-6eddb1502606","name":"mb_QBRPc5TB","RSSI":-96,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499138002312,"status":"insert","userid":"595b2544c43b30370de9f271"},{"_id":"595ed6201722865d2b23298e","mac":"22:06:64:01:00:14","name":"NokeLock","RSSI":-93,"mobile":"iPhone 7系统-10.3.2","mi":1,"flag":"A7 1m","time":1499138022399,"status":"insert","userid":"595b2544c43b30370de9f271"}],"status":{"code":0,"msg":"查询成功","sub_code":"query_success","sub_msg":"查询成功","timestamp":"1499997855786"},"isf":false}
+*************** response log end ***************
+
+[2017-07-14 10:04:31.907] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"00:4D:32:07:91:9C","name":"","mi":"1.5","mobile":"","flag":"11","userid":""}
+response time: 33
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"export_faild_syserror","sub_msg":"导出失败，系统错误","timestamp":"1499997855786"},"isf":false}
+*************** response log end ***************
+
+[2017-07-14 10:04:31.974] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /undefined
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 25
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-14 10:05:07.260] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":""}
+response time: 302
+response status: 200
+response body: 
+{"data":"/files/excel/1499997907138.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1499997855786"},"isf":false}
+*************** response log end ***************
+
+[2017-07-14 10:05:07.302] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  //files/excel/1499997907138.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 4
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"F:\\koa\\koaproject\\files\\excel\\1499997907138.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-14 10:05:12.740] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/baseconfig/get_url
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"userid":"1"}
+response time: 56
+response status: 200
+response body: 
+{"status":{"code":2,"msg":"无数据","sub_code":"get_faild_nodata","sub_msg":"获取失败，没有数据","timestamp":"1499997855786"},"isf":false}
+*************** response log end ***************
+
+[2017-07-14 10:05:53.122] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/baseconfig/set_url
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"host":"127.8.8.4","port":"3388","userid":"1"}
+response time: 14
+response status: 200
+response body: 
+{"status":{"code":0,"msg":"修改成功","sub_code":"set_success","sub_msg":"修改成功","timestamp":"1499997855786"},"isf":false}
+*************** response log end ***************
+

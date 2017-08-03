@@ -1,0 +1,182 @@
+[2017-06-30 17:16:50.453] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"12345","userid":""}
+response time: 54
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1498814202469"},"isf":false}
+*************** response log end ***************
+
+[2017-06-30 17:18:22.922] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"12345","userid":""}
+response time: 52
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1498814299245"},"isf":false}
+*************** response log end ***************
+
+[2017-06-30 17:19:06.882] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"12345","userid":""}
+response time: 30
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1498814342747"},"isf":false}
+*************** response log end ***************
+
+[2017-06-30 17:23:24.899] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"12345","userid":""}
+response time: 238992
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1498814342747"},"isf":false}
+*************** response log end ***************
+
+[2017-06-30 17:23:24.936] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"12345","userid":""}
+response time: 46
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1498814342747"},"isf":false}
+*************** response log end ***************
+
+[2017-06-30 17:23:24.946] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"12345","userid":""}
+response time: 53
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1498814342747"},"isf":false}
+*************** response log end ***************
+
+[2017-06-30 17:23:24.953] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"12345","userid":""}
+response time: 63
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1498814342747"},"isf":false}
+*************** response log end ***************
+
+[2017-06-30 17:23:24.966] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"12345","userid":""}
+response time: 72
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1498814342747"},"isf":false}
+*************** response log end ***************
+
+[2017-06-30 17:23:24.974] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"12345","userid":""}
+response time: 78
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1498814342747"},"isf":false}
+*************** response log end ***************
+
+[2017-06-30 17:23:25.006] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"12345","userid":""}
+response time: 113
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1498814342747"},"isf":false}
+*************** response log end ***************
+
+[2017-06-30 17:28:06.054] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"12345","userid":""}
+response time: 43
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1498814878646"},"isf":false}
+*************** response log end ***************
+
+[2017-06-30 17:31:34.268] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"12345","userid":""}
+response time: 45
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"query_faild_syserror","sub_msg":"查询失败，系统错误","timestamp":"1498815085971"},"isf":false}
+*************** response log end ***************
+
+[2017-06-30 17:42:40.545] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"12345","userid":""}
+response time: 57
+response status: 200
+response body: 
+{"data":[{"_id":"12345","avg_connect":0,"min_connect":null,"max_connect":null,"avg_scan":0,"min_scan":null,"max_scan":null,"avg_rssi":0,"min_rssi":null,"max_rssi":null}],"status":{"code":0,"msg":"查询成功","sub_code":"query_success","sub_msg":"查询成功","timestamp":"1498815754988"},"isf":false}
+*************** response log end ***************
+
+[2017-06-30 17:43:36.230] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"12345","userid":""}
+response time: 37
+response status: 200
+response body: 
+{"data":[{"_id":"12345","avg_connect":0,"min_connect":null,"max_connect":null,"avg_scan":0,"min_scan":null,"max_scan":null,"avg_rssi":0,"min_rssi":null,"max_rssi":null}],"status":{"code":0,"msg":"查询成功","sub_code":"query_success","sub_msg":"查询成功","timestamp":"1498815811815"},"isf":false}
+*************** response log end ***************
+

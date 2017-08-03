@@ -1,0 +1,169 @@
+[2017-08-01 14:10:02.330] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"qqq","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 22
+response status: 200
+response body: 
+{"status":{"code":1010102,"msg":"账户不存在","sub_code":"login_faild_notexist","sub_msg":"登录失败，用户名错误或者不存在","timestamp":"1501567794903"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 14:17:42.425] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/register
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"5@5.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 22
+response status: 200
+response body: 
+{"data":"59801d06808fdf04507156de","status":{"code":1020100,"msg":"注册成功","sub_code":"register_success","sub_msg":"注册成功","timestamp":"1501567794903"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 14:26:43.310] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/register
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"5@5.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 26
+response status: 200
+response body: 
+{"status":{"code":1020101,"msg":"用户名已存在","sub_code":"register_faild_exist","sub_msg":"注册失败，用户名已存在","timestamp":"1501568796735"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 14:27:03.339] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/register
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"5@5.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 5
+response status: 200
+response body: 
+{"status":{"code":1020101,"msg":"用户名已存在","sub_code":"register_faild_exist","sub_msg":"注册失败，用户名已存在","timestamp":"1501568796735"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 14:30:37.067] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/register
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"7@7.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 42
+response status: 200
+response body: 
+{"data":"5980200ddf9fcf046c6659fa","status":{"code":1020100,"msg":"注册成功","sub_code":"register_success","sub_msg":"注册成功","timestamp":"1501569015736"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 14:39:20.948] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/register
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"7@7.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 26
+response status: 200
+response body: 
+{"status":{"code":1020101,"msg":"用户名已存在","sub_code":"register_faild_exist","sub_msg":"注册失败，用户名已存在","timestamp":"1501569553930"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 14:42:20.358] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/register
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"7@7.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 25
+response status: 200
+response body: 
+{"status":{"code":1020101,"msg":"用户名已存在","sub_code":"register_faild_exist","sub_msg":"注册失败，用户名已存在","timestamp":"1501569734454"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 14:43:14.972] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/register
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"7@7.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 24
+response status: 200
+response body: 
+{"status":{"code":1020101,"msg":"用户名已存在","sub_code":"register_faild_exist","sub_msg":"注册失败，用户名已存在","timestamp":"1501569790343"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 14:45:07.612] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/register
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"7@7.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 27
+response status: 200
+response body: 
+{"status":{"code":1020101,"msg":"用户名已存在","sub_code":"register_faild_exist","sub_msg":"注册失败，用户名已存在","timestamp":"1501569891763"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 14:45:54.299] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/register
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"8@8.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 25
+response status: 200
+response body: 
+{"status":{"code":1020101,"msg":"用户名已存在","sub_code":"register_faild_exist","sub_msg":"注册失败，用户名已存在","timestamp":"1501569946168"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 14:46:13.034] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/register
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"1@2.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 22
+response status: 200
+response body: 
+{"data":"598023b5fab76b04833f132b","status":{"code":1020100,"msg":"注册成功","sub_code":"register_success","sub_msg":"注册成功","timestamp":"1501569946168"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 14:47:06.366] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/register
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"1@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 34
+response status: 200
+response body: 
+{"data":"598023ea9748fe04852e7f85","status":{"code":1020100,"msg":"注册成功","sub_code":"register_success","sub_msg":"注册成功","timestamp":"1501570019796"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 14:48:29.546] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/register
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"1@4.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 44
+response status: 200
+response body: 
+{"data":"5980243da889e104876b28d0","status":{"code":1020100,"msg":"注册成功","sub_code":"register_success","sub_msg":"注册成功","timestamp":"1501570094113"},"isf":false}
+*************** response log end ***************
+

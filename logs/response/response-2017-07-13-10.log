@@ -1,0 +1,13 @@
+[2017-07-13 10:52:30.053] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bxs/getBxPJ
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{}
+response time: 17
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+

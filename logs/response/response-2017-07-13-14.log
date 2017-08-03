@@ -1,0 +1,247 @@
+[2017-07-13 14:47:01.776] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/register
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 98
+response status: 200
+response body: 
+{"data":"59671765b15d4122c8bbdbfd","status":{"code":0,"msg":"注册成功","sub_code":"register_success","sub_msg":"注册成功","timestamp":"1499928389085"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:49:07.937] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"3@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 57
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"密码错误","sub_code":"login_faild_pwderror","sub_msg":"登录失败，密码错误","timestamp":"1499928543255"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:49:48.707] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 16
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"login_faild_syserror","sub_msg":"登录失败，系统错误","timestamp":"1499928543255"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:50:06.222] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 51
+response status: 200
+response body: 
+{"data":{"succ":true,"data":{"_id":"59671765b15d4122c8bbdbfd","username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}},"status":{"code":0,"msg":"登录成功","sub_code":"login_success","sub_msg":"登录成功","timestamp":"1499928543255"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:50:14.948] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 5
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"login_faild_syserror","sub_msg":"登录失败，系统错误","timestamp":"1499928543255"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:50:21.110] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 8
+response status: 200
+response body: 
+{"data":{"succ":true,"data":{"_id":"59671765b15d4122c8bbdbfd","username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}},"status":{"code":0,"msg":"登录成功","sub_code":"login_success","sub_msg":"登录成功","timestamp":"1499928543255"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:50:28.269] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 6
+response status: 200
+response body: 
+{"data":{"succ":true,"data":{"_id":"59671765b15d4122c8bbdbfd","username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}},"status":{"code":0,"msg":"登录成功","sub_code":"login_success","sub_msg":"登录成功","timestamp":"1499928543255"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:50:34.055] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 9
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"login_faild_syserror","sub_msg":"登录失败，系统错误","timestamp":"1499928543255"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:50:43.642] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 11
+response status: 200
+response body: 
+{"status":{"code":-1,"msg":"系统错误","sub_code":"login_faild_syserror","sub_msg":"登录失败，系统错误","timestamp":"1499928543255"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:50:49.408] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 9
+response status: 200
+response body: 
+{"data":{"succ":true,"data":{"_id":"59671765b15d4122c8bbdbfd","username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}},"status":{"code":0,"msg":"登录成功","sub_code":"login_success","sub_msg":"登录成功","timestamp":"1499928543255"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:54:57.168] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 28
+response status: 200
+response body: 
+{"data":{"succ":true,"data":{"_id":"59671765b15d4122c8bbdbfd","username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}},"status":{"code":0,"msg":"登录成功","sub_code":"login_success","sub_msg":"登录成功","timestamp":"1499928887669"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:55:06.349] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 10
+response status: 200
+response body: 
+{"data":{"succ":true,"data":{"_id":"59671765b15d4122c8bbdbfd","username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}},"status":{"code":0,"msg":"登录成功","sub_code":"login_success","sub_msg":"登录成功","timestamp":"1499928887669"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:55:11.215] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 10
+response status: 200
+response body: 
+{"data":{"succ":true,"data":{"_id":"59671765b15d4122c8bbdbfd","username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}},"status":{"code":0,"msg":"登录成功","sub_code":"login_success","sub_msg":"登录成功","timestamp":"1499928887669"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:55:32.224] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 10
+response status: 200
+response body: 
+{"data":{"succ":true,"data":{"_id":"59671765b15d4122c8bbdbfd","username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}},"status":{"code":0,"msg":"登录成功","sub_code":"login_success","sub_msg":"登录成功","timestamp":"1499928887669"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:55:45.665] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 35
+response status: 200
+response body: 
+{"data":{"succ":true,"data":{"_id":"59671765b15d4122c8bbdbfd","username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}},"status":{"code":0,"msg":"登录成功","sub_code":"login_success","sub_msg":"登录成功","timestamp":"1499928941491"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:55:50.251] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 15
+response status: 200
+response body: 
+{"data":{"succ":true,"data":{"_id":"59671765b15d4122c8bbdbfd","username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}},"status":{"code":0,"msg":"登录成功","sub_code":"login_success","sub_msg":"登录成功","timestamp":"1499928941491"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:55:54.762] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 9
+response status: 200
+response body: 
+{"data":{"succ":true,"data":{"_id":"59671765b15d4122c8bbdbfd","username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}},"status":{"code":0,"msg":"登录成功","sub_code":"login_success","sub_msg":"登录成功","timestamp":"1499928941491"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:55:58.231] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 11
+response status: 200
+response body: 
+{"data":{"succ":true,"data":{"_id":"59671765b15d4122c8bbdbfd","username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}},"status":{"code":0,"msg":"登录成功","sub_code":"login_success","sub_msg":"登录成功","timestamp":"1499928941491"},"isf":false}
+*************** response log end ***************
+
+[2017-07-13 14:56:01.906] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/login
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}
+response time: 13
+response status: 200
+response body: 
+{"data":{"succ":true,"data":{"_id":"59671765b15d4122c8bbdbfd","username":"4@3.com","password":"6512bd43d9caa6e02c990b0a82652dca"}},"status":{"code":0,"msg":"登录成功","sub_code":"login_success","sub_msg":"登录成功","timestamp":"1499928941491"},"isf":false}
+*************** response log end ***************
+

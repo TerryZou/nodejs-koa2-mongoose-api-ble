@@ -1,0 +1,134 @@
+[2017-07-24 15:31:00.621] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":""}
+response time: 4
+err name: TypeError
+err message: Cannot read property 'codes' of undefined
+err stack: TypeError: Cannot read property 'codes' of undefined
+    at exports.ble_scan_result (/Users/terryzou/company/ble/koaproject/app/controllers/BleScan_controller.js:120:37)
+    at dispatch (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:45:18)
+    at /Users/terryzou/company/ble/koaproject/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:44:32)
+    at /Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/terryzou/company/ble/koaproject/node_modules/koa-router/lib/router.js:350:31)
+    at dispatch (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:45:18)
+    at /Users/terryzou/company/ble/koaproject/middlewares/response_formatter.js:34:19
+    at dispatch (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:45:18)
+    at createGenerator (/Users/terryzou/company/ble/koaproject/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (/Users/terryzou/company/ble/koaproject/node_modules/co/index.js:65:19)
+    at /Users/terryzou/company/ble/koaproject/node_modules/co/index.js:54:5
+    at Promise (<anonymous>)
+    at Object.co (/Users/terryzou/company/ble/koaproject/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/terryzou/company/ble/koaproject/node_modules/co/index.js:118:63)
+    at next (/Users/terryzou/company/ble/koaproject/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/terryzou/company/ble/koaproject/node_modules/co/index.js:69:7)
+    at /Users/terryzou/company/ble/koaproject/node_modules/co/index.js:54:5
+*************** error log end ***************
+
+[2017-07-24 15:34:09.946] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":""}
+response time: 4
+err name: TypeError
+err message: Cannot read property 'codes' of undefined
+err stack: TypeError: Cannot read property 'codes' of undefined
+    at exports.ble_scan_result (/Users/terryzou/company/ble/koaproject/app/controllers/BleScan_controller.js:120:37)
+    at dispatch (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:45:18)
+    at /Users/terryzou/company/ble/koaproject/node_modules/koa-router/lib/router.js:345:16
+    at dispatch (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:44:32)
+    at /Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:36:12
+    at dispatch (/Users/terryzou/company/ble/koaproject/node_modules/koa-router/lib/router.js:350:31)
+    at dispatch (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:45:18)
+    at /Users/terryzou/company/ble/koaproject/middlewares/response_formatter.js:34:19
+    at dispatch (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:45:18)
+    at createGenerator (/Users/terryzou/company/ble/koaproject/node_modules/koa-convert/index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (/Users/terryzou/company/ble/koaproject/node_modules/co/index.js:65:19)
+    at /Users/terryzou/company/ble/koaproject/node_modules/co/index.js:54:5
+    at Promise (<anonymous>)
+    at Object.co (/Users/terryzou/company/ble/koaproject/node_modules/co/index.js:50:10)
+    at Object.toPromise (/Users/terryzou/company/ble/koaproject/node_modules/co/index.js:118:63)
+    at next (/Users/terryzou/company/ble/koaproject/node_modules/co/index.js:99:29)
+    at onFulfilled (/Users/terryzou/company/ble/koaproject/node_modules/co/index.js:69:7)
+    at /Users/terryzou/company/ble/koaproject/node_modules/co/index.js:54:5
+*************** error log end ***************
+
+[2017-07-24 15:39:14.170] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  //files/excel/1500881954022.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 3
+err name: BadRequestError
+err message: Malicious Path
+err stack: BadRequestError: Malicious Path
+    at resolvePath (/Users/terryzou/company/ble/koaproject/node_modules/resolve-path/index.js:77:11)
+    at /Users/terryzou/company/ble/koaproject/node_modules/koa-send/index.js:69:12
+    at Generator.next (<anonymous>)
+    at onFulfilled (/Users/terryzou/company/ble/koaproject/node_modules/co/index.js:65:19)
+    at /Users/terryzou/company/ble/koaproject/node_modules/co/index.js:54:5
+    at Promise (<anonymous>)
+    at co (/Users/terryzou/company/ble/koaproject/node_modules/co/index.js:50:10)
+    at send (/Users/terryzou/company/ble/koaproject/node_modules/koa-send/index.js:36:10)
+    at serve (/Users/terryzou/company/ble/koaproject/node_modules/koa-static/index.js:41:16)
+    at dispatch (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:45:18)
+    at app.use (/Users/terryzou/company/ble/koaproject/app.js:36:11)
+    at dispatch (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:45:18)
+    at filter (/Users/terryzou/company/ble/koaproject/node_modules/koa-json/index.js:25:12)
+    at dispatch (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:45:18)
+    at parseBody.then.body (/Users/terryzou/company/ble/koaproject/node_modules/koa-bodyparser/index.js:74:14)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:169:7)
+*************** error log end ***************
+
+[2017-07-24 15:51:15.435] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: GET
+request originalUrl:  //files/excel/1500882675293.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 3
+err name: BadRequestError
+err message: Malicious Path
+err stack: BadRequestError: Malicious Path
+    at resolvePath (/Users/terryzou/company/ble/koaproject/node_modules/resolve-path/index.js:77:11)
+    at /Users/terryzou/company/ble/koaproject/node_modules/koa-send/index.js:69:12
+    at Generator.next (<anonymous>)
+    at onFulfilled (/Users/terryzou/company/ble/koaproject/node_modules/co/index.js:65:19)
+    at /Users/terryzou/company/ble/koaproject/node_modules/co/index.js:54:5
+    at Promise (<anonymous>)
+    at co (/Users/terryzou/company/ble/koaproject/node_modules/co/index.js:50:10)
+    at send (/Users/terryzou/company/ble/koaproject/node_modules/koa-send/index.js:36:10)
+    at serve (/Users/terryzou/company/ble/koaproject/node_modules/koa-static/index.js:41:16)
+    at dispatch (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:45:18)
+    at app.use (/Users/terryzou/company/ble/koaproject/app.js:36:11)
+    at dispatch (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:45:18)
+    at filter (/Users/terryzou/company/ble/koaproject/node_modules/koa-json/index.js:25:12)
+    at dispatch (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:44:32)
+    at next (/Users/terryzou/company/ble/koaproject/node_modules/koa-compose/index.js:45:18)
+    at parseBody.then.body (/Users/terryzou/company/ble/koaproject/node_modules/koa-bodyparser/index.js:74:14)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:169:7)
+*************** error log end ***************
+

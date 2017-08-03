@@ -1,0 +1,350 @@
+[2017-07-17 15:04:42.930] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 560
+response status: 200
+response body: 
+{"data":"/files/excel/1500275082892.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500275029079"},"isf":false}
+*************** response log end ***************
+
+[2017-07-17 15:04:43.026] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  //files/excel/1500275082892.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 42
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"F:\\koa\\koaproject\\files\\excel\\1500275082892.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-17 15:07:07.093] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 155
+response status: 200
+response body: 
+{"data":"/files/excel/1500275227072.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500275221071"},"isf":false}
+*************** response log end ***************
+
+[2017-07-17 15:07:07.157] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  //files/excel/1500275227072.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 8
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"F:\\koa\\koaproject\\files\\excel\\1500275227072.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-17 15:09:44.244] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 130
+response status: 200
+response body: 
+{"data":"/files/excel/1500275384213.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500275380106"},"isf":false}
+*************** response log end ***************
+
+[2017-07-17 15:09:44.304] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  //files/excel/1500275384213.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 13
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"F:\\koa\\koaproject\\files\\excel\\1500275384213.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-17 15:11:06.788] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 129
+response status: 200
+response body: 
+{"data":"/files/excel/1500275466764.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500275459559"},"isf":false}
+*************** response log end ***************
+
+[2017-07-17 15:11:06.840] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  //files/excel/1500275466764.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 12
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"F:\\koa\\koaproject\\files\\excel\\1500275466764.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-17 15:12:08.425] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 149
+response status: 200
+response body: 
+{"data":"/files/excel/1500275528369.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500275523817"},"isf":false}
+*************** response log end ***************
+
+[2017-07-17 15:12:08.480] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  //files/excel/1500275528369.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 11
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"F:\\koa\\koaproject\\files\\excel\\1500275528369.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-17 15:13:32.067] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 109
+response status: 200
+response body: 
+{"data":"/files/excel/1500275612047.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500275601382"},"isf":false}
+*************** response log end ***************
+
+[2017-07-17 15:13:32.142] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  //files/excel/1500275612047.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 29
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"F:\\koa\\koaproject\\files\\excel\\1500275612047.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-17 15:15:22.662] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 89
+response status: 200
+response body: 
+{"data":"/files/excel/1500275722638.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500275718670"},"isf":false}
+*************** response log end ***************
+
+[2017-07-17 15:15:22.716] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  //files/excel/1500275722638.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 10
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"F:\\koa\\koaproject\\files\\excel\\1500275722638.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-17 15:16:05.561] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 103
+response status: 200
+response body: 
+{"data":"/files/excel/1500275765530.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500275762110"},"isf":false}
+*************** response log end ***************
+
+[2017-07-17 15:16:05.615] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  //files/excel/1500275765530.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 10
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"F:\\koa\\koaproject\\files\\excel\\1500275765530.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-17 15:17:19.040] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 118
+response status: 200
+response body: 
+{"data":"/files/excel/1500275839011.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500275833817"},"isf":false}
+*************** response log end ***************
+
+[2017-07-17 15:17:19.096] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  //files/excel/1500275839011.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 9
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"F:\\koa\\koaproject\\files\\excel\\1500275839011.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-17 15:21:50.962] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 124
+response status: 200
+response body: 
+{"data":"/files/excel/1500276110914.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500276097785"},"isf":false}
+*************** response log end ***************
+
+[2017-07-17 15:21:51.066] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  //files/excel/1500276110914.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 41
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"F:\\koa\\koaproject\\files\\excel\\1500276110914.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-17 15:23:51.346] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 114
+response status: 200
+response body: 
+{"data":"/files/excel/1500276231299.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500276225618"},"isf":false}
+*************** response log end ***************
+
+[2017-07-17 15:23:51.411] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  //files/excel/1500276231299.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 14
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"F:\\koa\\koaproject\\files\\excel\\1500276231299.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-17 15:31:11.079] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 134
+response status: 200
+response body: 
+{"data":"/files/excel/1500276671020.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500276664540"},"isf":false}
+*************** response log end ***************
+
+[2017-07-17 15:31:11.137] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  //files/excel/1500276671020.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 14
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"F:\\koa\\koaproject\\files\\excel\\1500276671020.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-17 15:40:37.927] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 366
+response status: 200
+response body: 
+{"data":"/files/excel/1500277237823.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500277227226"},"isf":false}
+*************** response log end ***************
+
+[2017-07-17 15:40:38.049] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  //files/excel/1500277237823.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 62
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"F:\\koa\\koaproject\\files\\excel\\1500277237823.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-17 15:41:06.476] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":"","connect_num":"200"}
+response time: 165
+response status: 200
+response body: 
+{"data":"/files/excel/1500277266394.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500277261465"},"isf":false}
+*************** response log end ***************
+
+[2017-07-17 15:41:06.537] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  //files/excel/1500277266394.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 14
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"F:\\koa\\koaproject\\files\\excel\\1500277266394.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+

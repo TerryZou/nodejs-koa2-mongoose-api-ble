@@ -1,0 +1,104 @@
+[2017-06-21 14:40:49.313] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request body: 
+{"name":"张三","pwd":"111111"}
+response time: 15
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-21 14:50:06.854] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request body: 
+{"name":"张三","pwd":"111111"}
+response time: 33
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-21 14:50:51.445] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request body: 
+{"name":"张三","pwd":"111111"}
+response time: 39
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-21 14:52:24.999] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request body: 
+{"name":"张三","pwd":"111111"}
+response time: 49
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-21 14:53:13.482] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request body: 
+{"name":"张三","pwd":"111111"}
+response time: 41
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-21 14:54:02.722] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request body: 
+{"name":"张三","pwd":"111111"}
+response time: 52
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-21 14:55:59.229] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request body: 
+{"name":"张三","pwd":"111111"}
+response time: 51
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-21 14:58:35.565] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request body: 
+{"name":"张三","pwd":"111111"}
+response time: 8
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+

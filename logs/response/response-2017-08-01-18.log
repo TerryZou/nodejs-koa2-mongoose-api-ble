@@ -1,0 +1,206 @@
+[2017-08-01 18:03:59.208] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"20:c3:8f:ec:c8:a5","name":"BP Monitor","mi":"1.5","mobile":"Nexus 5","flag":"20170630-4","userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 27
+response status: 200
+response body: 
+{"status":{"code":3020102,"msg":"没有数据","sub_code":"connect_query_faild_nodata","sub_msg":"查询连接测试记录失败，没有数据","timestamp":"1501581831542"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 18:05:28.895] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"20:c3:8f:ec:c8:a5","name":"BP Monitor","mi":"1.5","mobile":"Nexus 5","flag":"20170630-4","userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 25
+response status: 200
+response body: 
+{"status":{"code":3020102,"msg":"没有数据","sub_code":"connect_query_faild_nodata","sub_msg":"查询连接测试记录失败，没有数据","timestamp":"1501581920697"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 18:07:41.317] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"20:c3:8f:ec:c8:a5","name":"BP Monitor","mi":"1.5","mobile":"Nexus 5","flag":"20170630-4","userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 26
+response status: 200
+response body: 
+{"status":{"code":3020102,"msg":"没有数据","sub_code":"connect_query_faild_nodata","sub_msg":"查询连接测试记录失败，没有数据","timestamp":"1501582051681"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 18:10:05.769] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"20:c3:8f:ec:c8:a5","name":"BP Monitor","mi":"1.5","mobile":"Nexus 5","flag":"20170630-4","userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 27
+response status: 200
+response body: 
+{"status":{"code":3020102,"msg":"没有数据","sub_code":"connect_query_faild_nodata","sub_msg":"查询连接测试记录失败，没有数据","timestamp":"1501582195671"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 18:10:55.185] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"20:c3:8f:ec:c8:a5"}
+response time: 4
+response status: 200
+response body: 
+{"status":{"code":3020101,"msg":"参数有误","sub_code":"connect_query_faild_paramerror","sub_msg":"查询连接测试记录失败，查询参数有误","timestamp":"1501582249469"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 18:11:41.528] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"flag":"20170630-4"}
+response time: 27
+response status: 200
+response body: 
+{"data":[{"_id":"59560c8bbd55e493029f9eaf","mac":"20:c3:8f:ec:c8:a5","flag":"20170630-4","name":"BP Monitor","mi":1.5,"time":1498811530351,"mobile":"Nexus 5","LescanTime":878,"RSSI":-87,"isConnect":0,"result":"连接失败！","mark":"","userid":"5937ac8b34ab5a8460df3a6b"}],"status":{"code":3020100,"msg":"查询成功","sub_code":"connect_query_success","sub_msg":"查询连接测试记录成功","timestamp":"1501582249469"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 18:16:11.181] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"20:c3:8f:ec:c8:a5","name":"BP Monitor","mi":"1.5","mobile":"Nexus 5","flag":"20170630-4","userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 26
+response status: 200
+response body: 
+{"status":{"code":3020102,"msg":"没有数据","sub_code":"connect_query_faild_nodata","sub_msg":"查询连接测试记录失败，没有数据","timestamp":"1501582564699"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 18:17:28.394] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"20:c3:8f:ec:c8:a5","name":"BP Monitor","mi":"1.5","mobile":"Nexus 5","flag":"20170630-4","userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 27
+response status: 200
+response body: 
+{"status":{"code":3020102,"msg":"没有数据","sub_code":"connect_query_faild_nodata","sub_msg":"查询连接测试记录失败，没有数据","timestamp":"1501582639010"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 18:23:44.475] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"a4:b4:76:5e:b6:8d","flag":"20170628-8","name":"honor zero-68D","mi":"1.5","mobile":"Nexus 5","userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 38
+response status: 200
+response body: 
+{"data":[{"_id":"59562074a5c649080fe72dff","mac":"a4:b4:76:5e:b6:8d","flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816627466,"mobile":"Nexus 5","LescanTime":531,"RSSI":-75,"isConnect":0,"result":"连接失败！","mark":"","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"59562081a5c649080fe72e00","mac":"a4:b4:76:5e:b6:8d","flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816641174,"mobile":"Nexus 5","LescanTime":122,"RSSI":-66,"isConnect":0,"result":"连接失败！","mark":"","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"59562083a5c649080fe72e01","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":154,"DisconnectTime":12099,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816630950,"mobile":"Nexus 5","LescanTime":30,"RSSI":-66,"isConnect":1,"result":"连接成功！","mark":"Connection handle 71\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"5956208da5c649080fe72e02","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":153,"DisconnectTime":6036,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816646862,"mobile":"Nexus 5","LescanTime":68,"RSSI":-74,"isConnect":1,"result":"连接成功！","mark":"Connection handle 70\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"59562095a5c649080fe72e03","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":158,"DisconnectTime":6039,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816655348,"mobile":"Nexus 5","LescanTime":183,"RSSI":-75,"isConnect":1,"result":"连接成功！","mark":"Connection handle 69\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"5956209ea5c649080fe72e04","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":147,"DisconnectTime":6028,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816663907,"mobile":"Nexus 5","LescanTime":28,"RSSI":-61,"isConnect":1,"result":"连接成功！","mark":"Connection handle 68\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"595620a6a5c649080fe72e05","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":157,"DisconnectTime":6049,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816672314,"mobile":"Nexus 5","LescanTime":30,"RSSI":-74,"isConnect":1,"result":"连接成功！","mark":"Connection handle 71\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"595620afa5c649080fe72e06","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":158,"DisconnectTime":6020,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816680736,"mobile":"Nexus 5","LescanTime":172,"RSSI":-74,"isConnect":1,"result":"连接成功！","mark":"Connection handle 70\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"595620b7a5c649080fe72e07","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":152,"DisconnectTime":6051,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816689292,"mobile":"Nexus 5","LescanTime":30,"RSSI":-61,"isConnect":1,"result":"连接成功！","mark":"Connection handle 69\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"595620c0a5c649080fe72e08","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":161,"DisconnectTime":6014,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816697701,"mobile":"Nexus 5","LescanTime":185,"RSSI":-73,"isConnect":1,"result":"连接成功！","mark":"Connection handle 68\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"595620c8a5c649080fe72e09","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":154,"DisconnectTime":6045,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816706274,"mobile":"Nexus 5","LescanTime":173,"RSSI":-66,"isConnect":1,"result":"连接成功！","mark":"Connection handle 71\n","userid":"5937ac8b34ab5a8460df3a6b"}],"status":{"code":3020100,"msg":"查询成功","sub_code":"connect_query_success","sub_msg":"查询连接测试记录成功","timestamp":"1501583008315"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 18:24:13.433] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"a4:b4:76:5e:b6:8d","flag":"20170628-8","name":"honor zero-68D","mi":"1.5","mobile":"Nexus 5","userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 17
+response status: 200
+response body: 
+{"data":[{"_id":"59562074a5c649080fe72dff","mac":"a4:b4:76:5e:b6:8d","flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816627466,"mobile":"Nexus 5","LescanTime":531,"RSSI":-75,"isConnect":0,"result":"连接失败！","mark":"","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"59562081a5c649080fe72e00","mac":"a4:b4:76:5e:b6:8d","flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816641174,"mobile":"Nexus 5","LescanTime":122,"RSSI":-66,"isConnect":0,"result":"连接失败！","mark":"","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"59562083a5c649080fe72e01","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":154,"DisconnectTime":12099,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816630950,"mobile":"Nexus 5","LescanTime":30,"RSSI":-66,"isConnect":1,"result":"连接成功！","mark":"Connection handle 71\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"5956208da5c649080fe72e02","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":153,"DisconnectTime":6036,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816646862,"mobile":"Nexus 5","LescanTime":68,"RSSI":-74,"isConnect":1,"result":"连接成功！","mark":"Connection handle 70\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"59562095a5c649080fe72e03","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":158,"DisconnectTime":6039,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816655348,"mobile":"Nexus 5","LescanTime":183,"RSSI":-75,"isConnect":1,"result":"连接成功！","mark":"Connection handle 69\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"5956209ea5c649080fe72e04","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":147,"DisconnectTime":6028,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816663907,"mobile":"Nexus 5","LescanTime":28,"RSSI":-61,"isConnect":1,"result":"连接成功！","mark":"Connection handle 68\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"595620a6a5c649080fe72e05","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":157,"DisconnectTime":6049,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816672314,"mobile":"Nexus 5","LescanTime":30,"RSSI":-74,"isConnect":1,"result":"连接成功！","mark":"Connection handle 71\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"595620afa5c649080fe72e06","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":158,"DisconnectTime":6020,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816680736,"mobile":"Nexus 5","LescanTime":172,"RSSI":-74,"isConnect":1,"result":"连接成功！","mark":"Connection handle 70\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"595620b7a5c649080fe72e07","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":152,"DisconnectTime":6051,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816689292,"mobile":"Nexus 5","LescanTime":30,"RSSI":-61,"isConnect":1,"result":"连接成功！","mark":"Connection handle 69\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"595620c0a5c649080fe72e08","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":161,"DisconnectTime":6014,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816697701,"mobile":"Nexus 5","LescanTime":185,"RSSI":-73,"isConnect":1,"result":"连接成功！","mark":"Connection handle 68\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"595620c8a5c649080fe72e09","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":154,"DisconnectTime":6045,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816706274,"mobile":"Nexus 5","LescanTime":173,"RSSI":-66,"isConnect":1,"result":"连接成功！","mark":"Connection handle 71\n","userid":"5937ac8b34ab5a8460df3a6b"}],"status":{"code":3020100,"msg":"查询成功","sub_code":"connect_query_success","sub_msg":"查询连接测试记录成功","timestamp":"1501583008315"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 18:25:31.261] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"a4:b4:76:5e:b6:8d","flag":"20170628-8","name":"honor zero-68D","mi":"1.5","mobile":"Nexus 5","userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 9
+response status: 200
+response body: 
+{"data":[{"_id":"59562074a5c649080fe72dff","mac":"a4:b4:76:5e:b6:8d","flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816627466,"mobile":"Nexus 5","LescanTime":531,"RSSI":-75,"isConnect":0,"result":"连接失败！","mark":"","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"59562081a5c649080fe72e00","mac":"a4:b4:76:5e:b6:8d","flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816641174,"mobile":"Nexus 5","LescanTime":122,"RSSI":-66,"isConnect":0,"result":"连接失败！","mark":"","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"59562083a5c649080fe72e01","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":154,"DisconnectTime":12099,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816630950,"mobile":"Nexus 5","LescanTime":30,"RSSI":-66,"isConnect":1,"result":"连接成功！","mark":"Connection handle 71\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"5956208da5c649080fe72e02","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":153,"DisconnectTime":6036,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816646862,"mobile":"Nexus 5","LescanTime":68,"RSSI":-74,"isConnect":1,"result":"连接成功！","mark":"Connection handle 70\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"59562095a5c649080fe72e03","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":158,"DisconnectTime":6039,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816655348,"mobile":"Nexus 5","LescanTime":183,"RSSI":-75,"isConnect":1,"result":"连接成功！","mark":"Connection handle 69\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"5956209ea5c649080fe72e04","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":147,"DisconnectTime":6028,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816663907,"mobile":"Nexus 5","LescanTime":28,"RSSI":-61,"isConnect":1,"result":"连接成功！","mark":"Connection handle 68\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"595620a6a5c649080fe72e05","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":157,"DisconnectTime":6049,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816672314,"mobile":"Nexus 5","LescanTime":30,"RSSI":-74,"isConnect":1,"result":"连接成功！","mark":"Connection handle 71\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"595620afa5c649080fe72e06","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":158,"DisconnectTime":6020,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816680736,"mobile":"Nexus 5","LescanTime":172,"RSSI":-74,"isConnect":1,"result":"连接成功！","mark":"Connection handle 70\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"595620b7a5c649080fe72e07","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":152,"DisconnectTime":6051,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816689292,"mobile":"Nexus 5","LescanTime":30,"RSSI":-61,"isConnect":1,"result":"连接成功！","mark":"Connection handle 69\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"595620c0a5c649080fe72e08","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":161,"DisconnectTime":6014,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816697701,"mobile":"Nexus 5","LescanTime":185,"RSSI":-73,"isConnect":1,"result":"连接成功！","mark":"Connection handle 68\n","userid":"5937ac8b34ab5a8460df3a6b"},{"_id":"595620c8a5c649080fe72e09","mac":"a4:b4:76:5e:b6:8d","ConnectionTime":154,"DisconnectTime":6045,"flag":"20170628-8","name":"honor zero-68D","mi":1.5,"time":1498816706274,"mobile":"Nexus 5","LescanTime":173,"RSSI":-66,"isConnect":1,"result":"连接成功！","mark":"Connection handle 71\n","userid":"5937ac8b34ab5a8460df3a6b"}],"status":{"code":3020100,"msg":"查询成功","sub_code":"connect_query_success","sub_msg":"查询连接测试记录成功","timestamp":"1501583008315"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 18:32:58.392] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_query
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"20:c3:8f:ec:c8:a5","name":"BP Monitor","mi":"1.5","mobile":"Nexus 5","flag":"20170630-4","userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 5
+response status: 200
+response body: 
+{"status":{"code":3020102,"msg":"没有数据","sub_code":"connect_query_faild_nodata","sub_msg":"查询连接测试记录失败，没有数据","timestamp":"1501583008315"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 18:46:15.541] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"a4:b4:76:5e:b6:8d","flag":"20170628-8","name":"honor zero-68D","mi":"1.5","mobile":"Nexus 5","userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 43
+response status: 200
+response body: 
+{"data":"1501584375517.xlsx","status":{"code":3020200,"msg":"导出成功","sub_code":"connect_export_success","sub_msg":"导出连接测试记录成功","timestamp":"1501583008315"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 18:46:15.569] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /1501584375517.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 7
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"/Users/terryzou/company/ble/koaproject/files/excel/1501584375517.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-08-01 18:52:50.297] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"a4:b4:76:5e:b6:8d","flag":"20170628-8","name":"honor zero-68D","mi":"1.5","mobile":"Nexus 5","userid":"5937ac8b34ab5a8460df3a6b"}
+response time: 55
+response status: 200
+response body: 
+{"data":"1501584770276.xlsx","status":{"code":3020200,"msg":"导出成功","sub_code":"connect_export_success","sub_msg":"导出连接测试记录成功","timestamp":"1501584765072"},"isf":false}
+*************** response log end ***************
+
+[2017-08-01 18:52:50.330] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /1501584770276.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 5
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"/Users/terryzou/company/ble/koaproject/files/excel/1501584770276.xlsx","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+

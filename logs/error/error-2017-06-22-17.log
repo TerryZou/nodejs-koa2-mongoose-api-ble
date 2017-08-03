@@ -1,0 +1,35 @@
+[2017-06-22 17:09:18.656] [ERROR] errorLogger - 
+*************** error log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"name":"张三","pwd":"123456"}
+response time: 12
+err name: TypeError
+err message: Cannot read property 'add' of undefined
+err stack: TypeError: Cannot read property 'add' of undefined
+    at exports.registerUser (F:\koa\koaproject\app\controllers\user_controller.js:24:23)
+    at dispatch (F:\koa\koaproject\node_modules\koa-compose\index.js:44:32)
+    at next (F:\koa\koaproject\node_modules\koa-compose\index.js:45:18)
+    at F:\koa\koaproject\node_modules\koa-router\lib\router.js:345:16
+    at dispatch (F:\koa\koaproject\node_modules\koa-compose\index.js:44:32)
+    at F:\koa\koaproject\node_modules\koa-compose\index.js:36:12
+    at dispatch (F:\koa\koaproject\node_modules\koa-router\lib\router.js:350:31)
+    at dispatch (F:\koa\koaproject\node_modules\koa-compose\index.js:44:32)
+    at next (F:\koa\koaproject\node_modules\koa-compose\index.js:45:18)
+    at F:\koa\koaproject\middlewares\response_formatter.js:32:19
+    at dispatch (F:\koa\koaproject\node_modules\koa-compose\index.js:44:32)
+    at next (F:\koa\koaproject\node_modules\koa-compose\index.js:45:18)
+    at createGenerator (F:\koa\koaproject\node_modules\koa-convert\index.js:24:16)
+    at createGenerator.next (<anonymous>)
+    at onFulfilled (F:\koa\koaproject\node_modules\co\index.js:65:19)
+    at F:\koa\koaproject\node_modules\co\index.js:54:5
+    at Promise (<anonymous>)
+    at Object.co (F:\koa\koaproject\node_modules\co\index.js:50:10)
+    at Object.toPromise (F:\koa\koaproject\node_modules\co\index.js:118:63)
+    at next (F:\koa\koaproject\node_modules\co\index.js:99:29)
+    at onFulfilled (F:\koa\koaproject\node_modules\co\index.js:69:7)
+    at F:\koa\koaproject\node_modules\co\index.js:54:5
+*************** error log end ***************
+

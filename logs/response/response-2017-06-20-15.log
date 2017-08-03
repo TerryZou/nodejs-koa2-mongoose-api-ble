@@ -1,0 +1,232 @@
+[2017-06-20 15:03:45.185] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/getuser
+request client ip:  ::ffff:10.0.0.62
+request query:  {}
+response time: 56220
+response status: 200
+response body: 
+{"code":0,"message":"success","data":{"username":"阿，希爸","age":30}}
+*************** response log end ***************
+
+[2017-06-20 15:03:45.203] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/getuser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 4
+response status: 200
+response body: 
+{"code":0,"message":"success","data":{"username":"阿，希爸","age":30}}
+*************** response log end ***************
+
+[2017-06-20 15:03:54.900] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/getuser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 2
+response status: 200
+response body: 
+{"code":0,"message":"success","data":{"username":"阿，希爸","age":30}}
+*************** response log end ***************
+
+[2017-06-20 15:03:58.106] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/getuser
+request client ip:  ::ffff:10.0.0.62
+request query:  {}
+response time: 1
+response status: 200
+response body: 
+{"code":0,"message":"success","data":{"username":"阿，希爸","age":30}}
+*************** response log end ***************
+
+[2017-06-20 15:03:58.833] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/getuser
+request client ip:  ::ffff:10.0.0.62
+request query:  {}
+response time: 1
+response status: 200
+response body: 
+{"code":0,"message":"success","data":{"username":"阿，希爸","age":30}}
+*************** response log end ***************
+
+[2017-06-20 15:03:59.090] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/getuser
+request client ip:  ::ffff:10.0.0.62
+request query:  {}
+response time: 2
+response status: 200
+response body: 
+{"code":0,"message":"success","data":{"username":"阿，希爸","age":30}}
+*************** response log end ***************
+
+[2017-06-20 15:03:59.279] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/getuser
+request client ip:  ::ffff:10.0.0.62
+request query:  {}
+response time: 1
+response status: 200
+response body: 
+{"code":0,"message":"success","data":{"username":"阿，希爸","age":30}}
+*************** response log end ***************
+
+[2017-06-20 15:04:18.239] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request query:  {}
+response time: 2
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-20 15:07:05.736] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request query:  {}
+response time: 9
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-20 15:07:09.821] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request query:  {}
+response time: 1
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-20 15:07:10.574] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request query:  {}
+response time: 1
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-20 15:07:10.741] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request query:  {}
+response time: 1
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-20 15:07:10.909] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request query:  {}
+response time: 1
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-20 15:07:19.370] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/registerUser?id=1
+request client ip:  ::ffff:10.0.0.62
+request query:  {"id":"1"}
+response time: 2
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-20 15:07:53.251] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request body: 
+{"result":true}
+response time: 3
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-20 15:08:02.641] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request body: 
+{"result":true}
+response time: 2
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-20 15:10:27.024] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request body: 
+{"result":true}
+response time: 6
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-06-20 15:11:08.311] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/users/registerUser
+request client ip:  ::ffff:10.0.0.62
+request body: 
+{"id":"123"}
+response time: 8
+response status: 200
+response body: 
+{"code":0,"message":"success","data":{"result":true}}
+*************** response log end ***************
+
+[2017-06-20 15:49:36.643] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/users/getuser
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 41
+response status: 200
+response body: 
+{"code":0,"message":"success","data":{"username":"阿，希爸","age":30}}
+*************** response log end ***************
+

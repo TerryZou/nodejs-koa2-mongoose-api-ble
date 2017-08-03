@@ -1,0 +1,13 @@
+[2017-07-04 09:59:36.304] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/bleconnect/ble_connect_result
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"12345","userid":""}
+response time: 4385
+response status: 200
+response body: 
+{"data":[{"_id":"12345","avg_connect":0,"min_connect":null,"max_connect":null,"avg_scan":0,"min_scan":null,"max_scan":null,"avg_rssi":0,"min_rssi":null,"max_rssi":null}],"status":{"code":0,"msg":"查询成功","sub_code":"query_success","sub_msg":"查询成功","timestamp":"1499133558209"},"isf":false}
+*************** response log end ***************
+

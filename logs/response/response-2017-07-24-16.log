@@ -1,0 +1,689 @@
+[2017-07-24 16:00:41.754] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":""}
+response time: 73
+response status: 200
+response body: 
+{"data":"/files/excel/1500883241741.xlsx","status":{"code":0,"msg":"查询成功","sub_code":"query_success","sub_msg":"查询成功","timestamp":"1500883223130"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:04:34.864] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":""}
+response time: 44
+response status: 200
+response body: 
+{"data":"/files/excel/1500883474861.xlsx","status":{"code":0,"msg":"查询成功","sub_code":"query_success","sub_msg":"查询成功","timestamp":"1500883223130"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:06:00.088] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /favicon.ico
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 2
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-24 16:13:22.115] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 260
+response status: 200
+response body: 
+"<!DOCTYPE html><html><head><title>Hello Koa 2!</title><link rel=\"stylesheet\" href=\"/stylesheets/style.css\"></head><body><h1>Hello Koa 2!</h1><p>Welcome to Hello Koa 2!</p></body></html>"
+*************** response log end ***************
+
+[2017-07-24 16:13:22.130] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /stylesheets/style.css
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 4
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"/Users/terryzou/company/ble/koaproject/public/stylesheets/style.css","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-24 16:13:28.463] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /stylesheets/style.css
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 3
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"/Users/terryzou/company/ble/koaproject/public/stylesheets/style.css","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-24 16:13:28.485] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 26
+response status: 200
+response body: 
+"<!DOCTYPE html><html><head><title>Hello Koa 2!</title><link rel=\"stylesheet\" href=\"/stylesheets/style.css\"></head><body><h1>Hello Koa 2!</h1><p>Welcome to Hello Koa 2!</p></body></html>"
+*************** response log end ***************
+
+[2017-07-24 16:13:58.810] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /files/excel/
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-24 16:14:43.454] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /files/excel/1498638762114.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-24 16:14:51.872] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /files/excel/1498638762114.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-24 16:16:41.526] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 28
+response status: 200
+response body: 
+"<!DOCTYPE html><html><head><title>Hello Koa 2!</title><link rel=\"stylesheet\" href=\"/stylesheets/style.css\"></head><body><h1>Hello Koa 2!</h1><p>Welcome to Hello Koa 2!</p></body></html>"
+*************** response log end ***************
+
+[2017-07-24 16:16:41.553] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /stylesheets/style.css
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 1
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"/Users/terryzou/company/ble/koaproject/public/stylesheets/style.css","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-24 16:16:41.779] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /favicon.ico
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 2
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-24 16:16:49.667] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /files/excel
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 2
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-24 16:16:58.876] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /files/excel/eee.excel
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-24 16:17:02.974] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /files/excel/
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-24 16:17:26.760] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 24
+response status: 200
+response body: 
+"<!DOCTYPE html><html><head><title>Hello Koa 2!</title><link rel=\"stylesheet\" href=\"/stylesheets/style.css\"></head><body><h1>Hello Koa 2!</h1><p>Welcome to Hello Koa 2!</p></body></html>"
+*************** response log end ***************
+
+[2017-07-24 16:17:26.815] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /stylesheets/style.css
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 2
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"/Users/terryzou/company/ble/koaproject/public/stylesheets/style.css","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-24 16:17:33.676] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /mina
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 2
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-24 16:17:37.770] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /main
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-24 16:17:47.654] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 13
+response status: 200
+response body: 
+"<!DOCTYPE html><html><head><title>Hello Koa 2!</title><link rel=\"stylesheet\" href=\"/stylesheets/style.css\"></head><body><h1>Hello Koa 2!</h1><p>Welcome to Hello Koa 2!</p></body></html>"
+*************** response log end ***************
+
+[2017-07-24 16:17:47.684] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /stylesheets/style.css
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 2
+response status: 200
+response body: 
+{"_readableState":{"objectMode":false,"highWaterMark":65536,"buffer":{"head":null,"tail":null,"length":0},"length":0,"pipes":null,"pipesCount":0,"flowing":null,"ended":false,"endEmitted":false,"reading":false,"sync":true,"needReadable":false,"emittedReadable":false,"readableListening":false,"resumeScheduled":false,"destroyed":false,"defaultEncoding":"utf8","awaitDrain":0,"readingMore":false,"decoder":null,"encoding":null},"readable":true,"domain":null,"_events":{},"_eventsCount":2,"path":"/Users/terryzou/company/ble/koaproject/public/stylesheets/style.css","fd":null,"flags":"r","mode":438,"autoClose":true,"bytesRead":0}
+*************** response log end ***************
+
+[2017-07-24 16:19:20.588] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /files/excel/1498638762114.xlsx
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-24 16:23:27.990] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  //api/blescan/ble_scan_result_export?flag=A7%201m
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{}
+response time: 1
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-24 16:23:43.606] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  //api/blescan/ble_scan_result_export?flag=A7%201m
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-24 16:24:24.828] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  //api/blescan/ble_scan_result_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{}
+response time: 0
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-24 16:24:57.089] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_result_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{}
+response time: 2
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"查询失败","sub_code":"query_faild_paramerror","sub_msg":"查询失败，查询参数有误","timestamp":"1500883223130"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:25:28.601] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{}
+response time: 0
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"导出失败","sub_code":"export_faild_paramerror","sub_msg":"导出失败，导出参数有误","timestamp":"1500883223130"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:25:55.514] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":""}
+response time: 142
+response status: 200
+response body: 
+{"data":"/files/excel/1500884755421.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500883223130"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:26:09.248] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_result_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":""}
+response time: 47
+response status: 200
+response body: 
+{"data":"/files/excel/1500884769245.xlsx","status":{"code":0,"msg":"查询成功","sub_code":"query_success","sub_msg":"查询成功","timestamp":"1500883223130"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:29:22.643] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /files/excel/1500277266394.xlsx
+request client ip:  ::ffff:127.0.0.1
+request query:  {}
+response time: 2
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-24 16:29:56.336] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{}
+response time: 0
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"导出失败","sub_code":"export_faild_paramerror","sub_msg":"导出失败，导出参数有误","timestamp":"1500883223130"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:30:30.067] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_resutl_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{}
+response time: 0
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-07-24 16:30:51.981] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_resutl_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{}
+response time: 1
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-07-24 16:31:15.940] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_result_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{}
+response time: 0
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"查询失败","sub_code":"query_faild_paramerror","sub_msg":"查询失败，查询参数有误","timestamp":"1500883223130"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:31:27.818] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_result_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{}
+response time: 0
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"查询失败","sub_code":"query_faild_paramerror","sub_msg":"查询失败，查询参数有误","timestamp":"1500883223130"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:31:45.434] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{}
+response time: 0
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"导出失败","sub_code":"export_faild_paramerror","sub_msg":"导出失败，导出参数有误","timestamp":"1500883223130"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:32:06.357] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 2
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-07-24 16:32:16.177] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/blescan/ble_scan_exportqq
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 4
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-07-24 16:32:18.452] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 2
+response status: 200
+response body: 
+{"code":0,"message":"success"}
+*************** response log end ***************
+
+[2017-07-24 16:32:52.608] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{}
+response time: 1
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"导出失败","sub_code":"export_faild_paramerror","sub_msg":"导出失败，导出参数有误","timestamp":"1500883223130"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:32:59.585] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{"------WebKitFormBoundaryKsSASJ1MwOFRMAu4\r\nContent-Disposition: form-data; name":"\"flag\"\r\n\r\nA7 1m\r\n------WebKitFormBoundaryKsSASJ1MwOFRMAu4\r\nContent-Disposition: form-data; name=\"mac\"\r\n\r\n\r\n------WebKitFormBoundaryKsSASJ1MwOFRMAu4\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\n\r\n------WebKitFormBoundaryKsSASJ1MwOFRMAu4\r\nContent-Disposition: form-data; name=\"mi\"\r\n\r\n\r\n------WebKitFormBoundaryKsSASJ1MwOFRMAu4\r\nContent-Disposition: form-data; name=\"mobile\"\r\n\r\n\r\n------WebKitFormBoundaryKsSASJ1MwOFRMAu4\r\nContent-Disposition: form-data; name=\"userid\"\r\n\r\n\r\n------WebKitFormBoundaryKsSASJ1MwOFRMAu4--\r\n"}
+response time: 0
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"导出失败","sub_code":"export_faild_paramerror","sub_msg":"导出失败，导出参数有误","timestamp":"1500883223130"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:33:21.974] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{"------WebKitFormBoundary0B5OR6mxvcBNhMIY\r\nContent-Disposition: form-data; name":"\"flag\"\r\n\r\nA7 1m\r\n------WebKitFormBoundary0B5OR6mxvcBNhMIY\r\nContent-Disposition: form-data; name=\"mac\"\r\n\r\n\r\n------WebKitFormBoundary0B5OR6mxvcBNhMIY\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\n\r\n------WebKitFormBoundary0B5OR6mxvcBNhMIY\r\nContent-Disposition: form-data; name=\"mi\"\r\n\r\n\r\n------WebKitFormBoundary0B5OR6mxvcBNhMIY\r\nContent-Disposition: form-data; name=\"mobile\"\r\n\r\n\r\n------WebKitFormBoundary0B5OR6mxvcBNhMIY\r\nContent-Disposition: form-data; name=\"userid\"\r\n\r\n\r\n------WebKitFormBoundary0B5OR6mxvcBNhMIY--\r\n"}
+response time: 6
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"导出失败","sub_code":"export_faild_paramerror","sub_msg":"导出失败，导出参数有误","timestamp":"1500885197975"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:33:55.662] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{"------WebKitFormBoundaryC3COqjntrQs78fAb\r\nContent-Disposition: form-data; name":"\"flag\"\r\n\r\nA7 1m\r\n------WebKitFormBoundaryC3COqjntrQs78fAb\r\nContent-Disposition: form-data; name=\"mac\"\r\n\r\n\r\n------WebKitFormBoundaryC3COqjntrQs78fAb\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\n\r\n------WebKitFormBoundaryC3COqjntrQs78fAb\r\nContent-Disposition: form-data; name=\"mi\"\r\n\r\n\r\n------WebKitFormBoundaryC3COqjntrQs78fAb\r\nContent-Disposition: form-data; name=\"mobile\"\r\n\r\n\r\n------WebKitFormBoundaryC3COqjntrQs78fAb\r\nContent-Disposition: form-data; name=\"userid\"\r\n\r\n\r\n------WebKitFormBoundaryC3COqjntrQs78fAb--\r\n"}
+response time: 1
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"导出失败","sub_code":"export_faild_paramerror","sub_msg":"导出失败，导出参数有误","timestamp":"1500885197975"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:34:32.984] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{"------WebKitFormBoundary8j9od2yHQ75Nt4Nd\r\nContent-Disposition: form-data; name":"\"flag\"\r\n\r\naaaa\r\n------WebKitFormBoundary8j9od2yHQ75Nt4Nd\r\nContent-Disposition: form-data; name=\"mac\"\r\n\r\n\r\n------WebKitFormBoundary8j9od2yHQ75Nt4Nd\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\n\r\n------WebKitFormBoundary8j9od2yHQ75Nt4Nd\r\nContent-Disposition: form-data; name=\"mi\"\r\n\r\n\r\n------WebKitFormBoundary8j9od2yHQ75Nt4Nd\r\nContent-Disposition: form-data; name=\"mobile\"\r\n\r\n\r\n------WebKitFormBoundary8j9od2yHQ75Nt4Nd\r\nContent-Disposition: form-data; name=\"userid\"\r\n\r\n\r\n------WebKitFormBoundary8j9od2yHQ75Nt4Nd--\r\n"}
+response time: 1
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"导出失败","sub_code":"export_faild_paramerror","sub_msg":"导出失败，导出参数有误","timestamp":"1500885197975"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:35:02.270] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:127.0.0.1
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":""}
+response time: 152
+response status: 200
+response body: 
+{"data":"/files/excel/1500885302172.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500885197975"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:35:38.529] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export?flag=%27A7%201m%27
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{"------WebKitFormBoundarylwFd6Vrfc5NTdjiM\r\nContent-Disposition: form-data; name":"\"mac\"\r\n\r\n\r\n------WebKitFormBoundarylwFd6Vrfc5NTdjiM\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\n\r\n------WebKitFormBoundarylwFd6Vrfc5NTdjiM\r\nContent-Disposition: form-data; name=\"mi\"\r\n\r\n\r\n------WebKitFormBoundarylwFd6Vrfc5NTdjiM\r\nContent-Disposition: form-data; name=\"mobile\"\r\n\r\n\r\n------WebKitFormBoundarylwFd6Vrfc5NTdjiM\r\nContent-Disposition: form-data; name=\"userid\"\r\n\r\n\r\n------WebKitFormBoundarylwFd6Vrfc5NTdjiM--\r\n"}
+response time: 1
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"导出失败","sub_code":"export_faild_paramerror","sub_msg":"导出失败，导出参数有误","timestamp":"1500885197975"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:36:08.418] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export?flag=A7%201m
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{"------WebKitFormBoundary0xKAdBcnLfnNWAqC\r\nContent-Disposition: form-data; name":"\"mac\"\r\n\r\n\r\n------WebKitFormBoundary0xKAdBcnLfnNWAqC\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\n\r\n------WebKitFormBoundary0xKAdBcnLfnNWAqC\r\nContent-Disposition: form-data; name=\"mi\"\r\n\r\n\r\n------WebKitFormBoundary0xKAdBcnLfnNWAqC\r\nContent-Disposition: form-data; name=\"mobile\"\r\n\r\n\r\n------WebKitFormBoundary0xKAdBcnLfnNWAqC\r\nContent-Disposition: form-data; name=\"userid\"\r\n\r\n\r\n------WebKitFormBoundary0xKAdBcnLfnNWAqC--\r\n"}
+response time: 1
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"导出失败","sub_code":"export_faild_paramerror","sub_msg":"导出失败，导出参数有误","timestamp":"1500885197975"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:40:09.780] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":""}
+response time: 119
+response status: 200
+response body: 
+{"data":"/files/excel/1500885609689.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500885197975"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:40:23.550] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":""}
+response time: 108
+response status: 200
+response body: 
+{"data":"/files/excel/1500885623464.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500885197975"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:40:57.477] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{"mac":"","name":"","mi":"","mobile":"","flag":"A7 1m","userid":""}
+response time: 105
+response status: 200
+response body: 
+{"data":"/files/excel/1500885657395.xlsx","status":{"code":0,"msg":"导出成功","sub_code":"export_success","sub_msg":"导出成功","timestamp":"1500885197975"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:41:16.670] [INFO] resLogger - 
+*************** response log start ***************
+request method: GET
+request originalUrl:  /files/excel/1500885657395.xlsx
+request client ip:  ::ffff:10.0.0.12
+request query:  {}
+response time: 3
+response status: 404
+response body: 
+undefined
+*************** response log end ***************
+
+[2017-07-24 16:41:35.832] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{"------WebKitFormBoundaryTEoMiZDAnt20xlxh\r\nContent-Disposition: form-data; name":"\"flag\"\r\n\r\nA7 1m\r\n------WebKitFormBoundaryTEoMiZDAnt20xlxh\r\nContent-Disposition: form-data; name=\"mac\"\r\n\r\n\r\n------WebKitFormBoundaryTEoMiZDAnt20xlxh\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\n\r\n------WebKitFormBoundaryTEoMiZDAnt20xlxh\r\nContent-Disposition: form-data; name=\"mi\"\r\n\r\n\r\n------WebKitFormBoundaryTEoMiZDAnt20xlxh\r\nContent-Disposition: form-data; name=\"mobile\"\r\n\r\n\r\n------WebKitFormBoundaryTEoMiZDAnt20xlxh\r\nContent-Disposition: form-data; name=\"userid\"\r\n\r\n\r\n------WebKitFormBoundaryTEoMiZDAnt20xlxh--\r\n"}
+response time: 0
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"导出失败","sub_code":"export_faild_paramerror","sub_msg":"导出失败，导出参数有误","timestamp":"1500885197975"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:42:34.686] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{}
+response time: 0
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"导出失败","sub_code":"export_faild_paramerror","sub_msg":"导出失败，导出参数有误","timestamp":"1500885197975"},"isf":false}
+*************** response log end ***************
+
+[2017-07-24 16:42:45.850] [INFO] resLogger - 
+*************** response log start ***************
+request method: POST
+request originalUrl:  /api/blescan/ble_scan_export
+request client ip:  ::ffff:10.0.0.12
+request body: 
+{"------WebKitFormBoundarynnm69xAvAVCXHRK7\r\nContent-Disposition: form-data; name":"\"flag\"\r\n\r\nA7 1m\r\n------WebKitFormBoundarynnm69xAvAVCXHRK7\r\nContent-Disposition: form-data; name=\"mac\"\r\n\r\n\r\n------WebKitFormBoundarynnm69xAvAVCXHRK7\r\nContent-Disposition: form-data; name=\"name\"\r\n\r\n\r\n------WebKitFormBoundarynnm69xAvAVCXHRK7\r\nContent-Disposition: form-data; name=\"mi\"\r\n\r\n\r\n------WebKitFormBoundarynnm69xAvAVCXHRK7\r\nContent-Disposition: form-data; name=\"mobile\"\r\n\r\n\r\n------WebKitFormBoundarynnm69xAvAVCXHRK7\r\nContent-Disposition: form-data; name=\"userid\"\r\n\r\n\r\n------WebKitFormBoundarynnm69xAvAVCXHRK7--\r\n"}
+response time: 1
+response status: 200
+response body: 
+{"status":{"code":1,"msg":"导出失败","sub_code":"export_faild_paramerror","sub_msg":"导出失败，导出参数有误","timestamp":"1500885197975"},"isf":false}
+*************** response log end ***************
+
