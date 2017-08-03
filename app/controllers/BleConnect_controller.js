@@ -5,7 +5,7 @@ const apiCode = require("../../config/api_res_code_dict");
 const BleConnect = require("../bll/BleConnect_bll");
 
 //查询连接测试记录
-exports.ble_connect_query = async(ctx, next) => {
+exports.query = async(ctx, next) => {
 	var codes = apiCode.ble_connect_query.codes;
 	var result = new Object();
 	try {
@@ -82,8 +82,8 @@ exports.ble_connect_query = async(ctx, next) => {
 };
 
 //查询连接测试记录导出
-exports.ble_connect_export = async(ctx, next) => {
-	var codes = apiCode.ble_connect_export.codes;
+exports.query_export = async(ctx, next) => {
+	var codes = apiCode.ble_connect_query_export.codes;
 	var result = new Object();
 	try {
 		var mac = ctx.request.body.mac;
@@ -163,7 +163,7 @@ exports.ble_connect_export = async(ctx, next) => {
 };
 
 //查询连接测试结论
-exports.ble_connect_result = async(ctx, next) => {
+exports.result = async(ctx, next) => {
 	var codes = apiCode.ble_connect_result.codes;
 	var result = new Object();
 	try {
@@ -258,7 +258,7 @@ exports.ble_connect_result = async(ctx, next) => {
 };
 
 //查询连接测试结论导出
-exports.ble_connect_result_export = async(ctx, next) => {
+exports.result_export = async(ctx, next) => {
 	var codes = apiCode.ble_connect_result_export.codes;
 	var result = new Object();
 	try {

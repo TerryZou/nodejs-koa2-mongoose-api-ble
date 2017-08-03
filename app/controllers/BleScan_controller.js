@@ -5,7 +5,7 @@ const apiCode = require("../../config/api_res_code_dict");
 const BleScan = require("../bll/BleScan_bll");
 
 //查询扫描测试记录
-exports.ble_scan_query = async(ctx, next) => {
+exports.query = async(ctx, next) => {
 	var codes = apiCode.ble_scan_query.codes;
 	var result = new Object();
 	try {
@@ -84,8 +84,8 @@ exports.ble_scan_query = async(ctx, next) => {
 };
 
 //查询连接测试记录导出
-exports.ble_scan_export = async(ctx, next) => {
-	var codes = apiCode.ble_scan_export.codes;
+exports.query_export = async(ctx, next) => {
+	var codes = apiCode.ble_scan_query_export.codes;
 	var result = new Object();
 	try {
 		var mac = ctx.request.body.mac;
@@ -167,7 +167,7 @@ exports.ble_scan_export = async(ctx, next) => {
 };
 
 //查询连接测试结论
-exports.ble_scan_result = async(ctx, next) => {
+exports.result = async(ctx, next) => {
 	var codes = apiCode.ble_scan_result.codes;
 	var result = new Object();
 	try {
@@ -254,7 +254,7 @@ exports.ble_scan_result = async(ctx, next) => {
 };
 
 //查询连接测试结论导出
-exports.ble_scan_result_export = async(ctx, next) => {
+exports.result_export = async(ctx, next) => {
 	var codes = apiCode.ble_scan_result_export.codes;
 	var result = new Object();
 	try {
@@ -337,7 +337,7 @@ exports.ble_scan_result_export = async(ctx, next) => {
 };
 
 //查询新增扫描记录
-exports.ble_scan_queryonce = async(ctx, next) => {
+exports.queryonce = async(ctx, next) => {
 	var codes = apiCode.ble_scan_queryonce.codes;
 	var result = new Object();
 	try {

@@ -48,3 +48,48 @@ exports.getDevices = async(userid, flag) => {
 		throw e;
 	}
 };
+
+//查询设备测试设备名称列表
+exports.getNamesbyUseridFlag = async(userid, flag) => {
+	try {
+		var params = [{
+			'$match': {
+				userid: userid,
+				flag: flag
+			}
+		}, {
+			'$group': {
+				_id: {
+					"name": '$name'
+				}
+			}
+		}];
+		var data = await BleDeviceInfo().aggregate(params);
+		return data;
+	} catch(e) {
+		throw e;
+	}
+};
+
+//查询设备测试设备mac列表
+exports.getMacsbyUseridFlagName = async(userid, flag,name) => {
+	try {
+		var params = [{
+			'$match': {
+				userid: userid,
+				flag: flag,
+				name:name
+			}
+		}, {
+			'$group': {
+				_id: {
+					"mac": '$mac'
+				}
+			}
+		}];
+		var data = await BleDeviceInfo().aggregate(params);
+		return data;
+	} catch(e) {
+		throw e;
+	}
+};

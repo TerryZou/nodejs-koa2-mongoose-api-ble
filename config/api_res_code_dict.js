@@ -93,7 +93,7 @@ const dict = {
 	ble_connect_query: {
 		code: 30201,
 		apiname: "ble_connect_query",
-		apiurl: "api/blecontent/ble_connect_query",
+		apiurl: "api/ble_content/query",
 		codes: {
 			success: {
 				code: 3020100,
@@ -130,15 +130,15 @@ const dict = {
 		}
 	},
 	//导出连接测试记录
-	ble_connect_export: {
+	ble_connect_query_export: {
 		code: 30202,
-		apiname: "ble_connect_export",
-		apiurl: "api/blecontent/ble_connect_export",
+		apiname: "ble_connect_query_export",
+		apiurl: "api/ble_content/query_export",
 		codes: {
 			success: {
 				code: 3020200,
 				msg: "导出成功",
-				sub_code: "connect_export_success",
+				sub_code: "connect_query_export_success",
 				sub_msg: "导出连接测试记录成功",
 				details:"",
 				timestamp: new Date().getTime().toString()
@@ -146,7 +146,7 @@ const dict = {
 			paramerror: {
 				code: 3020201,
 				msg: "参数有误",
-				sub_code: "connect_export_faild_paramerror",
+				sub_code: "connect_query_export_faild_paramerror",
 				sub_msg: "导出连接测试记录失败，参数有误",
 				details:"",
 				timestamp: new Date().getTime().toString()
@@ -154,7 +154,7 @@ const dict = {
 			nodata: {
 				code: 3020202,
 				msg: "无数据",
-				sub_code: "connect_export_faild_nodata",
+				sub_code: "connect_query_export_faild_nodata",
 				sub_msg: "导出连接测试记录失败，没有数据",
 				details:"",
 				timestamp: new Date().getTime().toString()
@@ -162,7 +162,7 @@ const dict = {
 			exporterror: {
 				code: 3020203,
 				msg: "导出失败",
-				sub_code: "connect_export_faild_exporterror",
+				sub_code: "connect_query_export_faild_exporterror",
 				sub_msg: "导出连接测试记录失败，文件生成失败",
 				details:"",
 				timestamp: new Date().getTime().toString()
@@ -170,7 +170,7 @@ const dict = {
 			syserror: {
 				code: -1,
 				msg: "系统错误",
-				sub_code: "connect_export_faild_syserror",
+				sub_code: "connect_query_export_faild_syserror",
 				sub_msg: "导出连接测试记录失败，系统错误",
 				details:"",
 				timestamp: new Date().getTime().toString()
@@ -181,7 +181,7 @@ const dict = {
 	ble_connect_result: {
 		code: 30301,
 		apiname: "ble_connect_result",
-		apiurl: "api/blecontent/ble_connect_result",
+		apiurl: "api/ble_content/result",
 		codes: {
 			success: {
 				code: 3030100,
@@ -221,7 +221,7 @@ const dict = {
 	ble_connect_result_export: {
 		code: 303020,
 		apiname: "ble_connect_result_export",
-		apiurl: "api/blecontent/ble_connect_result_export",
+		apiurl: "api/ble_content/result_export",
 		codes: {
 			success: {
 				code: 3030200,
@@ -269,7 +269,7 @@ const dict = {
 	ble_scan_query: {
 		code: 40201,
 		apiname: "ble_scan_query",
-		apiurl: "api/blescan/ble_scan_query",
+		apiurl: "api/ble_scan/query",
 		codes: {
 			success: {
 				code: 4020100,
@@ -306,15 +306,15 @@ const dict = {
 		}
 	},
 	//导出扫描测试记录
-	ble_scan_export: {
+	ble_scan_query_export: {
 		code: 40202,
-		apiname: "ble_scan_export",
-		apiurl: "api/blescan/ble_scan_export",
+		apiname: "ble_scan_query_export",
+		apiurl: "api/ble_scan/query_export",
 		codes: {
 			success: {
 				code: 4020200,
 				msg: "导出成功",
-				sub_code: "scan_export_success",
+				sub_code: "scan_query_export_success",
 				sub_msg: "导出扫描测试记录成功",
 				details:"",
 				timestamp: new Date().getTime().toString()
@@ -322,7 +322,7 @@ const dict = {
 			paramerror: {
 				code: 4020201,
 				msg: "导出失败",
-				sub_code: "scan_export_faild_paramerror",
+				sub_code: "scan_query_export_faild_paramerror",
 				sub_msg: "导出扫描测试记录失败，导出参数有误",
 				details:"",
 				timestamp: new Date().getTime().toString()
@@ -330,7 +330,7 @@ const dict = {
 			nodata: {
 				code: 4020202,
 				msg: "无数据",
-				sub_code: "scan_export_faild_nodata",
+				sub_code: "scan_query_export_faild_nodata",
 				sub_msg: "导出扫描测试记录失败，没有数据",
 				details:"",
 				timestamp: new Date().getTime().toString()
@@ -338,7 +338,7 @@ const dict = {
 			exporterror: {
 				code: 4020203,
 				msg: "导出失败",
-				sub_code: "scan_export_faild_exporterror",
+				sub_code: "scan_query_export_faild_exporterror",
 				sub_msg: "导出扫描测试记录失败，文件生成失败",
 				details:"",
 				timestamp: new Date().getTime().toString()
@@ -346,7 +346,7 @@ const dict = {
 			syserror: {
 				code: -1,
 				msg: "系统错误",
-				sub_code: "scan_export_faild_syserror",
+				sub_code: "scan_query_export_faild_syserror",
 				sub_msg: "导出扫描测试记录失败，系统错误",
 				details:"",
 				timestamp: new Date().getTime().toString()
@@ -357,7 +357,7 @@ const dict = {
 	ble_scan_result: {
 		code: 40301,
 		apiname: "ble_scan_result",
-		apiurl: "api/blescan/ble_scan_result",
+		apiurl: "api/ble_scan/result",
 		codes: {
 			success: {
 				code: 4030100,
@@ -397,7 +397,7 @@ const dict = {
 	ble_scan_result_export: {
 		code: 40302,
 		apiname: "ble_scan_result_export",
-		apiurl: "api/blescan/ble_scan_result_export",
+		apiurl: "api/ble_scan/result_export",
 		codes: {
 			success: {
 				code: 4030200,
@@ -445,7 +445,7 @@ const dict = {
 	ble_scan_queryonce: {
 		code: 40301,
 		apiname: "ble_scan_queryonce",
-		apiurl: "api/blescan/ble_scan_queryonce",
+		apiurl: "api/ble_scan/queryonce",
 		codes: {
 			success: {
 				code: 4040100,
@@ -948,6 +948,86 @@ const dict = {
 				msg: "系统错误",
 				sub_code: "device_query_faild_syserror",
 				s: "获取设备测试设备列表失败，系统错误",
+				details:"",
+				timestamp: new Date().getTime().toString()
+			}
+		}
+	},
+	//查询设备测试设备名称列表
+	ble_name_query: {
+		code: 50503,
+		apiname: "ble_name_query",
+		apiurl: "api/config/ble_name_query",
+		codes: {
+			success: {
+				code: 5050300,
+				msg: "查询成功",
+				sub_code: "name_query_success",
+				sub_msg: "获取设备测试设备名称列表成功",
+				details:"",
+				timestamp: new Date().getTime().toString()
+			},
+			paramerror: {
+				code: 5050301,
+				msg: "参数错误",
+				sub_code: "name_query_faild_paramerror",
+				sub_msg: "获取设备测试设备名称列表失败，参数错误",
+				details:"",
+				timestamp: new Date().getTime().toString()
+			},
+			nodata: {
+				code: 5050302,
+				msg: "无数据",
+				sub_code: "name_query_faild_nodata",
+				sub_msg: "获取设备测试设备名称列表失败，没有数据",
+				details:"",
+				timestamp: new Date().getTime().toString()
+			},
+			syserror: {
+				code: -1,
+				msg: "系统错误",
+				sub_code: "name_query_faild_syserror",
+				s: "获取设备测试设备名称列表失败，系统错误",
+				details:"",
+				timestamp: new Date().getTime().toString()
+			}
+		}
+	},
+	//查询设备测试设备mac列表
+	ble_mac_query: {
+		code: 50504,
+		apiname: "ble_mac_query",
+		apiurl: "api/config/ble_mac_query",
+		codes: {
+			success: {
+				code: 5050400,
+				msg: "查询成功",
+				sub_code: "mac_query_success",
+				sub_msg: "获取设备测试设备mac列表成功",
+				details:"",
+				timestamp: new Date().getTime().toString()
+			},
+			paramerror: {
+				code: 5050401,
+				msg: "参数错误",
+				sub_code: "mac_query_faild_paramerror",
+				sub_msg: "获取设备测试设备mac列表失败，参数错误",
+				details:"",
+				timestamp: new Date().getTime().toString()
+			},
+			nodata: {
+				code: 5050402,
+				msg: "无数据",
+				sub_code: "mac_query_faild_nodata",
+				sub_msg: "获取设备测试设备mac列表失败，没有数据",
+				details:"",
+				timestamp: new Date().getTime().toString()
+			},
+			syserror: {
+				code: -1,
+				msg: "系统错误",
+				sub_code: "mac_query_faild_syserror",
+				s: "获取设备测试设备mac列表失败，系统错误",
 				details:"",
 				timestamp: new Date().getTime().toString()
 			}
