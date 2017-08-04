@@ -233,46 +233,52 @@ exports.result = async(ctx, next) => {
 					result.status = codes.success;
 					break;
 				case 0:
+					result.status = codes.nodata;
+					result.status.details = "";
+					break;
 				case 10:
 					result.status = codes.nodata;
-					result.details = "基本查询无数据";
+					result.status.details = "基本查询无数据";
 					break;
 				case 20:
 					result.status = codes.nodata;
-					result.details = "最大最小平均值查询无数据";
+					result.status.details = "最大最小平均值查询无数据";
 					break;
 				case 30:
 					result.status = codes.nodata;
-					result.details = "连接时间方差查询无数据";
+					result.status.details = "连接时间方差查询无数据";
 					break;
 				case 40:
 					result.status = codes.nodata;
-					result.details = "扫描时间方差查询无数据";
+					result.status.details = "扫描时间方差查询无数据";
 					break;
 				case 50:
 					result.status = codes.nodata;
-					result.details = "信号时间方差查询无数据";
+					result.status.details = "信号时间方差查询无数据";
 					break;
 				case -1:
+					result.status = codes.syserror;
+					result.status.details = "";
+					break;
 				case -11:
 					result.status = codes.syserror;
-					result.details = "基本查询异常";
+					result.status.details = "基本查询异常";
 					break;
 				case -12:
 					result.status = codes.syserror;
-					result.details = "最大最小平均值查询异常";
+					result.status.details = "最大最小平均值查询异常";
 					break;
 				case -13:
 					result.status = codes.syserror;
-					result.details = "连接时间方差查询异常";
+					result.status.details = "连接时间方差查询异常";
 					break;
 				case -14:
 					result.status = codes.syserror;
-					result.details = "扫描时间方差查询异常";
+					result.status.details = "扫描时间方差查询异常";
 					break;
 				case -15:
 					result.status = codes.syserror;
-					result.details = "信号时间方差查询异常";
+					result.status.details = "信号时间方差查询异常";
 					break;
 			}
 		}
@@ -359,44 +365,44 @@ exports.result_export = async(ctx, next) => {
 				case 0:
 				case 10:
 					result.status = codes.nodata;
-					result.details = "基本查询无数据";
+					result.status.details = "基本查询无数据";
 					break;
 				case 20:
 					result.status = codes.nodata;
-					result.details = "最大最小平均值查询无数据";
+					result.status.details = "最大最小平均值查询无数据";
 					break;
 				case 30:
 					result.status = codes.nodata;
-					result.details = "连接时间方差查询无数据";
+					result.status.details = "连接时间方差查询无数据";
 					break;
 				case 40:
 					result.status = codes.nodata;
-					result.details = "扫描时间方差查询无数据";
+					result.status.details = "扫描时间方差查询无数据";
 					break;
 				case 50:
 					result.status = codes.nodata;
-					result.details = "信号时间方差查询无数据";
+					result.status.details = "信号时间方差查询无数据";
 					break;
 				case -1:
 				case -11:
 					result.status = codes.syserror;
-					result.details = "基本查询异常";
+					result.status.details = "基本查询异常";
 					break;
 				case -12:
 					result.status = codes.syserror;
-					result.details = "最大最小平均值查询异常";
+					result.status.details = "最大最小平均值查询异常";
 					break;
 				case -13:
 					result.status = codes.syserror;
-					result.details = "连接时间方差查询异常";
+					result.status.details = "连接时间方差查询异常";
 					break;
 				case -14:
 					result.status = codes.syserror;
-					result.details = "扫描时间方差查询异常";
+					result.status.details = "扫描时间方差查询异常";
 					break;
 				case -15:
 					result.status = codes.syserror;
-					result.details = "信号时间方差查询异常";
+					result.status.details = "信号时间方差查询异常";
 					break;
 			}
 		}

@@ -16,7 +16,7 @@ exports.exportRecords = async(search) => {
 	var result = {
 		succ: false,
 		data: null,
-		status: 0
+		status:1
 	};
 	var data = await queryRecords(search);
 	result.status = data.status;
@@ -125,7 +125,8 @@ exports.getResultBySearch = async(search) => {
 exports.exportResults = async(search) => {
 	var result = {
 		succ: false,
-		data: null
+		data: null,
+		status:1
 	};
 	var data = await queryResults(search);
 	result.status = data.status;
@@ -243,7 +244,7 @@ async function queryResults(search) {
 	var result = {
 		data: {},
 		succ: true,
-		status: 0
+		status:1
 	};
 	try {
 		var match = {};
@@ -257,7 +258,7 @@ async function queryResults(search) {
 			match["name"] = search.name;
 		}
 		if(!jsUtil.isNullOrEmpty(search.mi)) {
-			match["mi"] = search.mi;
+			match["mi"] = Number.parseFloat(search.mi);
 		}
 		if(!jsUtil.isNullOrEmpty(search.mobile)) {
 			match["mobile"] = search.mobile;
@@ -268,6 +269,7 @@ async function queryResults(search) {
 		if(jsUtil.isNullOrEmpty(search.connect_num)) {
 			search.connect_num = 1;
 		}
+
 		var params = [{
 			'$match': match
 		}, {
@@ -304,29 +306,29 @@ async function queryResults(search) {
 		}];
 		var r = {};
 		var s = await BleConnectStatistics().findOne(match);
-		if(s.status == 1) {
-			r['name'] = s.data.name;
-			r['mac'] = s.data.mac;
-			r['flag'] = s.data.flag;
-			r['model'] = s.data.model;
-			r['scan_success_rate'] = s.data.lescan_success / search.connect_num;
-			r['connect_success_rate'] = s.data.lecc_success / s.data.lescan_success;
-			r['disconnect_success_rate'] = s.data.ledc_success / s.data.lecc_success;
-			r['ledc_failed_number'] = s.data.ledc_failed;
-			r['ble_up_failed_numpber'] = s.data.deviceup_failed;
-			r['scan_failed_number'] = s.data.lescan_failed;
-			r['success_rate'] = s.data.lecc_success / search.connect_num;
-		} else {
-			switch(s.status) {
-				case 0:
-					result.status = 10;
-					break;
-				case -1:
-					result.status = -11;
-					break;
-			}
-			result.succ = false;
+		switch(s.status) {
+			case 1:
+				r['name'] = s.data.name;
+				r['mac'] = s.data.mac;
+				r['flag'] = s.data.flag;
+				r['model'] = s.data.model;
+				r['scan_success_rate'] = s.data.lescan_success / search.connect_num;
+				r['connect_success_rate'] = s.data.lecc_success / s.data.lescan_success;
+				r['disconnect_success_rate'] = s.data.ledc_success / s.data.lecc_success;
+				r['ledc_failed_number'] = s.data.ledc_failed;
+				r['ble_up_failed_numpber'] = s.data.deviceup_failed;
+				r['scan_failed_number'] = s.data.lescan_failed;
+				break;
+			case 0:
+				result.status = 10;
+				result.succ = false;
+				break;
+			case -1:
+				result.status = -11;
+				result.succ = false;
+				break;
 		}
+
 		//获取最大最小平均值
 		if(result.succ) {
 			var r1 = await BleConnectTimers().aggregate(params);

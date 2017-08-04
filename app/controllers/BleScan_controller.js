@@ -235,16 +235,16 @@ exports.result = async(ctx, next) => {
 					break;
 				case 10:
 					result.status = codes.nodata;
-					result.details = "扫描次数查询无数据";
+					result.status.details = "扫描次数查询无数据";
 					isgo = false;
 					break;
 				case 20:
 					result.status = codes.nodata;
-					result.details = "最大最小平均值查询无数据";
+					result.status.details = "最大最小平均值查询无数据";
 					isgo = false;
 					break;
 				case 30:
-					result.details = "链接时间方差查询无数据";
+					result.status.details = "链接时间方差查询无数据";
 					isgo = false;
 					break;
 				case -1:
@@ -253,17 +253,17 @@ exports.result = async(ctx, next) => {
 					break;
 				case -11:
 					result.status = codes.syserror;
-					result.details = "扫描次数查询异常";
+					result.status.details = "扫描次数查询异常";
 					isgo = false;
 					break;
 				case -12:
 					result.status = codes.syserror;
-					result.details = "最大最小平均值查询异常";
+					result.status.details = "最大最小平均值查询异常";
 					isgo = false;
 					break;
 				case -13:
 					result.status = codes.syserror;
-					result.details = "链接时间方差查询异常";
+					result.status.details = "链接时间方差查询异常";
 					isgo = false;
 					break;
 			}
@@ -348,16 +348,16 @@ exports.result_export = async(ctx, next) => {
 					break;
 				case 10:
 					result.status = codes.nodata;
-					result.details = "扫描次数查询无数据";
+					result.status.details = "扫描次数查询无数据";
 					isgo = false;
 					break;
 				case 20:
 					result.status = codes.nodata;
-					result.details = "最大最小平均值查询无数据";
+					result.status.details = "最大最小平均值查询无数据";
 					isgo = false;
 					break;
 				case 30:
-					result.details = "链接时间方差查询无数据";
+					result.status.details = "链接时间方差查询无数据";
 					isgo = false;
 					break;
 				case -1:
@@ -366,17 +366,17 @@ exports.result_export = async(ctx, next) => {
 					break;
 				case -11:
 					result.status = codes.syserror;
-					result.details = "扫描次数查询异常";
+					result.status.details = "扫描次数查询异常";
 					isgo = false;
 					break;
 				case -12:
 					result.status = codes.syserror;
-					result.details = "最大最小平均值查询异常";
+					result.status.details = "最大最小平均值查询异常";
 					isgo = false;
 					break;
 				case -13:
 					result.status = codes.syserror;
-					result.details = "链接时间方差查询异常";
+					result.status.details = "链接时间方差查询异常";
 					isgo = false;
 					break;
 			}

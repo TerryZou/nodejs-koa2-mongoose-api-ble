@@ -15,7 +15,8 @@ exports.getRecordsBySearch = async(search) => {
 exports.exportRecords = async(search) => {
 	var result = {
 		succ: false,
-		data: null
+		data: null,
+		status:1
 	};
 	var data = await queryRecords(search);
 	result.status = data.status;
@@ -136,7 +137,8 @@ exports.getResultBySearch = async(search) => {
 exports.exportResults = async(search) => {
 	var result = {
 		succ: false,
-		data: null
+		data: null,
+		status:1
 	};
 	var data = await queryResults(search);
 	if(data.status == 1) {
