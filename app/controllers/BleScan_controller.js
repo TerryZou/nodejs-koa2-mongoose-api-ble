@@ -230,17 +230,40 @@ exports.result = async(ctx, next) => {
 					result.status = codes.success;
 					break;
 				case 0:
-				case 10:
-				case 20:
-				case 30:
 					result.status = codes.nodata;
 					isgo = false;
 					break;
+				case 10:
+					result.status = codes.nodata;
+					result.details = "扫描次数查询无数据";
+					isgo = false;
+					break;
+				case 20:
+					result.status = codes.nodata;
+					result.details = "最大最小平均值查询无数据";
+					isgo = false;
+					break;
+				case 30:
+					result.details = "链接时间方差查询无数据";
+					isgo = false;
+					break;
 				case -1:
+					result.status = codes.syserror;
+					isgo = false;
+					break;
 				case -11:
+					result.status = codes.syserror;
+					result.details = "扫描次数查询异常";
+					isgo = false;
+					break;
 				case -12:
+					result.status = codes.syserror;
+					result.details = "最大最小平均值查询异常";
+					isgo = false;
+					break;
 				case -13:
 					result.status = codes.syserror;
+					result.details = "链接时间方差查询异常";
 					isgo = false;
 					break;
 			}
@@ -248,7 +271,7 @@ exports.result = async(ctx, next) => {
 	} catch(e) {
 		result.status = codes.syserror;
 	}
-	
+
 	result.isf = false;
 	ctx.body = result;
 };
@@ -315,16 +338,45 @@ exports.result_export = async(ctx, next) => {
 					result.data = data.data;
 					result.status = codes.success;
 					break;
-				case 0:
-					result.status = codes.nodata;
-					isgo = false;
-					break;
 				case 2:
 					result.status = codes.exporterror;
 					isgo = false;
 					break;
+				case 0:
+					result.status = codes.nodata;
+					isgo = false;
+					break;
+				case 10:
+					result.status = codes.nodata;
+					result.details = "扫描次数查询无数据";
+					isgo = false;
+					break;
+				case 20:
+					result.status = codes.nodata;
+					result.details = "最大最小平均值查询无数据";
+					isgo = false;
+					break;
+				case 30:
+					result.details = "链接时间方差查询无数据";
+					isgo = false;
+					break;
 				case -1:
 					result.status = codes.syserror;
+					isgo = false;
+					break;
+				case -11:
+					result.status = codes.syserror;
+					result.details = "扫描次数查询异常";
+					isgo = false;
+					break;
+				case -12:
+					result.status = codes.syserror;
+					result.details = "最大最小平均值查询异常";
+					isgo = false;
+					break;
+				case -13:
+					result.status = codes.syserror;
+					result.details = "链接时间方差查询异常";
 					isgo = false;
 					break;
 			}
