@@ -19,6 +19,7 @@ var BleConnectTimersSchema = new Schema({
 	LescanTime: Number,
 	RSSI: Number,
 	isConnect: Number,
+	isScan:Number,
 	result: String,
 	mark: String,
 	isDiscover: Number,
@@ -34,8 +35,6 @@ module.exports = () => {
 	var BleConnectTimers = base.model('BleConnectTimers', BleConnectTimersSchema);
 	BleConnectTimers.getResultBySearch = async(field, params) => {
 		var o = {};
-		var p=params;
-		p.isConnect=1;
 		switch(field) {
 			case 'ConnectionTime':
 				o.map = function() {
@@ -62,7 +61,7 @@ module.exports = () => {
 		o.reduce = function(k, values) {
 			return Variance(k, values);
 		};
-		o.query = p;
+		o.query = params;
 		var result = await BleConnectTimers.mapReduce(o);
 		return result;
 	};

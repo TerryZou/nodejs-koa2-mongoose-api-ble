@@ -165,10 +165,7 @@ exports.exportResults = async(search) => {
 					'f': 'avg_connect',
 					'h': "连接平均时间（ms）"
 				},
-				{
-					'f': 'var_connect',
-					'h': "连接时间方差"
-				},
+				
 				{
 					'f': 'min_scan',
 					'h': "扫描最小时间（ms）"
@@ -182,10 +179,6 @@ exports.exportResults = async(search) => {
 					'h': "扫描平均时间（ms）"
 				},
 				{
-					'f': 'var_scan',
-					'h': "扫描时间方差"
-				},
-				{
 					'f': 'min_rssi',
 					'h': "RSSI最小值"
 				},
@@ -195,11 +188,19 @@ exports.exportResults = async(search) => {
 				},
 				{
 					'f': 'avg_rssi',
-					'h': "信号强度平均值"
+					'h': "RSSI平均值"
+				},
+				{
+					'f': 'var_connect',
+					'h': "连接时间方差"
+				},
+				{
+					'f': 'var_scan',
+					'h': "扫描时间方差"
 				},
 				{
 					'f': 'var_rssi',
-					'h': "信号强度方差"
+					'h': "RSSI方差"
 				},
 				{
 					'f': 'ledc_failed_number',
@@ -269,7 +270,6 @@ async function queryResults(search) {
 		if(jsUtil.isNullOrEmpty(search.connect_num)) {
 			search.connect_num = 1;
 		}
-
 		var params = [{
 			'$match': match
 		}, {
@@ -357,7 +357,9 @@ async function queryResults(search) {
 		}
 		//获取连接时间方差
 		if(result.succ) {
-			var connect_v = await BleConnectTimers().getResultBySearch('ConnectionTime', match);
+			var c_match=match;
+			c_match.isConnect=1;
+			var connect_v = await BleConnectTimers().getResultBySearch('ConnectionTime', c_match);
 			if(connect_v.status == 1) {
 				r['var_connect'] = connect_v.data[0].value;
 			} else {
@@ -374,7 +376,9 @@ async function queryResults(search) {
 		}
 		//获取扫描时间方差
 		if(result.succ) {
-			var scan_v = await BleConnectTimers().getResultBySearch('LescanTime', match);
+			var s_match=match;
+			s_match.isScan=1;
+			var scan_v = await BleConnectTimers().getResultBySearch('LescanTime', s_match);
 			if(scan_v.status == 1) {
 				r['var_scan'] = scan_v.data[0].value;
 			} else {
@@ -391,7 +395,9 @@ async function queryResults(search) {
 		}
 		//获取信号时间方差
 		if(result.succ) {
-			var rssi_v = await BleConnectTimers().getResultBySearch('RSSI', match);
+			var s_match=match;
+			s_match.isScan=1;
+			var rssi_v = await BleConnectTimers().getResultBySearch('RSSI', s_match);
 			if(rssi_v.status == 1) {
 				r['var_rssi'] = rssi_v.data[0].value;
 			} else {
