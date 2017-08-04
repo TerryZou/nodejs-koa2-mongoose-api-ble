@@ -195,18 +195,18 @@ exports.exportResults = async(search) => {
 				},
 				{
 					'f': 'avg_rssi',
-					'h': "信号强度方差"
+					'h': "信号强度平均值"
 				},
 				{
 					'f': 'var_rssi',
-					'h': "mac"
+					'h': "信号强度方差"
 				},
 				{
 					'f': 'ledc_failed_number',
 					'h': "断开失败次数"
 				},
 				{
-					'f': 'ble_up_failed_numpber',
+					'f': 'ble_up_failed_number',
 					'h': "蓝牙启动失败次数"
 				},
 				{
@@ -316,7 +316,7 @@ async function queryResults(search) {
 				r['connect_success_rate'] = s.data.lecc_success / s.data.lescan_success;
 				r['disconnect_success_rate'] = s.data.ledc_success / s.data.lecc_success;
 				r['ledc_failed_number'] = s.data.ledc_failed;
-				r['ble_up_failed_numpber'] = s.data.deviceup_failed;
+				r['ble_up_failed_number'] = s.data.deviceup_failed;
 				r['scan_failed_number'] = s.data.lescan_failed;
 				break;
 			case 0:

@@ -34,6 +34,8 @@ module.exports = () => {
 	var BleConnectTimers = base.model('BleConnectTimers', BleConnectTimersSchema);
 	BleConnectTimers.getResultBySearch = async(field, params) => {
 		var o = {};
+		var p=params;
+		p.isConnect=1;
 		switch(field) {
 			case 'ConnectionTime':
 				o.map = function() {
@@ -60,7 +62,7 @@ module.exports = () => {
 		o.reduce = function(k, values) {
 			return Variance(k, values);
 		};
-		o.query = params;
+		o.query = p;
 		var result = await BleConnectTimers.mapReduce(o);
 		return result;
 	};
