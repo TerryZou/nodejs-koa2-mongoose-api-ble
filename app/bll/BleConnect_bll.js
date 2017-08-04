@@ -218,7 +218,7 @@ exports.exportResults = async(search) => {
 					'h': "组 "
 				},
 				{
-					'f': 'model',
+					'f': 'mobile',
 					'h': "手机型号"
 				},
 				{
@@ -311,7 +311,7 @@ async function queryResults(search) {
 				r['name'] = s.data.name;
 				r['mac'] = s.data.mac;
 				r['flag'] = s.data.flag;
-				r['model'] = s.data.model;
+				r['mobile'] = s.data.mobile;
 				r['scan_success_rate'] = s.data.lescan_success / search.connect_num;
 				r['connect_success_rate'] = s.data.lecc_success / s.data.lescan_success;
 				r['disconnect_success_rate'] = s.data.ledc_success / s.data.lecc_success;
