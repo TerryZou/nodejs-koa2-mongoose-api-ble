@@ -266,7 +266,7 @@ async function queryResults(search) {
 			match["userid"] = search.userid;
 		}
 		if(jsUtil.isNullOrEmpty(search.connect_num)) {
-			search.connect_num = NaN;
+			search.connect_num = 1;
 		}
 		var params = [{
 			'$match': match

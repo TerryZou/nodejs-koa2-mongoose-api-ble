@@ -176,45 +176,45 @@ exports.result = async(ctx, next) => {
 		var connect_num = ctx.request.body.connect_num;
 		var isgo = true;
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(flag) ) {
+		if(isgo && jsUtil.isNullOrEmpty(flag)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 flag 不能缺少或为空！";
+			result.status.details = "参数 flag 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(name) ) {
+		if(isgo && jsUtil.isNullOrEmpty(name)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 name 不能缺少或为空！";
+			result.status.details = "参数 name 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(userid) ) {
+		if(isgo && jsUtil.isNullOrEmpty(userid)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 userid 不能缺少或为空！";
+			result.status.details = "参数 userid 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(mac) ) {
+		if(isgo && jsUtil.isNullOrEmpty(mac)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 mac 不能缺少或为空！";
+			result.status.details = "参数 mac 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(mobile) ) {
+		if(isgo && jsUtil.isNullOrEmpty(mobile)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 mobile 不能缺少或为空！";
+			result.status.details = "参数 mobile 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(mi) ) {
+		if(isgo && jsUtil.isNullOrEmpty(mi)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 mi 不能缺少或为空！";
+			result.status.details = "参数 mi 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(connect_num) ) {
+		if(isgo && jsUtil.isNullOrEmpty(connect_num)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 connect_num 不能缺少或为空！";
+			result.status.details = "参数 connect_num 不能缺少或为空！";
 			isgo = false;
 		}
 		if(isgo) {
@@ -234,19 +234,45 @@ exports.result = async(ctx, next) => {
 					break;
 				case 0:
 				case 10:
+					result.status = codes.nodata;
+					result.details = "基本查询无数据";
+					break;
 				case 20:
+					result.status = codes.nodata;
+					result.details = "最大最小平均值查询无数据";
+					break;
 				case 30:
+					result.status = codes.nodata;
+					result.details = "连接时间方差查询无数据";
+					break;
 				case 40:
+					result.status = codes.nodata;
+					result.details = "扫描时间方差查询无数据";
+					break;
 				case 50:
 					result.status = codes.nodata;
+					result.details = "信号时间方差查询无数据";
 					break;
 				case -1:
 				case -11:
+					result.status = codes.syserror;
+					result.details = "基本查询异常";
+					break;
 				case -12:
+					result.status = codes.syserror;
+					result.details = "最大最小平均值查询异常";
+					break;
 				case -13:
+					result.status = codes.syserror;
+					result.details = "连接时间方差查询异常";
+					break;
 				case -14:
+					result.status = codes.syserror;
+					result.details = "扫描时间方差查询异常";
+					break;
 				case -15:
 					result.status = codes.syserror;
+					result.details = "信号时间方差查询异常";
 					break;
 			}
 		}
@@ -271,45 +297,45 @@ exports.result_export = async(ctx, next) => {
 		var connect_num = ctx.request.body.connect_num;
 		var isgo = true;
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(flag) ) {
+		if(isgo && jsUtil.isNullOrEmpty(flag)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 flag 不能缺少或为空！";
+			result.status.details = "参数 flag 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(name) ) {
+		if(isgo && jsUtil.isNullOrEmpty(name)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 name 不能缺少或为空！";
+			result.status.details = "参数 name 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(userid) ) {
+		if(isgo && jsUtil.isNullOrEmpty(userid)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 userid 不能缺少或为空！";
+			result.status.details = "参数 userid 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(mac) ) {
+		if(isgo && jsUtil.isNullOrEmpty(mac)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 mac 不能缺少或为空！";
+			result.status.details = "参数 mac 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(mobile) ) {
+		if(isgo && jsUtil.isNullOrEmpty(mobile)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 mobile 不能缺少或为空！";
+			result.status.details = "参数 mobile 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(mi) ) {
+		if(isgo && jsUtil.isNullOrEmpty(mi)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 mi 不能缺少或为空！";
+			result.status.details = "参数 mi 不能缺少或为空！";
 			isgo = false;
 		}
 		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(connect_num) ) {
+		if(isgo && jsUtil.isNullOrEmpty(connect_num)) {
 			result.status = codes.paramerror;
-			result.status.details="参数 connect_num 不能缺少或为空！";
+			result.status.details = "参数 connect_num 不能缺少或为空！";
 			isgo = false;
 		}
 		if(isgo) {
@@ -328,24 +354,49 @@ exports.result_export = async(ctx, next) => {
 					result.status = codes.success;
 					break;
 				case 2:
-					result.data = data.data;
 					result.status = codes.exporterror;
 					break;
 				case 0:
 				case 10:
+					result.status = codes.nodata;
+					result.details = "基本查询无数据";
+					break;
 				case 20:
+					result.status = codes.nodata;
+					result.details = "最大最小平均值查询无数据";
+					break;
 				case 30:
+					result.status = codes.nodata;
+					result.details = "连接时间方差查询无数据";
+					break;
 				case 40:
+					result.status = codes.nodata;
+					result.details = "扫描时间方差查询无数据";
+					break;
 				case 50:
 					result.status = codes.nodata;
+					result.details = "信号时间方差查询无数据";
 					break;
 				case -1:
 				case -11:
+					result.status = codes.syserror;
+					result.details = "基本查询异常";
+					break;
 				case -12:
+					result.status = codes.syserror;
+					result.details = "最大最小平均值查询异常";
+					break;
 				case -13:
+					result.status = codes.syserror;
+					result.details = "连接时间方差查询异常";
+					break;
 				case -14:
+					result.status = codes.syserror;
+					result.details = "扫描时间方差查询异常";
+					break;
 				case -15:
 					result.status = codes.syserror;
+					result.details = "信号时间方差查询异常";
 					break;
 			}
 		}
