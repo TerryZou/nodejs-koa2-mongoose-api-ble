@@ -153,9 +153,14 @@ exports.exportResults = async(search) => {
 					'h': "mac"
 				},
 				{
-					'f': 'var_time',
-					'h': "连接时间方差"
+					'f': 'mi',
+					'h': "距离"
 				},
+				{
+					'f': 'count',
+					'h': "次数"
+				},
+				
 				{
 					'f': 'min_rssi',
 					'h': "信号强度最小值"
@@ -169,6 +174,10 @@ exports.exportResults = async(search) => {
 					'h': "信号强度方差"
 				},
 				{
+					'f': 'var_time',
+					'h': "连接时间方差"
+				},
+				{
 					'f': 'flag',
 					'h': "组 "
 				},
@@ -176,14 +185,12 @@ exports.exportResults = async(search) => {
 					'f': 'mobile',
 					'h': "手机型号"
 				},
+				
+				
 				{
-					'f': 'count',
-					'h': "次数"
-				},
-				{
-					'f': 'mi',
-					'h': "距离"
-				},
+					'f': 'rssi127',
+					'h': "127总数"
+				}
 			]
 		}];
 		var datas = [data.data];
@@ -297,6 +304,25 @@ async function queryResults(search) {
 						break;
 					case -1:
 						result.status = -13;
+						break;
+				}
+				result.succ = false;
+			}
+		}
+		//获取信号127个数
+		if(result.succ) {
+			var s_match = match;
+			s_match.RSSI=127;
+			var rssi_v = await BleScanRecord().count(s_match);
+			if(rssi_v.status == 1) {
+				r['rssi127'] = rssi_v.data;
+			} else {
+				switch(rssi_v.status) {
+					case 0:
+						result.status = 40;
+						break;
+					case -1:
+						result.status = -14;
 						break;
 				}
 				result.succ = false;

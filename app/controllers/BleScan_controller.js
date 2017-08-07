@@ -333,7 +333,7 @@ exports.result_export = async(ctx, next) => {
 				flag: flag,
 				userid: userid
 			});
-			
+
 			switch(data.status) {
 				case 1:
 					result.data = data.data;
@@ -358,7 +358,13 @@ exports.result_export = async(ctx, next) => {
 					isgo = false;
 					break;
 				case 30:
+					result.status = codes.nodata;
 					result.status.details = "链接时间方差查询无数据";
+					isgo = false;
+					break;
+				case 40:
+					result.status = codes.nodata;
+					result.status.details = "127信号总数查询无数据";
 					isgo = false;
 					break;
 				case -1:
@@ -378,6 +384,11 @@ exports.result_export = async(ctx, next) => {
 				case -13:
 					result.status = codes.syserror;
 					result.status.details = "链接时间方差查询异常";
+					isgo = false;
+					break;
+				case -14:
+					result.status = codes.syserror;
+					result.status.details = "127信号总数查询异常";
 					isgo = false;
 					break;
 			}
