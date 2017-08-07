@@ -238,7 +238,7 @@ async function queryResults(search) {
 		r['mac'] = search.mac;
 		r['flag'] = search.flag;
 		r['mobile'] = search.mobile;
-		r['mi'] = search.mi;
+		r['mi'] =Number.parseInt( search.mi);
 		if(result.succ) {
 			var r_count = await BleScanRecord().count(match);
 			if(r_count.status == 1) {
@@ -258,7 +258,7 @@ async function queryResults(search) {
 		//获取最大最小平均值
 		if(result.succ) {
 			var s_match=match;
-			s_match.RSSI={$ne:127};
+			s_match.RSSI={'$ne':127};
 			var params = [{
 			'$match': s_match
 		}, {
@@ -275,6 +275,7 @@ async function queryResults(search) {
 				}
 			}
 		}];
+		console.log(params)
 			var r1 = await BleScanRecord().aggregate(params);
 			if(r1.status == 1) {
 				r['avg_rssi'] = r1.data[0].avg_rssi;
