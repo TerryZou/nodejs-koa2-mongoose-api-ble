@@ -242,7 +242,7 @@ exports.result = async(ctx, next) => {
 					break;
 				case 20:
 					result.status = codes.nodata;
-					result.status.details = "最大最小平均值查询无数据";
+					result.status.details = "链接扫描最大最小平均值查询无数据";
 					break;
 				case 30:
 					result.status = codes.nodata;
@@ -256,6 +256,14 @@ exports.result = async(ctx, next) => {
 					result.status = codes.nodata;
 					result.status.details = "信号时间方差查询无数据";
 					break;
+				case 60:
+					result.status = codes.nodata;
+					result.status.details = "信号最大最小平均值查询无数据";
+					break;
+					case 70:
+					result.status = codes.nodata;
+					result.status.details = "127信号总数查询无数据";
+					break;
 				case -1:
 					result.status = codes.syserror;
 					result.status.details = "";
@@ -266,7 +274,7 @@ exports.result = async(ctx, next) => {
 					break;
 				case -12:
 					result.status = codes.syserror;
-					result.status.details = "最大最小平均值查询异常";
+					result.status.details = "链接扫描最大最小平均值查询异常";
 					break;
 				case -13:
 					result.status = codes.syserror;
@@ -279,6 +287,13 @@ exports.result = async(ctx, next) => {
 				case -15:
 					result.status = codes.syserror;
 					result.status.details = "信号时间方差查询异常";
+					break;
+				case -16:
+					result.status = codes.syserror;
+					result.status.details = "信号最大最小平均值查询异常";
+					case -17:
+					result.status = codes.syserror;
+					result.status.details = "127信号总数查询异常";
 					break;
 			}
 		}

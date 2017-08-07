@@ -1,5 +1,6 @@
 var db = require('mongoose'),
-	url = 'mongodb://127.0.0.1:27017/bledatabase';
+	//url = 'mongodb://127.0.0.1:27017/bledatabase';
+	url = 'mongodb://192.168.82.53:27017/bledatabase';
 db.connect(url);
 //db.Promise = Promise;
 //console.log("链接数据库");

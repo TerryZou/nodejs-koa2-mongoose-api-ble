@@ -16,7 +16,7 @@ exports.exportRecords = async(search) => {
 	var result = {
 		succ: false,
 		data: null,
-		status:1
+		status: 1
 	};
 	var data = await queryRecords(search);
 	result.status = data.status;
@@ -126,7 +126,7 @@ exports.exportResults = async(search) => {
 	var result = {
 		succ: false,
 		data: null,
-		status:1
+		status: 1
 	};
 	var data = await queryResults(search);
 	result.status = data.status;
@@ -165,7 +165,7 @@ exports.exportResults = async(search) => {
 					'f': 'avg_connect',
 					'h': "连接平均时间（ms）"
 				},
-				
+
 				{
 					'f': 'min_scan',
 					'h': "扫描最小时间（ms）"
@@ -223,6 +223,10 @@ exports.exportResults = async(search) => {
 					'h': "手机型号"
 				},
 				{
+					'f': 'rssi127',
+					'h': "127总数"
+				},
+				{
 					'f': 'success_rate',
 					'h': "成功率"
 				}
@@ -245,7 +249,7 @@ async function queryResults(search) {
 	var result = {
 		data: {},
 		succ: true,
-		status:1
+		status: 1
 	};
 	try {
 		var match = {};
@@ -270,40 +274,7 @@ async function queryResults(search) {
 		if(jsUtil.isNullOrEmpty(search.connect_num)) {
 			search.connect_num = 1;
 		}
-		var params = [{
-			'$match': match
-		}, {
-			'$group': {
-				_id: "$flag",
-				avg_connect: {
-					'$avg': '$ConnectionTime'
-				},
-				min_connect: {
-					'$min': '$ConnectionTime'
-				},
-				max_connect: {
-					'$max': '$ConnectionTime'
-				},
-				avg_scan: {
-					'$avg': '$LescanTime'
-				},
-				min_scan: {
-					'$min': '$LescanTime'
-				},
-				max_scan: {
-					'$max': '$LescanTime'
-				},
-				avg_rssi: {
-					'$avg': '$RSSI'
-				},
-				min_rssi: {
-					'$min': '$RSSI'
-				},
-				max_rssi: {
-					'$max': '$RSSI'
-				}
-			}
-		}];
+
 		var r = {};
 		var s = await BleConnectStatistics().findOne(match);
 		switch(s.status) {
@@ -329,8 +300,33 @@ async function queryResults(search) {
 				break;
 		}
 
-		//获取最大最小平均值
+		//链接，扫描获取最大最小平均值
 		if(result.succ) {
+			var params = [{
+				'$match': match
+			}, {
+				'$group': {
+					_id: "$flag",
+					avg_connect: {
+						'$avg': '$ConnectionTime'
+					},
+					min_connect: {
+						'$min': '$ConnectionTime'
+					},
+					max_connect: {
+						'$max': '$ConnectionTime'
+					},
+					avg_scan: {
+						'$avg': '$LescanTime'
+					},
+					min_scan: {
+						'$min': '$LescanTime'
+					},
+					max_scan: {
+						'$max': '$LescanTime'
+					}
+				}
+			}];
 			var r1 = await BleConnectTimers().aggregate(params);
 			if(r1.status == 1) {
 				//result.data = r1.data;
@@ -340,9 +336,7 @@ async function queryResults(search) {
 				r['avg_scan'] = r1.data[0].avg_scan;
 				r['min_scan'] = r1.data[0].min_scan;
 				r['max_scan'] = r1.data[0].max_scan;
-				r['avg_rssi'] = r1.data[0].avg_rssi;
-				r['min_rssi'] = r1.data[0].min_rssi;
-				r['max_rssi'] = r1.data[0].max_rssi;
+				
 			} else {
 				switch(r1.status) {
 					case 0:
@@ -355,10 +349,50 @@ async function queryResults(search) {
 				result.succ = false;
 			}
 		}
-		//获取连接时间方差
+		//信号获取最大最小平均值
 		if(result.succ) {
 			var c_match=match;
-			c_match.isConnect=1;
+			c_match["RSSI"]={$ne:127};
+			var params = [{
+				'$match': c_match
+			}, {
+				'$group': {
+					_id: "$flag",
+					
+					avg_rssi: {
+						'$avg': '$RSSI'
+					},
+					min_rssi: {
+						'$min': '$RSSI'
+					},
+					max_rssi: {
+						'$max': '$RSSI'
+					}
+				}
+			}];
+			var r1 = await BleConnectTimers().aggregate(params);
+			if(r1.status == 1) {
+				//result.data = r1.data;
+				r['avg_rssi'] = r1.data[0].avg_rssi;
+				r['min_rssi'] = r1.data[0].min_rssi;
+				r['max_rssi'] = r1.data[0].max_rssi;
+			} else {
+				switch(r1.status) {
+					case 0:
+						result.status = 60;
+						break;
+					case -1:
+						result.status = -16;
+						break;
+				}
+				result.succ = false;
+			}
+		}
+		//获取连接时间方差
+		if(result.succ) {
+
+			var c_match = match;
+			c_match.isConnect = 1;
 			var connect_v = await BleConnectTimers().getResultBySearch('ConnectionTime', c_match);
 			if(connect_v.status == 1) {
 				r['var_connect'] = connect_v.data[0].value;
@@ -376,8 +410,8 @@ async function queryResults(search) {
 		}
 		//获取扫描时间方差
 		if(result.succ) {
-			var s_match=match;
-			s_match.isScan=1;
+			var s_match = match;
+			s_match.isScan = 1;
 			var scan_v = await BleConnectTimers().getResultBySearch('LescanTime', s_match);
 			if(scan_v.status == 1) {
 				r['var_scan'] = scan_v.data[0].value;
@@ -395,8 +429,9 @@ async function queryResults(search) {
 		}
 		//获取信号时间方差
 		if(result.succ) {
-			var s_match=match;
-			s_match.isScan=1;
+			var s_match = match;
+			s_match.isScan = 1;
+			s_match["RSSI"]={$ne:127};
 			var rssi_v = await BleConnectTimers().getResultBySearch('RSSI', s_match);
 			if(rssi_v.status == 1) {
 				r['var_rssi'] = rssi_v.data[0].value;
@@ -407,6 +442,26 @@ async function queryResults(search) {
 						break;
 					case -1:
 						result.status = -15;
+						break;
+				}
+				result.succ = false;
+			}
+		}
+		//获取信号127个数
+		if(result.succ) {
+			var s_match = match;
+			s_match.isScan = 1;
+			s_match["RSSI"]=127;
+			var rssi_v = await BleConnectTimers().count(s_match);
+			if(rssi_v.status == 1) {
+				r['rssi127'] = rssi_v.data;
+			} else {
+				switch(rssi_v.status) {
+					case 0:
+						result.status = 70;
+						break;
+					case -1:
+						result.status = -17;
 						break;
 				}
 				result.succ = false;
