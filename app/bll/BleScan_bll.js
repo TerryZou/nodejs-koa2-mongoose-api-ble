@@ -140,8 +140,8 @@ exports.exportResults = async(search) => {
 		data: null,
 		status:1
 	};
-	var data = await queryResults(search);
-	if(data.status == 1) {
+	result= await queryResults(search);
+	if(result.status == 1) {
 		var headers = [{
 			name: "blescanresult",
 			headers: [{
@@ -225,22 +225,6 @@ async function queryResults(search) {
 		if(!jsUtil.isNullOrEmpty(search.userid)) {
 			match["userid"] = search.userid;
 		}
-		var params = [{
-			'$match': match
-		}, {
-			'$group': {
-				_id: "$flag",
-				avg_rssi: {
-					'$avg': '$RSSI'
-				},
-				min_rssi: {
-					'$min': '$RSSI'
-				},
-				max_rssi: {
-					'$max': '$RSSI'
-				}
-			}
-		}];
 		
 		var r = {};
 		r['name'] = search.name;
@@ -266,6 +250,24 @@ async function queryResults(search) {
 		}
 		//获取最大最小平均值
 		if(result.succ) {
+			var s_match=match;
+			s_match.RSSI={$ne:127};
+			var params = [{
+			'$match': s_match
+		}, {
+			'$group': {
+				_id: "$flag",
+				avg_rssi: {
+					'$avg': '$RSSI'
+				},
+				min_rssi: {
+					'$min': '$RSSI'
+				},
+				max_rssi: {
+					'$max': '$RSSI'
+				}
+			}
+		}];
 			var r1 = await BleScanRecord().aggregate(params);
 			if(r1.status == 1) {
 				r['avg_rssi'] = r1.data[0].avg_rssi;

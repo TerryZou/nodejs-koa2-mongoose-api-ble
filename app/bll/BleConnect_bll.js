@@ -352,7 +352,7 @@ async function queryResults(search) {
 		//信号获取最大最小平均值
 		if(result.succ) {
 			var c_match=match;
-			c_match["RSSI"]={$ne:127};
+			c_match.RSSI={$ne:127};
 			var params = [{
 				'$match': c_match
 			}, {
@@ -431,7 +431,7 @@ async function queryResults(search) {
 		if(result.succ) {
 			var s_match = match;
 			s_match.isScan = 1;
-			s_match["RSSI"]={$ne:127};
+			s_match.RSSI={$ne:127};
 			var rssi_v = await BleConnectTimers().getResultBySearch('RSSI', s_match);
 			if(rssi_v.status == 1) {
 				r['var_rssi'] = rssi_v.data[0].value;
@@ -451,7 +451,7 @@ async function queryResults(search) {
 		if(result.succ) {
 			var s_match = match;
 			s_match.isScan = 1;
-			s_match["RSSI"]=127;
+			s_match.RSSI=127;
 			var rssi_v = await BleConnectTimers().count(s_match);
 			if(rssi_v.status == 1) {
 				r['rssi127'] = rssi_v.data;

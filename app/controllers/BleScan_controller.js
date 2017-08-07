@@ -333,6 +333,7 @@ exports.result_export = async(ctx, next) => {
 				flag: flag,
 				userid: userid
 			});
+			
 			switch(data.status) {
 				case 1:
 					result.data = data.data;
@@ -382,6 +383,7 @@ exports.result_export = async(ctx, next) => {
 			}
 		}
 	} catch(e) {
+		console.log(e);
 		result.status = codes.syserror;
 	}
 	result.isf = false;
