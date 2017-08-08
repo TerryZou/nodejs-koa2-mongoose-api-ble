@@ -29,11 +29,15 @@ exports.getEvnbyUserid = async(userid) => {
 //查询设备测试设备列表
 exports.getDevices = async(userid, flag) => {
 	try {
+		var match={};
+		if(!jsUtil.isNullOrEmpty(userid)) {
+			match['userid'] = userid;
+		}
+		if(!jsUtil.isNullOrEmpty(flag)) {
+			match['flag'] = flag;
+		}
 		var params = [{
-			'$match': {
-				userid: userid,
-				flag: flag
-			}
+			'$match': match
 		}, {
 			'$group': {
 				_id: {

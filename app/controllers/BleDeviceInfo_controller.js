@@ -53,12 +53,12 @@ exports.ble_device_query = async(ctx, next) => {
 			result.status.details="参数 userid 不能缺少或为空！";
 			isgo = false;
 		}
-		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(flag) ) {
-			result.status = codes.paramerror;
-			result.status.details="参数 flag 不能缺少或为空！";
-			isgo = false;
-		}
+//		//验证参数是否正确
+//		if(isgo &&jsUtil.isNullOrEmpty(flag) ) {
+//			result.status = codes.paramerror;
+//			result.status.details="参数 flag 不能缺少或为空！";
+//			isgo = false;
+//		}
 		if(isgo) {
 			var data = await BleDeviceInfo.getDevices(userid, flag);
 			switch(data.status) {
