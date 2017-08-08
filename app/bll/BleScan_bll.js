@@ -35,10 +35,10 @@ exports.exportRecords = async(search) => {
 					'f': 'RSSI',
 					'h': '信号强度'
 				},
-				{
-					'f': 'time',
-					'h': '连接时长'
-				},
+//				{
+//					'f': 'time',
+//					'h': '连接时长'
+//				},
 				{
 					'f': 'flag',
 					'h': '组'
