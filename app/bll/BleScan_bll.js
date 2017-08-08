@@ -140,8 +140,9 @@ exports.exportResults = async(search) => {
 		data: null,
 		status:1
 	};
-	result= await queryResults(search);
-	if(result.status == 1) {
+	var data= await queryResults(search);
+	result.status=data.status;
+	if(data.status == 1) {
 		var headers = [{
 			name: "blescanresult",
 			headers: [{
@@ -224,7 +225,7 @@ async function queryResults(search) {
 			match["name"] = search.name;
 		}
 		if(!jsUtil.isNullOrEmpty(search.mi)) {
-			match["mi"] = search.mi;
+			match["mi"] = Number.parseInt(search.mi);
 		}
 		if(!jsUtil.isNullOrEmpty(search.mobile)) {
 			match["mobile"] = search.mobile;
@@ -238,7 +239,7 @@ async function queryResults(search) {
 		r['mac'] = search.mac;
 		r['flag'] = search.flag;
 		r['mobile'] = search.mobile;
-		r['mi'] =Number.parseInt( search.mi);
+		r['mi'] =Number.parseInt(search.mi);
 		if(result.succ) {
 			var r_count = await BleScanRecord().count(match);
 			if(r_count.status == 1) {
@@ -275,8 +276,9 @@ async function queryResults(search) {
 				}
 			}
 		}];
-		console.log(params)
+		
 			var r1 = await BleScanRecord().aggregate(params);
+			console.log(r1)
 			if(r1.status == 1) {
 				r['avg_rssi'] = r1.data[0].avg_rssi;
 				r['min_rssi'] = r1.data[0].min_rssi;
