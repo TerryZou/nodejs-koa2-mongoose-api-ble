@@ -100,12 +100,12 @@ exports.getLastRecord = async(search) => {
 	var result = null;
 	try {
 		var params = {};
-		if(!jsUtil.isNullOrEmpty(search.mac)) {
-			params["mac"] = search.mac.toLowerCase();
-		}
-		if(!jsUtil.isNullOrEmpty(search.name)) {
-			params["name"] = search.name;
-		}
+//		if(!jsUtil.isNullOrEmpty(search.mac)) {
+//			params["mac"] = search.mac.toLowerCase();
+//		}
+//		if(!jsUtil.isNullOrEmpty(search.name)) {
+//			params["name"] = search.name;
+//		}
 		if(!jsUtil.isNullOrEmpty(search.mi)) {
 			params["mi"] = search.mi;
 		}

@@ -402,12 +402,12 @@ exports.result_export = async(ctx, next) => {
 };
 
 //查询新增扫描记录
-exports.queryonce = async(ctx, next) => {
+exports.query_once = async(ctx, next) => {
 	var codes = apiCode.ble_scan_queryonce.codes;
 	var result = new Object();
 	try {
-		var mac = ctx.request.body.mac;
-		var name = ctx.request.body.name;
+		//var mac = ctx.request.body.mac;
+		//var name = ctx.request.body.name;
 		var mi = ctx.request.body.mi;
 		var mobile = ctx.request.body.mobile;
 		var flag = ctx.request.body.flag;
@@ -419,24 +419,14 @@ exports.queryonce = async(ctx, next) => {
 			result.status.details = "参数 flag 不能缺少或为空！";
 			isgo = false;
 		}
-		//验证参数是否正确
-		if(isgo && jsUtil.isNullOrEmpty(name)) {
-			result.status = codes.paramerror;
-			result.status.details = "参数 name 不能缺少或为空！";
-			isgo = false;
-		}
+		
 		//验证参数是否正确
 		if(isgo && jsUtil.isNullOrEmpty(userid)) {
 			result.status = codes.paramerror;
 			result.status.details = "参数 userid 不能缺少或为空！";
 			isgo = false;
 		}
-		//验证参数是否正确
-		if(isgo && jsUtil.isNullOrEmpty(mac)) {
-			result.status = codes.paramerror;
-			result.status.details = "参数 mac 不能缺少或为空！";
-			isgo = false;
-		}
+		
 		//验证参数是否正确
 		if(isgo && jsUtil.isNullOrEmpty(mobile)) {
 			result.status = codes.paramerror;
@@ -451,8 +441,7 @@ exports.queryonce = async(ctx, next) => {
 		}
 		if(isgo) {
 			var data = await BleScan.getLastRecord({
-				mac: mac,
-				name: name,
+				
 				mi: mi,
 				mobile: mobile,
 				flag: flag,
