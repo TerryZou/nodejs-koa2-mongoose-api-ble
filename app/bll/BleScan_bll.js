@@ -347,7 +347,7 @@ exports.getResultsBySearchs = async(searchs) => {
 	return result;
 };
 //通过条件导出扫描结果
-exports.exportResult = async(searchs) => {
+exports.exportResults = async(searchs) => {
 	var result = {
 		succ: false,
 		data: null,
