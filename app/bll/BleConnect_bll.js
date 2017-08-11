@@ -494,11 +494,14 @@ exports.exportResults = async(searchs) => {
 		data: null,
 		status: 1
 	};
-	var data = await queryResults(search);
+	var data = await queryResults(searchs);
 	result.status = data.status;
 	if(data.status == 1) {
-		var headers = [{
-			name: "bleconresult",
+		var headers = new Array();
+		var datas=new Array();
+		for(var i=0;i<data.data.length;i++){
+		headers.push([{
+			name: data.data[i].title,
 			headers: [{
 					'f': 'name',
 					'h': "设备名称"
@@ -597,8 +600,11 @@ exports.exportResults = async(searchs) => {
 					'h': "成功率"
 				}
 			]
-		}];
-		var datas = [data.data];
+		}]);
+		
+		datas.push(data.data[i].data);
+		}
+		
 		var filename = new Date().getTime().toString() + '.xlsx'
 		path = pathconfig.excel + filename;
 		result.succ = xlsx.generateExcel(path, headers, datas);
@@ -615,15 +621,17 @@ async function queryResults(searchs) {
 	var result = {
 		data: {},
 		succ: true,
-		status: 1
+		status: 1,
+		param:{}
 	};
 	var array = new Array();
 	for(var i = 0; i < searchs.length; i++) {
 		var r = await queryResult(searchs[i]);
 		if(r.status == 1) {
-			array.push(r.data[0]);
+			array.push({"title":searchs[i].name+"-"+searchs[i].mac,"data":r.data});
 		} else {
 			result.status = r.status;
+			result.param=searchs[i];
 			break;
 		}
 	}

@@ -529,7 +529,6 @@ ctx.body = result;
 exports.result_list_export = async(ctx, next) => {
 	var codes = apiCode.ble_scan_result_export.codes;
 	var params = ctx.request.body.params;
-	console.log(params);
 	var result = new Object();
 	var isgo=true;
 	try {
