@@ -273,6 +273,8 @@ async function queryResult(search) {
 		}
 		if(jsUtil.isNullOrEmpty(search.connect_num)) {
 			search.connect_num = 1;
+		}else{
+			search.connect_num=Number.parseInt(search.connect_num);
 		}
 
 		var r = {};
@@ -286,6 +288,7 @@ async function queryResult(search) {
 				r['scan_success_rate'] = s.data.lescan_success / search.connect_num;
 				r['connect_success_rate'] = s.data.lecc_success / s.data.lescan_success;
 				r['disconnect_success_rate'] = s.data.ledc_success / s.data.lecc_success;
+				r['success_rate'] = s.data.lecc_succes / search.connect_num;
 				r['ledc_failed_number'] = s.data.ledc_failed;
 				r['ble_up_failed_number'] = s.data.deviceup_failed;
 				r['scan_failed_number'] = s.data.lescan_failed;
