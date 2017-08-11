@@ -405,6 +405,7 @@ exports.result_export = async(ctx, next) => {
 exports.result_list = async(ctx, next) => {
 	var codes = apiCode.ble_scan_result.codes;
 	var params = ctx.request.body.params;
+	var result = new Object();
 	var isgo = true;
 	try {
 	//验证参数是否正确
@@ -518,7 +519,7 @@ exports.result_list = async(ctx, next) => {
 		}
 	}
 } catch(e) {
-	//console.log(e);
+	console.log(e);
 	result.status = codes.syserror;
 }
 
@@ -528,6 +529,7 @@ ctx.body = result;
 //查询扫描测试结论列表导出
 exports.result_list_export = async(ctx, next) => {
 	var codes = apiCode.ble_scan_result_export.codes;
+	var params = ctx.request.body.params;
 	var result = new Object();
 	var isgo=true;
 	try {
