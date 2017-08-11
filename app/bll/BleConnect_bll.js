@@ -495,13 +495,11 @@ exports.exportResults = async(searchs) => {
 		status: 1
 	};
 	var data = await queryResults(searchs);
+	console.log(data);
 	result.status = data.status;
 	if(data.status == 1) {
-		var headers = new Array();
-		var datas=new Array();
-		for(var i=0;i<data.data.length;i++){
-		headers.push([{
-			name: data.data[i].title,
+		var headers=[{
+			name: "bleconnectresult",
 			headers: [{
 					'f': 'name',
 					'h': "设备名称"
@@ -600,10 +598,9 @@ exports.exportResults = async(searchs) => {
 					'h': "成功率"
 				}
 			]
-		}]);
+		}];
 		
-		datas.push(data.data[i].data);
-		}
+		var datas=[data.data];
 		
 		var filename = new Date().getTime().toString() + '.xlsx'
 		path = pathconfig.excel + filename;
@@ -628,7 +625,7 @@ async function queryResults(searchs) {
 	for(var i = 0; i < searchs.length; i++) {
 		var r = await queryResult(searchs[i]);
 		if(r.status == 1) {
-			array.push({"title":searchs[i].name+"-"+searchs[i].mac,"data":r.data});
+			array.push(r.data[0]);
 		} else {
 			result.status = r.status;
 			result.param=searchs[i];
