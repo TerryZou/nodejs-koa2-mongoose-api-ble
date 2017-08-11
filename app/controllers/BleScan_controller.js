@@ -393,7 +393,6 @@ exports.result_export = async(ctx, next) => {
 			}
 		}
 	} catch(e) {
-		console.log(e);
 		result.status = codes.syserror;
 	}
 	result.isf = false;
@@ -518,7 +517,6 @@ exports.result_list = async(ctx, next) => {
 		}
 	}
 } catch(e) {
-	console.log(e);
 	result.status = codes.syserror;
 }
 
@@ -661,7 +659,6 @@ exports.result_list_export = async(ctx, next) => {
 			}
 		}
 	} catch(e) {
-		console.log(e);
 		result.status = codes.syserror;
 	}
 	result.isf = false;

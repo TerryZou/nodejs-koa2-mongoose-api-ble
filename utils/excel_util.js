@@ -31,7 +31,6 @@ exports.generateExcel = (path, headers, data) => {
 			for (var hi = 0; hi < headers.length; hi++) {
 				var h = headers[hi].headers.map((v, i) => Object.assign({}, {
 					v: v.h,
-					//a:console.log(v),
 					position: String.fromCharCode(65 + i) + 1
 				})).reduce((prev, next) => Object.assign({}, prev, {
 					[next.position]: {
@@ -40,7 +39,6 @@ exports.generateExcel = (path, headers, data) => {
 				}), {});
 				var d = data[hi].map((v, i) => headers[hi].headers.map((k, j) => Object.assign({}, {
 					v: v[k.f],
-					//a:console.log(v[k.f]),
 					position: String.fromCharCode(65 + j) + (i + 2)
 				}))).reduce((prev, next) => prev.concat(next)).reduce((prev, next) => Object.assign({}, prev, {
 					[next.position]: {
@@ -54,11 +52,7 @@ exports.generateExcel = (path, headers, data) => {
 				var outputPos = Object.keys(output);
 				// 计算出范围
 				var ref = outputPos[0] + ':' + outputPos[outputPos.length - 1];
-				console.log("++++ref++++")
-				console.log(ref)
 				sheetNames.push(headers[hi].name);
-				console.log("++++++headers[hi].name+++++");
-				console.log(headers[hi].name);
 				sheets[headers[hi].name] = Object.assign({}, output, {
 					'!ref': ref
 				});
@@ -74,7 +68,6 @@ exports.generateExcel = (path, headers, data) => {
 			xlsx.writeFile(wb, process.cwd()+path);
 			result = true;
 		} catch (e) {
-			//console.log(e);
 		}
 		return result;
 		

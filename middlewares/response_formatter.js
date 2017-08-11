@@ -7,7 +7,7 @@ var ApiError = require('../app/error/ApiError');
 var response_formatter = async (ctx, next) => {
     //如果有返回数据，将返回数据添加到data中
     if (ctx.body) {
-    	console.log("有数据");
+    	console.log(ctx.body);
     	if (ctx.body.isf) {
 			ctx.body = {
 				code: 0,
