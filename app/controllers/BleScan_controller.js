@@ -401,7 +401,7 @@ exports.result_export = async(ctx, next) => {
 	ctx.body = result;
 };
 
-//查询扫描测试结论
+//查询扫描测试结论列表
 exports.result_list = async(ctx, next) => {
 	var codes = apiCode.ble_scan_result.codes;
 	var params = ctx.request.body.params;
@@ -518,16 +518,18 @@ exports.result_list = async(ctx, next) => {
 		}
 	}
 } catch(e) {
+	//console.log(e);
 	result.status = codes.syserror;
 }
 
 result.isf = false;
 ctx.body = result;
 };
-//查询扫描测试结论导出
+//查询扫描测试结论列表导出
 exports.result_list_export = async(ctx, next) => {
 	var codes = apiCode.ble_scan_result_export.codes;
 	var result = new Object();
+	var isgo=true;
 	try {
 		//验证参数是否正确
 	if(isgo && jsUtil.isNullOrEmpty(params)) {
