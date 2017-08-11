@@ -225,7 +225,7 @@ async function queryResult(search) {
 			match["name"] = search.name;
 		}
 		if(!jsUtil.isNullOrEmpty(search.mi)) {
-			match["mi"] = Number.parseInt(search.mi);
+			match["mi"] = Number.parseFloat(search.mi);
 		}
 		if(!jsUtil.isNullOrEmpty(search.mobile)) {
 			match["mobile"] = search.mobile;
@@ -239,7 +239,7 @@ async function queryResult(search) {
 		r['mac'] = search.mac;
 		r['flag'] = search.flag;
 		r['mobile'] = search.mobile;
-		r['mi'] =Number.parseInt(search.mi);
+		r['mi'] =Number.parseFloat(search.mi);
 		if(result.succ) {
 			var r_count = await BleScanRecord().count(match);
 			if(r_count.status == 1) {
