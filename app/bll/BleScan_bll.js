@@ -278,6 +278,7 @@ async function queryResult(search) {
 		}];
 		
 			var r1 = await BleScanRecord().aggregate(params);
+			console.log(search);
 			console.log(r1)
 			if(r1.status == 1) {
 				r['avg_rssi'] = r1.data[0].avg_rssi;

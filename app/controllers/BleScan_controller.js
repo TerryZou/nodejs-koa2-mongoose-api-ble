@@ -223,7 +223,6 @@ exports.result = async(ctx, next) => {
 				flag: flag,
 				userid: userid
 			});
-			console.log(data);
 			switch(data.status) {
 				case 1:
 					result.data = data.data;
