@@ -360,7 +360,7 @@ exports.result_export = async(ctx, next) => {
 			isgo = false;
 		}
 		if(isgo) {
-			var data = await BleConnect.exportResults({
+			var data = await BleConnect.exportResult({
 				mac: mac,
 				name: name,
 				mi: mi,

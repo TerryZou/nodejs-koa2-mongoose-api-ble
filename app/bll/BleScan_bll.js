@@ -129,18 +129,18 @@ exports.getLastRecord = async(search) => {
 
 //通过条件获取扫描结果
 exports.getResultBySearch = async(search) => {
-	var result = await queryResults(search);
+	var result = await queryResult(search);
 	return result;
 };
 
 //通过条件导出扫描结果
-exports.exportResults = async(search) => {
+exports.exportResult = async(search) => {
 	var result = {
 		succ: false,
 		data: null,
 		status:1
 	};
-	var data= await queryResults(search);
+	var data= await queryResult(search);
 	result.status=data.status;
 	if(data.status == 1) {
 		var headers = [{
@@ -207,7 +207,7 @@ exports.exportResults = async(search) => {
 	return result;
 };
 
-async function queryResults(search) {
+async function queryResult(search) {
 	var result = {
 		data: {},
 		status: 1,
@@ -341,3 +341,104 @@ async function queryResults(search) {
 		throw e;
 	}
 };
+//通过条件获取扫描结果
+exports.getResultsBySearchs = async(searchs) => {
+	var result = await queryResults(searchs);
+	return result;
+};
+//通过条件导出扫描结果
+exports.exportResult = async(searchs) => {
+	var result = {
+		succ: false,
+		data: null,
+		status:1
+	};
+	var data= await queryResults(searchs);
+	result.status=data.status;
+	if(data.status == 1) {
+		var headers = [{
+			name: "blescanresult",
+			headers: [{
+					'f': 'name',
+					'h': "设备名称"
+				},
+				{
+					'f': 'mac',
+					'h': "mac"
+				},
+				{
+					'f': 'mi',
+					'h': "距离"
+				},
+				{
+					'f': 'count',
+					'h': "次数"
+				},
+				
+				{
+					'f': 'min_rssi',
+					'h': "信号强度最小值"
+				},
+				{
+					'f': 'max_rssi',
+					'h': "信号强度最大值"
+				},
+				{
+					'f': 'avg_rssi',
+					'h': "信号强度方差"
+				},
+				{
+					'f': 'var_time',
+					'h': "连接时间方差"
+				},
+				{
+					'f': 'flag',
+					'h': "组 "
+				},
+				{
+					'f': 'mobile',
+					'h': "手机型号"
+				},
+				
+				
+				{
+					'f': 'rssi127',
+					'h': "127总数"
+				}
+			]
+		}];
+		var datas = [data.data];
+		var filename = new Date().getTime().toString() + '.xlsx'
+		path = pathconfig.excel + filename;
+		result.succ = xlsx.generateExcel(path, headers, datas);
+		if(result.succ) {
+			result.data = filename;
+		} else {
+			result.status = 2;
+		}
+	}
+	return result;
+};
+async function queryResults(searchs) {
+	var result = {
+		data: {},
+		succ: true,
+		status: 1,
+		param:{}
+	};
+	var array = new Array();
+	for(var i = 0; i < searchs.length; i++) {
+		var r = await queryResult(searchs[i]);
+		if(r.status == 1) {
+			array.push(r.data[0]);
+		} else {
+			result.status = r.status;
+			result.param=searchs[i];
+			break;
+		}
+	}
+	if(result.status == 1) {
+		result.data = array;
+	}
+	return result;
+}
