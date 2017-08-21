@@ -134,7 +134,7 @@ exports.exportRecordsList = async(searchs) => {
 		var datas = new Array();
 		for(var i = 0; i < data.data.length; i++) {
 			headers.push({
-				name: "blecon",
+				name: "blecon"+i,
 				headers: [{
 						'f': '_id',
 						'h': 'Id'
