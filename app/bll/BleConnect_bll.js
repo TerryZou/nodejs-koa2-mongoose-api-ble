@@ -115,6 +115,114 @@ async function queryRecords(search) {
 	}
 };
 
+//通过条件获取链接记录列表
+exports.getRecordsListBySearchs = async(searchs) => {
+	var result = await queryRecordsList(searchs);
+	return result;
+};
+//通过条件导出链接记录
+exports.exportRecordsList = async(searchs) => {
+	var result = {
+		succ: false,
+		data: null,
+		status: 1
+	};
+	var data = await queryRecordsList(searchs);
+	result.status = data.status;
+	if(data.status == 1) {
+		var headers = new Array();
+		var datas = new Array();
+		for(var i = 0; i < data.data.length; i++) {
+			headers.push({
+				name: "blecon",
+				headers: [{
+						'f': '_id',
+						'h': 'Id'
+					},
+					{
+						'f': 'ConnectionTime',
+						'h': '连接时间'
+					},
+					{
+						'f': 'DisconnectTime',
+						'h': '断开时间'
+					},
+					{
+						'f': 'LescanTime',
+						'h': '扫描时间'
+					},
+					{
+						'f': 'RSSI',
+						'h': '信号强度'
+					},
+					{
+						'f': 'flag',
+						'h': '组'
+					},
+					{
+						'f': 'isConnect',
+						'h': '是否连接'
+					},
+					{
+						'f': 'mac',
+						'h': 'mac'
+					},
+					{
+						'f': 'mi',
+						'h': '距离'
+					},
+					{
+						'f': 'mobile',
+						'h': '手机型号'
+					},
+					{
+						'f': 'name',
+						'h': '设别名称'
+					},
+					{
+						'f': 'time',
+						'h': '时间'
+					}
+				]
+			});
+			datas.push(data.data[i]);
+		}
+		var filename = new Date().getTime().toString() + '.xlsx'
+		path = pathconfig.excel + filename;
+		result.succ = xlsx.generateExcel(path, headers, datas);
+		if(result.succ) {
+			result.data = filename;
+		} else {
+			result.status = 2;
+		}
+	}
+	return result;
+};
+
+async function queryRecordsList(searchs) {
+	var result = {
+		data: {},
+		succ: true,
+		status: 1,
+		param: {}
+	};
+	var array = new Array();
+	for(var i = 0; i < searchs.length; i++) {
+		var r = await queryRecords(searchs[i]);
+		if(r.status == 1) {
+			array.push(r.data);
+		} else {
+			result.status = r.status;
+			result.param = searchs[i];
+			break;
+		}
+	}
+	if(result.status == 1) {
+		result.data = array;
+	}
+	return result;
+};
+
 //通过条件获取链接结果
 exports.getResultBySearch = async(search) => {
 	var result = await queryResult(search);
@@ -273,8 +381,8 @@ async function queryResult(search) {
 		}
 		if(jsUtil.isNullOrEmpty(search.connect_num)) {
 			search.connect_num = 1;
-		}else{
-			search.connect_num=Number.parseInt(search.connect_num);
+		} else {
+			search.connect_num = Number.parseInt(search.connect_num);
 		}
 
 		var r = {};
@@ -501,7 +609,7 @@ exports.exportResults = async(searchs) => {
 	console.log(data);
 	result.status = data.status;
 	if(data.status == 1) {
-		var headers=[{
+		var headers = [{
 			name: "bleconnectresult",
 			headers: [{
 					'f': 'name',
@@ -602,9 +710,9 @@ exports.exportResults = async(searchs) => {
 				}
 			]
 		}];
-		
-		var datas=[data.data];
-		
+
+		var datas = [data.data];
+
 		var filename = new Date().getTime().toString() + '.xlsx'
 		path = pathconfig.excel + filename;
 		result.succ = xlsx.generateExcel(path, headers, datas);
@@ -622,7 +730,7 @@ async function queryResults(searchs) {
 		data: {},
 		succ: true,
 		status: 1,
-		param:{}
+		param: {}
 	};
 	var array = new Array();
 	for(var i = 0; i < searchs.length; i++) {
@@ -631,7 +739,7 @@ async function queryResults(searchs) {
 			array.push(r.data[0]);
 		} else {
 			result.status = r.status;
-			result.param=searchs[i];
+			result.param = searchs[i];
 			break;
 		}
 	}
