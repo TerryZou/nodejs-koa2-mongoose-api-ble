@@ -152,7 +152,7 @@ exports.query_list = async(ctx, next) => {
 		}
 
 		if(isgo) {
-			var data = await BleConnect.getRecordsListBySearch(params);
+			var data = await BleConnect.getRecordsListBySearchs(params);
 			switch(data.status) {
 				case 1:
 					result.data = data.data;
