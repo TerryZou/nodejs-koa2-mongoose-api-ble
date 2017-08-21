@@ -28,6 +28,15 @@ exports.exportRecords = async(search) => {
 					'h': 'Id'
 				},
 				{
+					'f': 'name',
+					'h': '设别名称'
+				},
+				{
+					'f': 'mac',
+					'h': 'mac'
+				},
+
+				{
 					'f': 'ConnectionTime',
 					'h': '连接时间'
 				},
@@ -40,36 +49,24 @@ exports.exportRecords = async(search) => {
 					'h': '扫描时间'
 				},
 				{
-					'f': 'RSSI',
-					'h': '信号强度'
-				},
-				{
-					'f': 'flag',
-					'h': '组'
-				},
-				{
-					'f': 'isConnect',
-					'h': '是否连接'
-				},
-				{
-					'f': 'mac',
-					'h': 'mac'
-				},
-				{
 					'f': 'mi',
 					'h': '距离'
+				},
+				{
+					'f': 'RSSI',
+					'h': '信号强度'
 				},
 				{
 					'f': 'mobile',
 					'h': '手机型号'
 				},
 				{
-					'f': 'name',
-					'h': '设别名称'
+					'f': 'flag',
+					'h': '组'
 				},
 				{
-					'f': 'time',
-					'h': '时间'
+					'f': 'result',
+					'h': '结果'
 				}
 			]
 		}];
@@ -108,7 +105,7 @@ async function queryRecords(search) {
 		if(!jsUtil.isNullOrEmpty(search.userid)) {
 			params["userid"] = search.userid;
 		}
-		params["isConnect"]=1;
+		params["isConnect"] = 1;
 		result = await BleConnectTimers().query(params);
 		return result;
 	} catch(e) {
@@ -135,11 +132,20 @@ exports.exportRecordsList = async(searchs) => {
 		var datas = new Array();
 		for(var i = 0; i < data.data.length; i++) {
 			headers.push({
-				name: "blecon"+i,
+				name: "blecon" + i,
 				headers: [{
 						'f': '_id',
 						'h': 'Id'
 					},
+					{
+						'f': 'name',
+						'h': '设别名称'
+					},
+					{
+						'f': 'mac',
+						'h': 'mac'
+					},
+
 					{
 						'f': 'ConnectionTime',
 						'h': '连接时间'
@@ -153,36 +159,24 @@ exports.exportRecordsList = async(searchs) => {
 						'h': '扫描时间'
 					},
 					{
-						'f': 'RSSI',
-						'h': '信号强度'
-					},
-					{
-						'f': 'flag',
-						'h': '组'
-					},
-					{
-						'f': 'isConnect',
-						'h': '是否连接'
-					},
-					{
-						'f': 'mac',
-						'h': 'mac'
-					},
-					{
 						'f': 'mi',
 						'h': '距离'
+					},
+					{
+						'f': 'RSSI',
+						'h': '信号强度'
 					},
 					{
 						'f': 'mobile',
 						'h': '手机型号'
 					},
 					{
-						'f': 'name',
-						'h': '设别名称'
+						'f': 'flag',
+						'h': '组'
 					},
 					{
-						'f': 'time',
-						'h': '时间'
+						'f': 'result',
+						'h': '结果'
 					}
 				]
 			});
