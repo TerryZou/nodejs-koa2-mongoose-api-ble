@@ -108,6 +108,7 @@ async function queryRecords(search) {
 		if(!jsUtil.isNullOrEmpty(search.userid)) {
 			params["userid"] = search.userid;
 		}
+		params["isConnect"]=1;
 		result = await BleConnectTimers().query(params);
 		return result;
 	} catch(e) {
