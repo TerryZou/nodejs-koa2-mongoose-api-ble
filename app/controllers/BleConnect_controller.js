@@ -255,7 +255,103 @@ exports.query_export = async(ctx, next) => {
 	result.isf = false;
 	ctx.body = result;
 };
+//查询连接测试结论导出
+exports.query_list_export = async(ctx, next) => {
+	var codes = apiCode.ble_connect_query_export.codes;
+	var params = ctx.request.body.params;
+	var result = new Object();
+	try {
+		var isgo = true;
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(params)) {
+			result.status = codes.paramerror;
+			result.status.details = "参数 params 不能缺少或为空！";
+			isgo = false;
+		}
+		if(isgo) {
+			params = eval("(" + params + ")");
+		}
+		if(isgo && params.length > 0) {
+			for(var i = 0; i < params.length; i++) {
+				//验证参数是否正确
+				if(isgo && jsUtil.isNullOrEmpty(params[i].flag)) {
+					result.status = codes.paramerror;
+					result.status.details = "第" + i + "组参数 flag 不能缺少或为空！";
+					isgo = false;
+					break;
+				}
+				//验证参数是否正确
+				if(isgo && jsUtil.isNullOrEmpty(params[i].name)) {
+					result.status = codes.paramerror;
+					result.status.details = "第" + i + "组参数 name 不能缺少或为空！";
+					isgo = false;
+					break;
+				}
+				//验证参数是否正确
+				if(isgo && jsUtil.isNullOrEmpty(params[i].userid)) {
+					result.status = codes.paramerror;
+					result.status.details = "第" + i + "组参数 userid 不能缺少或为空！";
+					isgo = false;
+					break;
+				}
+				//验证参数是否正确
+				if(isgo && jsUtil.isNullOrEmpty(params[i].mac)) {
+					result.status = codes.paramerror;
+					result.status.details = "第" + i + "组参数 mac 不能缺少或为空！";
+					isgo = false;
+					break;
+				}
+				//验证参数是否正确
+				if(isgo && jsUtil.isNullOrEmpty(params[i].mobile)) {
+					result.status = codes.paramerror;
+					result.status.details = "第" + i + "组参数 mobile 不能缺少或为空！";
+					isgo = false;
+					break;
+				}
+				//验证参数是否正确
+				if(isgo && jsUtil.isNullOrEmpty(params[i].mi)) {
+					result.status = codes.paramerror;
+					result.status.details = "第" + i + "组参数 mi 不能缺少或为空！";
+					isgo = false;
+					break;
+				}
+				//验证参数是否正确
+				if(isgo && jsUtil.isNullOrEmpty(params[i].connect_num)) {
+					result.status = codes.paramerror;
+					result.status.details = "第" + i + "组参数 connect_num 不能缺少或为空！";
+					isgo = false;
+					break;
+				}
+			}
+		}
 
+		if(isgo) {
+			var data = await BleConnect.exportRecordsList(params);
+			switch(data.status) {
+				case 1:
+					result.data = data.data;
+					result.status = codes.success;
+					break;
+				case 2:
+					result.status = codes.exporterror;
+					result.param = data.param;
+					break;
+				case 0:
+					result.status = codes.nodata;
+					result.param = data.param;
+					break;
+				case -1:
+					result.status = codes.syserror;
+					result.param = data.param;
+					break;
+			}
+		}
+	} catch(e) {
+		result.status = codes.syserror;
+	}
+	result.isf = false;
+	ctx.body = result;
+};
 //查询连接测试结论
 exports.result = async(ctx, next) => {
 	var codes = apiCode.ble_connect_result.codes;
