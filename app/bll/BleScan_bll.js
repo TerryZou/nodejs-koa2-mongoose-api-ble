@@ -16,7 +16,7 @@ exports.exportRecords = async(search) => {
 	var result = {
 		succ: false,
 		data: null,
-		status:1
+		status: 1
 	};
 	var data = await queryRecords(search);
 	result.status = data.status;
@@ -35,10 +35,10 @@ exports.exportRecords = async(search) => {
 					'f': 'RSSI',
 					'h': '信号强度'
 				},
-//				{
-//					'f': 'time',
-//					'h': '连接时长'
-//				},
+				//				{
+				//					'f': 'time',
+				//					'h': '连接时长'
+				//				},
 				{
 					'f': 'flag',
 					'h': '组'
@@ -95,17 +95,106 @@ async function queryRecords(search) {
 	}
 };
 
+//通过条件获取扫描记录列表
+exports.getRecordsListBySearchs = async(searchs) => {
+	var result = await queryRecordsList(searchs);
+	return result;
+};
+
+//通过条件导出扫描记录
+exports.exportRecordsList = async(searchs) => {
+	var result = {
+		succ: false,
+		data: null,
+		status: 1
+	};
+	var data = await queryRecordsList(search);
+	result.status = data.status;
+	if(data.status == 1) {
+		var headers = new Array();
+		var datas = new Array();
+		for(var i = 0; i < data.data.length; i++) {
+			headers.push({
+				name: "blescan",
+				headers: [{
+						'f': 'mac',
+						'h': 'mac'
+					},
+					{
+						'f': 'name',
+						'h': 'name'
+					},
+					{
+						'f': 'RSSI',
+						'h': '信号强度'
+					},
+					//				{
+					//					'f': 'time',
+					//					'h': '连接时长'
+					//				},
+					{
+						'f': 'flag',
+						'h': '组'
+					},
+					{
+						'f': 'mi',
+						'h': '距离'
+					},
+					{
+						'f': 'mobile',
+						'h': '手机型号'
+					}
+				]
+			});
+			datas.push(data.data[i]);
+		}
+		var filename = new Date().getTime().toString() + '.xlsx';
+		path = pathconfig.excel + filename;
+		result.succ = xlsx.generateExcel(path, headers, datas);
+		if(result.succ) {
+			result.data = filename;
+		} else {
+			result.status = 2;
+		}
+	}
+	return result;
+};
+
+async function queryRecordsList(searchs) {
+	var result = {
+		data: {},
+		succ: true,
+		status: 1,
+		param: {}
+	};
+	var array = new Array();
+	for(var i = 0; i < searchs.length; i++) {
+		var r = await queryRecords(searchs[i]);
+		if(r.status == 1) {
+			array.push(r.data);
+		} else {
+			result.status = r.status;
+			result.param = searchs[i];
+			break;
+		}
+	}
+	if(result.status == 1) {
+		result.data = array;
+	}
+	return result;
+};
+
 //通过条件获取最近扫描记录
 exports.getLastRecord = async(search) => {
 	var result = null;
 	try {
 		var params = {};
-//		if(!jsUtil.isNullOrEmpty(search.mac)) {
-//			params["mac"] = search.mac.toLowerCase();
-//		}
-//		if(!jsUtil.isNullOrEmpty(search.name)) {
-//			params["name"] = search.name;
-//		}
+		//		if(!jsUtil.isNullOrEmpty(search.mac)) {
+		//			params["mac"] = search.mac.toLowerCase();
+		//		}
+		//		if(!jsUtil.isNullOrEmpty(search.name)) {
+		//			params["name"] = search.name;
+		//		}
 		if(!jsUtil.isNullOrEmpty(search.mi)) {
 			params["mi"] = search.mi;
 		}
@@ -138,10 +227,10 @@ exports.exportResult = async(search) => {
 	var result = {
 		succ: false,
 		data: null,
-		status:1
+		status: 1
 	};
-	var data= await queryResult(search);
-	result.status=data.status;
+	var data = await queryResult(search);
+	result.status = data.status;
 	if(data.status == 1) {
 		var headers = [{
 			name: "blescanresult",
@@ -161,7 +250,7 @@ exports.exportResult = async(search) => {
 					'f': 'count',
 					'h': "次数"
 				},
-				
+
 				{
 					'f': 'min_rssi',
 					'h': "信号强度最小值"
@@ -186,8 +275,7 @@ exports.exportResult = async(search) => {
 					'f': 'mobile',
 					'h': "手机型号"
 				},
-				
-				
+
 				{
 					'f': 'rssi127',
 					'h': "127总数"
@@ -233,13 +321,13 @@ async function queryResult(search) {
 		if(!jsUtil.isNullOrEmpty(search.userid)) {
 			match["userid"] = search.userid;
 		}
-		
+
 		var r = {};
 		r['name'] = search.name;
 		r['mac'] = search.mac;
 		r['flag'] = search.flag;
 		r['mobile'] = search.mobile;
-		r['mi'] =Number.parseFloat(search.mi);
+		r['mi'] = Number.parseFloat(search.mi);
 		if(result.succ) {
 			var r_count = await BleScanRecord().count(match);
 			if(r_count.status == 1) {
@@ -258,25 +346,27 @@ async function queryResult(search) {
 		}
 		//获取最大最小平均值
 		if(result.succ) {
-			var s_match=match;
-			s_match.RSSI={'$ne':127};
+			var s_match = match;
+			s_match.RSSI = {
+				'$ne': 127
+			};
 			var params = [{
-			'$match': s_match
-		}, {
-			'$group': {
-				_id: "$flag",
-				avg_rssi: {
-					'$avg': '$RSSI'
-				},
-				min_rssi: {
-					'$min': '$RSSI'
-				},
-				max_rssi: {
-					'$max': '$RSSI'
+				'$match': s_match
+			}, {
+				'$group': {
+					_id: "$flag",
+					avg_rssi: {
+						'$avg': '$RSSI'
+					},
+					min_rssi: {
+						'$min': '$RSSI'
+					},
+					max_rssi: {
+						'$max': '$RSSI'
+					}
 				}
-			}
-		}];
-		
+			}];
+
 			var r1 = await BleScanRecord().aggregate(params);
 			if(r1.status == 1) {
 				r['avg_rssi'] = r1.data[0].avg_rssi;
@@ -314,7 +404,7 @@ async function queryResult(search) {
 		//获取信号127个数
 		if(result.succ) {
 			var s_match = match;
-			s_match.RSSI=127;
+			s_match.RSSI = 127;
 			var rssi_v = await BleScanRecord().count(s_match);
 			if(rssi_v.status == 1) {
 				r['rssi127'] = rssi_v.data;
@@ -350,10 +440,10 @@ exports.exportResults = async(searchs) => {
 	var result = {
 		succ: false,
 		data: null,
-		status:1
+		status: 1
 	};
-	var data= await queryResults(searchs);
-	result.status=data.status;
+	var data = await queryResults(searchs);
+	result.status = data.status;
 	if(data.status == 1) {
 		var headers = [{
 			name: "blescanresult",
@@ -373,7 +463,7 @@ exports.exportResults = async(searchs) => {
 					'f': 'count',
 					'h': "次数"
 				},
-				
+
 				{
 					'f': 'min_rssi',
 					'h': "信号强度最小值"
@@ -398,8 +488,7 @@ exports.exportResults = async(searchs) => {
 					'f': 'mobile',
 					'h': "手机型号"
 				},
-				
-				
+
 				{
 					'f': 'rssi127',
 					'h': "127总数"
@@ -423,7 +512,7 @@ async function queryResults(searchs) {
 		data: {},
 		succ: true,
 		status: 1,
-		param:{}
+		param: {}
 	};
 	var array = new Array();
 	for(var i = 0; i < searchs.length; i++) {
@@ -432,7 +521,7 @@ async function queryResults(searchs) {
 			array.push(r.data[0]);
 		} else {
 			result.status = r.status;
-			result.param=searchs[i];
+			result.param = searchs[i];
 			break;
 		}
 	}
