@@ -11,7 +11,7 @@ exports.getEvnbyUserid = async(userid,type) => {
 		var params = [{
 			'$match': {
 				userid: userid,
-				type:type
+				type:Number.parseInt(type)
 			}
 		}, {
 			'$group': {
