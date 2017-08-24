@@ -1,8 +1,8 @@
 const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
 const jsUtil = require('../../utils/js_util');
-const BleConnectTimers = require("../models/BleConnectTimers_model");
-const BleConnectStatistics = require("../models/BleConnectStatistics_model");
+const BtConnectTimers = require("../models/BtConnectTimers_model");
+const BtConnectStatistics = require("../models/BtConnectStatistics_model");
 const xlsx = require("../../utils/excel_util");
 const pathconfig = require("../../config/path_config");
 
@@ -45,28 +45,20 @@ exports.exportRecords = async(search) => {
 					'h': '断开时间'
 				},
 				{
-					'f': 'LescanTime',
-					'h': '扫描时间'
-				},
-				{
 					'f': 'mi',
 					'h': '距离'
-				},
-				{
-					'f': 'RSSI',
-					'h': '信号强度'
-				},
-				{
-					'f': 'mobile',
-					'h': '手机型号'
 				},
 				{
 					'f': 'flag',
 					'h': '组'
 				},
 				{
-					'f': 'result',
-					'h': '结果'
+					'f': 'time',
+					'h': '记录时间'
+				},
+				{
+					'f': 'isConnect',
+					'h': '连接状态'
 				}
 			]
 		}];
@@ -96,9 +88,6 @@ async function queryRecords(search) {
 		if(!jsUtil.isNullOrEmpty(search.mi)) {
 			params["mi"] = search.mi;
 		}
-		if(!jsUtil.isNullOrEmpty(search.mobile)) {
-			params["mobile"] = search.mobile;
-		}
 		if(!jsUtil.isNullOrEmpty(search.flag)) {
 			params["flag"] = search.flag;
 		}
@@ -106,7 +95,7 @@ async function queryRecords(search) {
 			params["userid"] = search.userid;
 		}
 		params["isConnect"] = 1;
-		result = await BleConnectTimers().query(params);
+		result = await BtConnectTimers().query(params);
 		return result;
 	} catch(e) {
 		throw e;
@@ -134,50 +123,42 @@ exports.exportRecordsList = async(searchs) => {
 			headers.push({
 				name: "blecon" + i,
 				headers: [{
-						'f': '_id',
-						'h': 'Id'
-					},
-					{
-						'f': 'name',
-						'h': '设别名称'
-					},
-					{
-						'f': 'mac',
-						'h': 'mac'
-					},
+					'f': '_id',
+					'h': 'Id'
+				},
+				{
+					'f': 'name',
+					'h': '设别名称'
+				},
+				{
+					'f': 'mac',
+					'h': 'mac'
+				},
 
-					{
-						'f': 'ConnectionTime',
-						'h': '连接时间'
-					},
-					{
-						'f': 'DisconnectTime',
-						'h': '断开时间'
-					},
-					{
-						'f': 'LescanTime',
-						'h': '扫描时间'
-					},
-					{
-						'f': 'mi',
-						'h': '距离'
-					},
-					{
-						'f': 'RSSI',
-						'h': '信号强度'
-					},
-					{
-						'f': 'mobile',
-						'h': '手机型号'
-					},
-					{
-						'f': 'flag',
-						'h': '组'
-					},
-					{
-						'f': 'result',
-						'h': '结果'
-					}
+				{
+					'f': 'ConnectionTime',
+					'h': '连接时间'
+				},
+				{
+					'f': 'DisconnectTime',
+					'h': '断开时间'
+				},
+				{
+					'f': 'mi',
+					'h': '距离'
+				},
+				{
+					'f': 'flag',
+					'h': '组'
+				},
+				{
+					'f': 'time',
+					'h': '记录时间'
+				},
+				{
+					'f': 'isConnect',
+					'h': '连接状态'
+				}
 				]
 			});
 			datas.push(data.data[i]);
@@ -245,10 +226,6 @@ exports.exportResult = async(search) => {
 					'h': "mac"
 				},
 				{
-					'f': 'scan_success_rate',
-					'h': "扫描设备成功率"
-				},
-				{
 					'f': 'connect_success_rate',
 					'h': "连接设备成功率"
 				},
@@ -274,60 +251,20 @@ exports.exportResult = async(search) => {
 					'h': "扫描最小时间（ms）"
 				},
 				{
-					'f': 'max_scan',
-					'h': "扫描最大时间（ms）"
-				},
-				{
-					'f': 'avg_scan',
-					'h': "扫描平均时间（ms）"
-				},
-				{
-					'f': 'min_rssi',
-					'h': "RSSI最小值"
-				},
-				{
-					'f': 'max_rssi',
-					'h': "RSSI最大值"
-				},
-				{
-					'f': 'avg_rssi',
-					'h': "RSSI平均值"
-				},
-				{
 					'f': 'var_connect',
 					'h': "连接时间方差"
 				},
 				{
-					'f': 'var_scan',
-					'h': "扫描时间方差"
-				},
-				{
-					'f': 'var_rssi',
-					'h': "RSSI方差"
-				},
-				{
-					'f': 'ledc_failed_number',
+					'f': 'dc_failed_number',
 					'h': "断开失败次数"
 				},
 				{
-					'f': 'ble_up_failed_number',
+					'f': 'bt_up_failed_number',
 					'h': "蓝牙启动失败次数"
-				},
-				{
-					'f': 'scan_failed_number',
-					'h': "扫描失败次数"
 				},
 				{
 					'f': 'flag',
 					'h': "组 "
-				},
-				{
-					'f': 'mobile',
-					'h': "手机型号"
-				},
-				{
-					'f': 'rssi127',
-					'h': "127总数"
 				},
 				{
 					'f': 'success_rate',
@@ -368,9 +305,6 @@ async function queryResult(search) {
 		if(!jsUtil.isNullOrEmpty(search.mi)) {
 			match["mi"] = Number.parseFloat(search.mi);
 		}
-		if(!jsUtil.isNullOrEmpty(search.mobile)) {
-			match["mobile"] = search.mobile;
-		}
 		if(!jsUtil.isNullOrEmpty(search.userid)) {
 			match["userid"] = search.userid;
 		}
@@ -381,20 +315,17 @@ async function queryResult(search) {
 		}
 
 		var r = {};
-		var s = await BleConnectStatistics().findOne(match);
+		var s = await BtConnectStatistics().findOne(match);
 		switch(s.status) {
 			case 1:
 				r['name'] = s.data.name;
 				r['mac'] = s.data.mac;
 				r['flag'] = s.data.flag;
-				r['mobile'] = s.data.mobile;
-				r['scan_success_rate'] = s.data.lescan_success / search.connect_num;
-				r['connect_success_rate'] = s.data.lecc_success / s.data.lescan_success;
-				r['disconnect_success_rate'] = s.data.ledc_success / s.data.lecc_success;
-				r['success_rate'] = s.data.lecc_success / search.connect_num;
-				r['ledc_failed_number'] = s.data.ledc_failed;
-				r['ble_up_failed_number'] = s.data.deviceup_failed;
-				r['scan_failed_number'] = s.data.lescan_failed;
+				r['connect_success_rate'] = s.data.cc_success / search.connect_num;
+				r['disconnect_success_rate'] = s.data.dc_success / s.data.cc_success;
+				r['success_rate'] = s.data.cc_success / search.connect_num;
+				r['dc_failed_number'] = s.data.dc_failed;
+				r['bt_up_failed_number'] = s.data.deviceup_failed;
 				break;
 			case 0:
 				result.status = 10;
@@ -421,27 +352,15 @@ async function queryResult(search) {
 					},
 					max_connect: {
 						'$max': '$ConnectionTime'
-					},
-					avg_scan: {
-						'$avg': '$LescanTime'
-					},
-					min_scan: {
-						'$min': '$LescanTime'
-					},
-					max_scan: {
-						'$max': '$LescanTime'
 					}
 				}
 			}];
-			var r1 = await BleConnectTimers().aggregate(params);
+			var r1 = await BtConnectTimers().aggregate(params);
 			if(r1.status == 1) {
 				//result.data = r1.data;
 				r['avg_connect'] = r1.data[0].avg_connect;
 				r['min_connect'] = r1.data[0].min_connect;
 				r['max_connect'] = r1.data[0].max_connect;
-				r['avg_scan'] = r1.data[0].avg_scan;
-				r['min_scan'] = r1.data[0].min_scan;
-				r['max_scan'] = r1.data[0].max_scan;
 
 			} else {
 				switch(r1.status) {
@@ -455,53 +374,10 @@ async function queryResult(search) {
 				result.succ = false;
 			}
 		}
-		//信号获取最大最小平均值
 		if(result.succ) {
-			var c_match = match;
-			c_match.RSSI = {
-				$ne: 127
-			};
-			var params = [{
-				'$match': c_match
-			}, {
-				'$group': {
-					_id: "$flag",
-
-					avg_rssi: {
-						'$avg': '$RSSI'
-					},
-					min_rssi: {
-						'$min': '$RSSI'
-					},
-					max_rssi: {
-						'$max': '$RSSI'
-					}
-				}
-			}];
-			var r1 = await BleConnectTimers().aggregate(params);
-			if(r1.status == 1) {
-				//result.data = r1.data;
-				r['avg_rssi'] = r1.data[0].avg_rssi;
-				r['min_rssi'] = r1.data[0].min_rssi;
-				r['max_rssi'] = r1.data[0].max_rssi;
-			} else {
-				switch(r1.status) {
-					case 0:
-						result.status = 60;
-						break;
-					case -1:
-						result.status = -16;
-						break;
-				}
-				result.succ = false;
-			}
-		}
-		//获取连接时间方差
-		if(result.succ) {
-
 			var c_match = match;
 			c_match.isConnect = 1;
-			var connect_v = await BleConnectTimers().getResultBySearch('ConnectionTime', c_match);
+			var connect_v = await BtConnectTimers().getResultBySearch('ConnectionTime', c_match);
 			if(connect_v.status == 1) {
 				r['var_connect'] = connect_v.data[0].value;
 			} else {
@@ -511,67 +387,6 @@ async function queryResult(search) {
 						break;
 					case -1:
 						result.status = -13;
-						break;
-				}
-				result.succ = false;
-			}
-		}
-		//获取扫描时间方差
-		if(result.succ) {
-			var s_match = match;
-			s_match.isScan = 1;
-			var scan_v = await BleConnectTimers().getResultBySearch('LescanTime', s_match);
-			if(scan_v.status == 1) {
-				r['var_scan'] = scan_v.data[0].value;
-			} else {
-				switch(scan_v.status) {
-					case 0:
-						result.status = 40;
-						break;
-					case -1:
-						result.status = -14;
-						break;
-				}
-				result.succ = false;
-			}
-		}
-		//获取信号时间方差
-		if(result.succ) {
-			var s_match = match;
-			s_match.isScan = 1;
-			s_match.RSSI = {
-				$ne: 127
-			};
-			var rssi_v = await BleConnectTimers().getResultBySearch('RSSI', s_match);
-			if(rssi_v.status == 1) {
-				r['var_rssi'] = rssi_v.data[0].value;
-			} else {
-				switch(rssi_v.status) {
-					case 0:
-						result.status = 50;
-						break;
-					case -1:
-						result.status = -15;
-						break;
-				}
-				result.succ = false;
-			}
-		}
-		//获取信号127个数
-		if(result.succ) {
-			var s_match = match;
-			s_match.isScan = 1;
-			s_match.RSSI = 127;
-			var rssi_v = await BleConnectTimers().count(s_match);
-			if(rssi_v.status == 1) {
-				r['rssi127'] = rssi_v.data;
-			} else {
-				switch(rssi_v.status) {
-					case 0:
-						result.status = 70;
-						break;
-					case -1:
-						result.status = -17;
 						break;
 				}
 				result.succ = false;
@@ -614,10 +429,6 @@ exports.exportResults = async(searchs) => {
 					'h': "mac"
 				},
 				{
-					'f': 'scan_success_rate',
-					'h': "扫描设备成功率"
-				},
-				{
 					'f': 'connect_success_rate',
 					'h': "连接设备成功率"
 				},
@@ -637,66 +448,21 @@ exports.exportResults = async(searchs) => {
 					'f': 'avg_connect',
 					'h': "连接平均时间（ms）"
 				},
-
-				{
-					'f': 'min_scan',
-					'h': "扫描最小时间（ms）"
-				},
-				{
-					'f': 'max_scan',
-					'h': "扫描最大时间（ms）"
-				},
-				{
-					'f': 'avg_scan',
-					'h': "扫描平均时间（ms）"
-				},
-				{
-					'f': 'min_rssi',
-					'h': "RSSI最小值"
-				},
-				{
-					'f': 'max_rssi',
-					'h': "RSSI最大值"
-				},
-				{
-					'f': 'avg_rssi',
-					'h': "RSSI平均值"
-				},
 				{
 					'f': 'var_connect',
 					'h': "连接时间方差"
 				},
 				{
-					'f': 'var_scan',
-					'h': "扫描时间方差"
-				},
-				{
-					'f': 'var_rssi',
-					'h': "RSSI方差"
-				},
-				{
-					'f': 'ledc_failed_number',
+					'f': 'dc_failed_number',
 					'h': "断开失败次数"
 				},
 				{
-					'f': 'ble_up_failed_number',
+					'f': 'bt_up_failed_number',
 					'h': "蓝牙启动失败次数"
-				},
-				{
-					'f': 'scan_failed_number',
-					'h': "扫描失败次数"
 				},
 				{
 					'f': 'flag',
 					'h': "组 "
-				},
-				{
-					'f': 'mobile',
-					'h': "手机型号"
-				},
-				{
-					'f': 'rssi127',
-					'h': "127总数"
 				},
 				{
 					'f': 'success_rate',
