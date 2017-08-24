@@ -38,7 +38,7 @@ exports.getDevices = async(userid, flag,type) => {
 			match['flag'] = flag;
 		}
 		if(!jsUtil.isNullOrEmpty(type)) {
-			match['type'] = type;
+			match['type'] = Number.parseInt(type);
 		}
 		var params = [{
 			'$match': match
@@ -64,7 +64,7 @@ exports.getNamesbyUseridFlag = async(userid, flag,type) => {
 			'$match': {
 				userid: userid,
 				flag: flag,
-				type:type
+				type:Number.parseInt(type)
 			}
 		}, {
 			'$group': {
@@ -88,7 +88,7 @@ exports.getMacsbyUseridFlagName = async(userid, flag,name,type) => {
 				userid: userid,
 				flag: flag,
 				name:name,
-				type:type
+				type:Number.parseInt(type)
 			}
 		}, {
 			'$group': {
