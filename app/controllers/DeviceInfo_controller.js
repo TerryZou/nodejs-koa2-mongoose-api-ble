@@ -2,23 +2,30 @@ const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
 const jsUtil = require('../../utils/js_util');
 const apiCode = require("../../config/api_res_code_dict");
-const BleDeviceInfo = require("../bll/BleDeviceInfo_bll");
+const DeviceInfo = require("../bll/DeviceInfo_bll");
 
 //查询各个用户对应测试环境列表
-exports.ble_env_query = async(ctx, next) => {
+exports.env_query = async(ctx, next) => {
 	var codes = apiCode.ble_env_query.codes;
 	var result = new Object();
 	var isgo = true;
 	try {
 		var userid = ctx.request.body.userid;
+		var type = ctx.request.body.type;
 		//验证参数是否正确
 		if(isgo &&jsUtil.isNullOrEmpty(userid) ) {
 			result.status = codes.paramerror;
 			result.status.details="参数 userid 不能缺少或为空！";
 			isgo = false;
 		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(type) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 type 不能缺少或为空！";
+			isgo = false;
+		}
 		if(isgo) {
-			var data = await BleDeviceInfo.getEvnbyUserid(userid);
+			var data = await DeviceInfo.getEvnbyUserid(userid,type);
 			switch(data.status) {
 				case 1:
 					result.data = data.data;
@@ -40,27 +47,34 @@ exports.ble_env_query = async(ctx, next) => {
 };
 
 //查询设备测试设备列表
-exports.ble_device_query = async(ctx, next) => {
+exports.device_query = async(ctx, next) => {
 	var codes = apiCode.ble_device_query.codes;
 	var result = new Object();
 	var isgo = true;
 	try {
 		var userid = ctx.request.body.userid;
 		var flag = ctx.request.body.flag;
+		var type = ctx.request.body.type;
 		//验证参数是否正确
 		if(isgo &&jsUtil.isNullOrEmpty(userid) ) {
 			result.status = codes.paramerror;
 			result.status.details="参数 userid 不能缺少或为空！";
 			isgo = false;
 		}
-//		//验证参数是否正确
-//		if(isgo &&jsUtil.isNullOrEmpty(flag) ) {
-//			result.status = codes.paramerror;
-//			result.status.details="参数 flag 不能缺少或为空！";
-//			isgo = false;
-//		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(flag) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 flag 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(type) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 type 不能缺少或为空！";
+			isgo = false;
+		}
 		if(isgo) {
-			var data = await BleDeviceInfo.getDevices(userid, flag);
+			var data = await DeviceInfo.getDevices(userid, flag,type);
 			switch(data.status) {
 				case 1:
 					result.data = data.data;
@@ -82,13 +96,14 @@ exports.ble_device_query = async(ctx, next) => {
 };
 
 //查询设备测试设备名称列表
-exports.ble_name_query = async(ctx, next) => {
+exports.name_query = async(ctx, next) => {
 	var codes = apiCode.ble_name_query.codes;
 	var result = new Object();
 	var isgo = true;
 	try {
 		var userid = ctx.request.body.userid;
 		var flag = ctx.request.body.flag;
+		var type = ctx.request.body.type;
 		//验证参数是否正确
 		if(isgo &&jsUtil.isNullOrEmpty(userid) ) {
 			result.status = codes.paramerror;
@@ -101,8 +116,14 @@ exports.ble_name_query = async(ctx, next) => {
 			result.status.details="参数 flag 不能缺少或为空！";
 			isgo = false;
 		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(type) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 type 不能缺少或为空！";
+			isgo = false;
+		}
 		if(isgo) {
-			var data = await BleDeviceInfo.getNamesbyUseridFlag(userid, flag);
+			var data = await DeviceInfo.getNamesbyUseridFlag(userid, flag,type);
 			switch(data.status) {
 				case 1:
 					result.data = data.data;
@@ -124,7 +145,7 @@ exports.ble_name_query = async(ctx, next) => {
 };
 
 //查询设备测试设备mac列表
-exports.ble_mac_query = async(ctx, next) => {
+exports.mac_query = async(ctx, next) => {
 	var codes = apiCode.ble_mac_query.codes;
 	var result = new Object();
 	var isgo = true;
@@ -132,6 +153,7 @@ exports.ble_mac_query = async(ctx, next) => {
 		var userid = ctx.request.body.userid;
 		var flag = ctx.request.body.flag;
 		var name=ctx.request.body.name;
+		var type=ctx.request.body.type;
 		//验证参数是否正确
 		if(isgo &&jsUtil.isNullOrEmpty(userid) ) {
 			result.status = codes.paramerror;
@@ -150,8 +172,14 @@ exports.ble_mac_query = async(ctx, next) => {
 			result.status.details="参数 name 不能缺少或为空！";
 			isgo = false;
 		}
+		//验证参数是否正确
+		if(isgo &&jsUtil.isNullOrEmpty(type) ) {
+			result.status = codes.paramerror;
+			result.status.details="参数 type 不能缺少或为空！";
+			isgo = false;
+		}
 		if(isgo) {
-			var data = await BleDeviceInfo.getMacsbyUseridFlagName(userid, flag,name);
+			var data = await DeviceInfo.getMacsbyUseridFlagName(userid, flag,name,type);
 			switch(data.status) {
 				case 1:
 					result.data = data.data;

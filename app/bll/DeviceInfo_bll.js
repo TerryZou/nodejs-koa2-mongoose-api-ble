@@ -1,16 +1,17 @@
 const ApiError = require('../error/ApiError');
 const ApiErrorNames = require('../error/ApiErrorNames');
 const jsUtil = require('../../utils/js_util');
-const BleDeviceInfo = require("../models/BleDeviceInfo_model");
+const DeviceInfo = require("../models/DeviceInfo_model");
 const xlsx = require("../../utils/excel_util");
 const pathconfig = require("../../config/path_config");
 
 //查询各个用户对应测试环境列表
-exports.getEvnbyUserid = async(userid) => {
+exports.getEvnbyUserid = async(userid,type) => {
 	try {
 		var params = [{
 			'$match': {
-				userid: userid
+				userid: userid,
+				type:type
 			}
 		}, {
 			'$group': {
@@ -19,7 +20,7 @@ exports.getEvnbyUserid = async(userid) => {
 				}
 			}
 		}];
-		var data = await BleDeviceInfo().aggregate(params);
+		var data = await DeviceInfo().aggregate(params);
 		return data;
 	} catch(e) {
 		throw e;
@@ -27,7 +28,7 @@ exports.getEvnbyUserid = async(userid) => {
 };
 
 //查询设备测试设备列表
-exports.getDevices = async(userid, flag) => {
+exports.getDevices = async(userid, flag,type) => {
 	try {
 		var match={};
 		if(!jsUtil.isNullOrEmpty(userid)) {
@@ -35,6 +36,9 @@ exports.getDevices = async(userid, flag) => {
 		}
 		if(!jsUtil.isNullOrEmpty(flag)) {
 			match['flag'] = flag;
+		}
+		if(!jsUtil.isNullOrEmpty(type)) {
+			match['type'] = type;
 		}
 		var params = [{
 			'$match': match
@@ -46,7 +50,7 @@ exports.getDevices = async(userid, flag) => {
 				}
 			}
 		}];
-		var data = await BleDeviceInfo().aggregate(params);
+		var data = await DeviceInfo().aggregate(params);
 		return data;
 	} catch(e) {
 		throw e;
@@ -54,12 +58,13 @@ exports.getDevices = async(userid, flag) => {
 };
 
 //查询设备测试设备名称列表
-exports.getNamesbyUseridFlag = async(userid, flag) => {
+exports.getNamesbyUseridFlag = async(userid, flag,type) => {
 	try {
 		var params = [{
 			'$match': {
 				userid: userid,
-				flag: flag
+				flag: flag,
+				type:type
 			}
 		}, {
 			'$group': {
@@ -68,7 +73,7 @@ exports.getNamesbyUseridFlag = async(userid, flag) => {
 				}
 			}
 		}];
-		var data = await BleDeviceInfo().aggregate(params);
+		var data = await DeviceInfo().aggregate(params);
 		return data;
 	} catch(e) {
 		throw e;
@@ -76,13 +81,14 @@ exports.getNamesbyUseridFlag = async(userid, flag) => {
 };
 
 //查询设备测试设备mac列表
-exports.getMacsbyUseridFlagName = async(userid, flag,name) => {
+exports.getMacsbyUseridFlagName = async(userid, flag,name,type) => {
 	try {
 		var params = [{
 			'$match': {
 				userid: userid,
 				flag: flag,
-				name:name
+				name:name,
+				type:type
 			}
 		}, {
 			'$group': {
@@ -91,7 +97,7 @@ exports.getMacsbyUseridFlagName = async(userid, flag,name) => {
 				}
 			}
 		}];
-		var data = await BleDeviceInfo().aggregate(params);
+		var data = await DeviceInfo().aggregate(params);
 		return data;
 	} catch(e) {
 		throw e;
