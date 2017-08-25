@@ -61,12 +61,13 @@ exports.device_query = async(ctx, next) => {
 			result.status.details="参数 userid 不能缺少或为空！";
 			isgo = false;
 		}
-		//验证参数是否正确
-		if(isgo &&jsUtil.isNullOrEmpty(flag) ) {
-			result.status = codes.paramerror;
-			result.status.details="参数 flag 不能缺少或为空！";
-			isgo = false;
-		}
+		//这里不要flag，但不知道为什么，总是不要
+//		//验证参数是否正确
+//		if(isgo &&jsUtil.isNullOrEmpty(flag) ) {
+//			result.status = codes.paramerror;
+//			result.status.details="参数 flag 不能缺少或为空！";
+//			isgo = false;
+//		}
 		//验证参数是否正确
 		if(isgo &&jsUtil.isNullOrEmpty(type) ) {
 			result.status = codes.paramerror;
