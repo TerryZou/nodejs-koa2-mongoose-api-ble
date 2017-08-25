@@ -108,14 +108,14 @@ exports.exportRecordsList = async(searchs) => {
 		data: null,
 		status: 1
 	};
-	var data = await queryRecordsList(search);
+	var data = await queryRecordsList(searchs);
 	result.status = data.status;
 	if(data.status == 1) {
 		var headers = new Array();
 		var datas = new Array();
 		for(var i = 0; i < data.data.length; i++) {
 			headers.push({
-				name: "blescan",
+				name: "blescan"+i,
 				headers: [{
 						'f': 'mac',
 						'h': 'mac'
