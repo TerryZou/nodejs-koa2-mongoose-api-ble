@@ -22,7 +22,7 @@ exports.exportRecords = async(search) => {
 	result.status = data.status;
 	if(data.status == 1) {
 		var headers = [{
-			name: "blecon",
+			name: "btcon",
 			headers: [{
 					'f': '_id',
 					'h': 'Id'
@@ -121,7 +121,7 @@ exports.exportRecordsList = async(searchs) => {
 		var datas = new Array();
 		for(var i = 0; i < data.data.length; i++) {
 			headers.push({
-				name: "blecon" + i,
+				name: "btcon" + i,
 				headers: [{
 					'f': '_id',
 					'h': 'Id'
@@ -216,7 +216,7 @@ exports.exportResult = async(search) => {
 	result.status = data.status;
 	if(data.status == 1) {
 		var headers = [{
-			name: "bleconresult",
+			name: "btconresult",
 			headers: [{
 					'f': 'name',
 					'h': "设备名称"
@@ -244,11 +244,6 @@ exports.exportResult = async(search) => {
 				{
 					'f': 'avg_connect',
 					'h': "连接平均时间（ms）"
-				},
-
-				{
-					'f': 'min_scan',
-					'h': "扫描最小时间（ms）"
 				},
 				{
 					'f': 'var_connect',
@@ -419,7 +414,7 @@ exports.exportResults = async(searchs) => {
 	result.status = data.status;
 	if(data.status == 1) {
 		var headers = [{
-			name: "bleconnectresult",
+			name: "btconnectresult",
 			headers: [{
 					'f': 'name',
 					'h': "设备名称"
