@@ -261,11 +261,11 @@ exports.exportResult = async(search) => {
 				},
 				{
 					'f': 'avg_rssi',
-					'h': "信号强度方差"
+					'h': "信号强度平均值"
 				},
 				{
-					'f': 'var_time',
-					'h': "连接时间方差"
+					'f': 'var_rssi',
+					'h': "信号强度方差"
 				},
 				{
 					'f': 'flag',
@@ -386,9 +386,9 @@ async function queryResult(search) {
 		}
 		//获取连接时间方差
 		if(result.succ) {
-			var scan_v = await BleScanRecord().getResultBySearch('Time', match);
+			var scan_v = await BleScanRecord().getResultBySearch('RSSI', match);
 			if(scan_v.status) {
-				r['var_time'] = scan_v.data[0].value;
+				r['var_rssi'] = scan_v.data[0].value;
 			} else {
 				switch(r1.status) {
 					case 0:
@@ -474,11 +474,11 @@ exports.exportResults = async(searchs) => {
 				},
 				{
 					'f': 'avg_rssi',
-					'h': "信号强度方差"
+					'h': "信号强度平均值"
 				},
 				{
-					'f': 'var_time',
-					'h': "连接时间方差"
+					'f': 'var_rssi',
+					'h': "信号强度方差"
 				},
 				{
 					'f': 'flag',

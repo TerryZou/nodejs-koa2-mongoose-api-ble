@@ -25,11 +25,11 @@ module.exports = () => {
 	BleScanRecord.getResultBySearch = async(field, params) => {
 		var o = {};
 		switch(field) {
-			case 'Time':
+			case 'RSSI':
 				o.map = function() {
 					emit({
 						'flag': this.flag
-					}, this.time)
+					}, this.RSSI)
 				}
 				break;
 		}
