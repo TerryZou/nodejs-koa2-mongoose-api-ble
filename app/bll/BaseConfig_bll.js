@@ -19,14 +19,34 @@ exports.getByUserId = async(userid) => {
 };
 
 //修改url
-exports.updateByUserId = async(userid, data) => {
+exports.updateByUserId = async(userid, obj) => {
 	try {
 		var params = {
 			userid: userid
 		};
-		var data = await BaseConfig().update(params, data);
+		var data = await BaseConfig().update(params, obj);
 		return data;
 	} catch(e) {
+		throw e;
+	}
+};
+
+//增加url
+exports.add = async(entity) => {
+	try {
+		var data = await BaseConfig().add(entity);
+		return data;
+	} catch(e) {
+		throw e;
+	}
+};
+
+//删除url
+exports.deleteUrl=async(p)=>{
+	try{
+		var data=await BaseConfig().remove(p);
+		return data;
+	}catch(e){
 		throw e;
 	}
 };

@@ -101,7 +101,7 @@ exports.ble_set_distance = async(ctx, next) => {
 	ctx.body = result;
 };
 
-//ble_set_distance
+//ble_del_distance
 exports.ble_del_distance = async(ctx, next) => {
 	var codes = apiCode.ble_del_distance.codes;
 	var result = new Object();

@@ -98,7 +98,6 @@ exports.ble_add_mobile = async(ctx, next) => {
 			}
 		}
 	} catch(e) {
-		console.log(e);
 		result.status = codes.syserror;
 	}
 	result.isf = false;
