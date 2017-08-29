@@ -15,6 +15,16 @@ exports.add = async(entity) => {
 	}
 };
 
+//删除
+exports.del=async(p)=>{
+	try{
+		var data=await BleMobileInterval().remove(p);
+		return data;
+	}catch(e){
+		throw e;
+	}
+};
+
 //通过手机型号获取数据
 exports.getByMobile = async(mobile) => {
 	try {

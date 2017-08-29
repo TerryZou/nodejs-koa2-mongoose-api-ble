@@ -1132,6 +1132,47 @@ const dict = {
 			}
 		}
 	},
+	//删除距离数据
+	ble_del_mobile: {
+		code: 50406,
+		apiname: "ble_del_mobile",
+		apiurl: "api/config/ble_del_mobile",
+		codes: {
+			success: {
+				code: 5040600,
+				msg: "删除成功",
+				sub_code: "ble_del_mobile",
+				sub_msg: "删除手机型号成功",
+				details: "",
+				timestamp: new Date().getTime().toString()
+			},
+			noexist: {
+				code: 5040601,
+				msg: "数据不存在",
+				sub_code: "ble_del_mobile_faild_noexist",
+				sub_msg: "删除手机型号失败，该数据不存在",
+				details: "",
+				timestamp: new Date().getTime().toString()
+			},
+			paramerror: {
+				code: 5040602,
+				msg: "参数有误",
+				sub_code: "ble_del_mobile_faild_paramerror",
+				sub_msg: "删除手机型号失败，参数不正确",
+				details: "",
+				timestamp: new Date().getTime().toString()
+			},
+			syserror: {
+				code: -1,
+				msg: "系统错误",
+				sub_code: "ble_del_mobile_faild_syserror",
+				sub_msg: "删除手机型号失败，系统错误",
+				details: "",
+				timestamp: new Date().getTime().toString()
+			}
+		}
+	},
+	
 	//查询各个用户对应测试环境列表
 	ble_env_query: {
 		code: 50501,
