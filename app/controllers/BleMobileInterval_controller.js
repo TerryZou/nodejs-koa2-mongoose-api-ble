@@ -61,7 +61,7 @@ exports.ble_add_mobile = async(ctx, next) => {
 		}
 		//验证是否存在
 		if(isgo) {
-			var data = await BleMobileInterval().getByMobile(mobile);
+			var data = await BleMobileInterval.getByMobile(mobile);
 			switch(data.status) {
 				case 1:
 					result.status = codes.exist;
@@ -76,7 +76,7 @@ exports.ble_add_mobile = async(ctx, next) => {
 			}
 		}
 		if(isgo) {
-			var data = await BleMobileInterval().add({
+			var data = await BleMobileInterval.add({
 				mobile: mobile,
 				scan_interval: scan_interval,
 				scan_window: scan_window,
@@ -98,6 +98,7 @@ exports.ble_add_mobile = async(ctx, next) => {
 			}
 		}
 	} catch(e) {
+		console.log(e);
 		result.status = codes.syserror;
 	}
 	result.isf = false;
