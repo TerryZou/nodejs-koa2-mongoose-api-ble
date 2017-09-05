@@ -6,7 +6,7 @@ var upload_controller = require('../../app/controllers/upload_controller');
 var storage = multer.diskStorage({
   //文件保存路径
   destination: function (req, file, cb) {
-    cb(null, '../../files/uploads/')
+    cb(null, process.cwd()+ '/files/uploads/')
   },
   //修改文件名称
   filename: function (req, file, cb) {
@@ -16,8 +16,9 @@ var storage = multer.diskStorage({
 })
 //加载配置
 var upload = multer({ storage: storage });//{ dest: '../../files/uploads/' }
-//router.post('/upload1',upload.single('file'), upload_controller.upload1);
-router.post('/upload1',upload.single('file'), ()=>{
-	console.log("test-upload");
-});
+router.post('/upload1',upload.single('file'), upload_controller.upload1);
+//router.post('/upload1', upload_controller.upload1);
+//router.post('/upload1',upload.single('file'), ()=>{
+//	console.log("test-upload");
+//});
 module.exports = router;
