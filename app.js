@@ -49,6 +49,7 @@ app.use(async (ctx, next) => {
 
 app.use(require('koa-static')(__dirname + '/public'))
 app.use(require('koa-static')(__dirname + '/files'))
+app.use(require('koa-static')(__dirname + '/files/uploads'))
 app.use(require('koa-static')(__dirname + '/files/excel'))
 
 app.use(views(__dirname + '/views', {

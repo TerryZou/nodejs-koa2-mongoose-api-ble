@@ -7,6 +7,7 @@ var BaseConfig_router = require('./BaseConfig_router');
 var DistanceInfo_router = require('./DistanceInfo_router');
 var BleMobileInterval_router = require('./BleMobileInterval_router');
 var DeviceInfo_router = require('./DeviceInfo_router');
+var upload_router = require('./upload_router');
 
 router.use('/users', user_router.routes(), user_router.allowedMethods());
 router.use('/ble_connect', BleConnect_router.routes(), BleConnect_router.allowedMethods());
@@ -16,5 +17,5 @@ router.use('/config', BaseConfig_router.routes(), BaseConfig_router.allowedMetho
 router.use('/config', DistanceInfo_router.routes(), DistanceInfo_router.allowedMethods());
 router.use('/config', BleMobileInterval_router.routes(), BleMobileInterval_router.allowedMethods());
 router.use('/config', DeviceInfo_router.routes(), DeviceInfo_router.allowedMethods());
-
+router.use('/upload', upload_router.routes(), upload_router.allowedMethods());
 module.exports = router;
