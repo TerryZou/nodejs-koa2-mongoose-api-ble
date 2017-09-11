@@ -7,13 +7,13 @@ var Schema = conn.Schema,
 
 // 模型
 var DeviceInfoSchema = new Schema({
-	"mobile": String,
-	"scan_interval": String,
-	"scan_window": String,
-	"connect_interval": String,
-	"connect_window": String,
-	"connect_min_interval": String,
-	"connect_max_interval": String,
+	"mac" : String,
+    "name" : String,
+    "RSSI" : Number,
+    "time" : Number,
+    "flag" : String,
+    "datetime" :Date,
+    "userid" : String,
 	"type":Number
 }, {
 	versionKey: false

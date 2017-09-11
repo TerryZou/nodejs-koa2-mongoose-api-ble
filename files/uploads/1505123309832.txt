@@ -1,0 +1,37 @@
+{
+  "mac" : "80:30:dc:f1:1a:05",
+  "connect_num" : 100,
+  "name" : "HS2",
+  "flag" : "iphone6",
+  "mi" : 3,
+  "connectBeanList" : [
+    {
+      "mac" : "80:30:dc:f1:1a:05",
+      "name" : "HS2",
+      "RSSI" : -67,
+      "isConnect" : 1,
+      "mobile" : "iPhone 6 Plus:10.0.1",
+      "mi" : 3,
+      "ConnectionTime" : 164,
+      "flag" : "iphone6",
+      "LescanTime" : 38,
+      "DisconnectTime" : 2,
+      "time" : 1501395706864,
+      "isDiscover" : 1
+    },
+    {
+      "mac" : "80:30:dc:f1:1a:05",
+      "name" : "HS2",
+      "RSSI" : -67,
+      "isConnect" : 1,
+      "mobile" : "iPhone 6 Plus:10.0.1",
+      "mi" : 3,
+      "ConnectionTime" : 129,
+      "flag" : "iphone6",
+      "LescanTime" : 20,
+      "DisconnectTime" : 2,
+      "time" : 1501395713584,
+      "isDiscover" : 1
+    }
+                          ]
+}

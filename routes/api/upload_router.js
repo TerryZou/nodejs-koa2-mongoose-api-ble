@@ -16,7 +16,7 @@ var storage = multer.diskStorage({
 })
 //加载配置
 var upload = multer({ storage: storage });//{ dest: '../../files/uploads/' }
-router.post('/upload1',upload.single('file'), upload_controller.upload1);
+router.post('/connect',upload.single('file'), upload_controller.connect);
 //router.post('/upload1', upload_controller.upload1);
 //router.post('/upload1',upload.single('file'), ()=>{
 //	console.log("test-upload");
