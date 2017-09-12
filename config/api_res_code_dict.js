@@ -1371,6 +1371,14 @@ const dict = {
 				details: "",
 				timestamp: new Date().getTime().toString()
 			},
+			fileexist:{
+				code: 6010104,
+				msg: "导入文件已存在",
+				sub_code: "upload_connect_faild_fileexist",
+				sub_msg: "ble链接数据导入失败，导入文件已存在",
+				details: "",
+				timestamp: new Date().getTime().toString()
+			},
 			syserror: {
 				code: -1,
 				msg: "系统错误",

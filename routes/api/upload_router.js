@@ -10,9 +10,9 @@ var storage = multer.diskStorage({
   },
   //修改文件名称
   filename: function (req, file, cb) {
-    var fileFormat = (file.originalname).split(".");
+   // var fileFormat = (file.originalname).split(".");
     
-    cb(null,Date.now() + "." + fileFormat[fileFormat.length - 1]);
+    cb(null,file.originalname);
   }
 })
 //加载配置
