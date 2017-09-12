@@ -11,18 +11,24 @@ const BleConnectTimers = require("../models/BleConnectTimers_model");
 const BleConnectStatistics = require("../models/BleConnectStatistics_model");
 
 //添加用户
+//0 无数据
+//1 成功
+//2 失败
 exports.connect_import = async(userid, filename) => {
+	var result = new Object();
 	try {
 		var path = process.cwd() + "/files/uploads/" + filename;
 		var data = await fs.readfile(path);
 		if(data.succ) {
 			var jsondata = eval("(" + data.data + ")");
-			console.log(jsondata);
 			var firstdata = null;
-			var isok = false;
+			var isok = true;
+			result.status = 0;
 			if(jsondata.connectBeanList != undefined && jsondata.connectBeanList.length > 0) {
 				firstdata = jsondata.connectBeanList[0];
-				isok = true;
+			} else {
+				result.status = 2;
+				isok = false;
 			}
 			//添加设备
 			if(isok) {
@@ -54,14 +60,14 @@ exports.connect_import = async(userid, filename) => {
 							if(dev_add_data.status == 1) {
 								//添加成功
 							} else {
-								//添加失败
+								result.status = 3;
 							}
 						}
 					} else {
 						//数据存在
 					}
 				} else {
-					//查询有误
+					result.status = 3;
 				}
 			}
 			//添加距离
@@ -83,12 +89,12 @@ exports.connect_import = async(userid, filename) => {
 							if(dist_add_data.status == 1) {
 								//添加成功
 							} else {
-								//添加失败
+								result.status = 3;
 							}
 						}
 					}
 				} else {
-					//查询失败
+					result.status = 3;
 				}
 			}
 			//添加手机
@@ -114,12 +120,12 @@ exports.connect_import = async(userid, filename) => {
 							if(mobile_add_data.status == 1) {
 								//添加成功
 							} else {
-								//添加失败
+								result.status = 3;
 							}
 						}
 					}
 				} else {
-					//查询失败
+					result.status = 3;
 				}
 			}
 			//添加记录
@@ -162,9 +168,8 @@ exports.connect_import = async(userid, filename) => {
 								dis_faild++;
 							}
 						}
-					}
-					else{
-						//添加失败 i
+					} else {
+						result.status = 3;
 					}
 				}
 				var conn_sta_params = {
@@ -216,15 +221,23 @@ exports.connect_import = async(userid, filename) => {
 						}
 
 						var sta_result = await BleConnectStatistics().add(sta_obj);
+						if(sta_result.succ) {
+							if(sta_result.status == 1) {
+
+							} else {
+								result.status = 3;
+							}
+						}
 					}
-				}
-				else{
-					//查询失败
+				} else {
+					result.status = 3;
 				}
 			}
 		}
-		return {succ:true,status:1};
+		result.succ = true;
 	} catch(e) {
-		throw e;
+		result.succ = false;
+		result.status = -1;
 	}
+	return result;
 };

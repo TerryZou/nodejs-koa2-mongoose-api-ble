@@ -11,14 +11,12 @@ var storage = multer.diskStorage({
   //修改文件名称
   filename: function (req, file, cb) {
     var fileFormat = (file.originalname).split(".");
+    
     cb(null,Date.now() + "." + fileFormat[fileFormat.length - 1]);
   }
 })
 //加载配置
 var upload = multer({ storage: storage });//{ dest: '../../files/uploads/' }
-router.post('/connect',upload.single('file'), upload_controller.connect);
-//router.post('/upload1', upload_controller.upload1);
-//router.post('/upload1',upload.single('file'), ()=>{
-//	console.log("test-upload");
-//});
+router.post('/ble_connect',upload.single('file'), upload_controller.ble_connect);
+
 module.exports = router;

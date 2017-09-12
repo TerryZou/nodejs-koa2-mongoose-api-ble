@@ -1332,6 +1332,54 @@ const dict = {
 				timestamp: new Date().getTime().toString()
 			}
 		}
+	},
+	//ble链接数据导入
+	upload_bleconnect: {
+		code: 60101,
+		apiname: "upload_bleconnect",
+		apiurl: "api/upload/bleconnect",
+		codes: {
+			success: {
+				code: 6010100,
+				msg: "导入成功",
+				sub_code: "upload_connect_success",
+				sub_msg: "ble链接数据导入成功",
+				details: "",
+				timestamp: new Date().getTime().toString()
+			},
+			paramerror: {
+				code: 6010101,
+				msg: "参数错误",
+				sub_code: "upload_connect_faild_paramerror",
+				sub_msg: "ble链接数据导入失败，参数错误",
+				details: "",
+				timestamp: new Date().getTime().toString()
+			},
+			nodata: {
+				code: 6010102,
+				msg: "无数据",
+				sub_code: "upload_connect_faild_nodata",
+				sub_msg: "ble链接数据导入失败，没有数据",
+				details: "",
+				timestamp: new Date().getTime().toString()
+			},
+			dberror: {
+				code: 6010103,
+				msg: "数据库错误",
+				sub_code: "upload_connect_faild_db",
+				sub_msg: "ble链接数据导入失败，数据库错误",
+				details: "",
+				timestamp: new Date().getTime().toString()
+			},
+			syserror: {
+				code: -1,
+				msg: "系统错误",
+				sub_code: "mac_query_faild_syserror",
+				s: "获取设备测试设备mac列表失败，系统错误",
+				details: "",
+				timestamp: new Date().getTime().toString()
+			}
+		}
 	}
 };
 

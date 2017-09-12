@@ -5,17 +5,43 @@ const apiCode = require("../../config/api_res_code_dict");
 const test = require("../bll/test_bll");
 const importbll = require("../bll/import_bll");
 
-exports.connect = async(ctx, next) => {
-	var codes = apiCode.baseconfig_del_url.codes;
+exports.ble_connect = async(ctx, next) => {
+	var codes = apiCode.upload_bleconnect.codes;
 	var result = new Object();
-	var userid = ctx.request.body.userid;
+	var userid = ctx.req.body.userid;
+
 	var isgo = true;
 	try {
 		var filename = ctx.req.file.filename;
-		var datas=await test.upload1(filename);
-		await importbll.connect_import(userid,filename);
-		result.status=codes.success;
-		result.status.details=datas;
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(userid)) {
+			result.status = codes.paramerror;
+			result.status.details = "参数 userid 不能缺少或为空！";
+			isgo = false;
+		}
+		//验证参数是否正确
+		if(isgo && jsUtil.isNullOrEmpty(filename)) {
+			result.status = codes.paramerror;
+			result.status.details = "参数 file 不能缺少或为空！";
+			isgo = false;
+		}
+		if(isgo) {
+			var data = await importbll.connect_import(userid, filename);
+			switch(data.status) {
+				case 0:
+					result.status = codes.success;
+					break;
+				case 2:
+					result.status = codes.nodata;
+					break;
+				case 3:
+					result.status = codes.dberror;
+					break;
+				case -1:
+					result.status = codes.error;
+					break;
+			}
+		}
 	} catch(e) {
 		console.log(e);
 		result.status = codes.syserror;
