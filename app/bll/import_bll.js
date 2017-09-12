@@ -18,7 +18,7 @@ const BleConnectStatistics = require("../models/BleConnectStatistics_model");
 exports.ble_connect_import = async(userid, filename) => {
 	var result = new Object();
 	try {
-		var path = process.cwd() + "/files/uploads/" + filename;
+		var path = process.cwd() + "/files/uploads/"+userid+"/" + filename;
 		var data = await fs.readfile(path);
 		if(data.succ) {
 			var jsondata = eval("(" + data.data + ")");

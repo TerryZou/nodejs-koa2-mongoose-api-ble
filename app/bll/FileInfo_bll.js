@@ -18,6 +18,20 @@ exports.getByName = async(name) => {
 	}
 };
 
+//通过name获取
+exports.getByNameUserid = async(name,userid) => {
+	try {
+		var params = {
+			name: name,
+			userid:userid
+		};
+		var data = await FileInfo().findOne(params);
+		return data;
+	} catch(e) {
+		throw e;
+	}
+};
+
 //增加url
 exports.add = async(entity) => {
 	try {

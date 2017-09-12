@@ -10,7 +10,6 @@ exports.ble_connect = async(ctx, next) => {
 	var codes = apiCode.upload_bleconnect.codes;
 	var result = new Object();
 	var userid = ctx.req.body.userid;
-
 	var isgo = true;
 	try {
 		var filename = ctx.req.file.filename;
@@ -27,7 +26,7 @@ exports.ble_connect = async(ctx, next) => {
 			isgo = false;
 		}
 		if(isgo) {
-			var file_data = await FileInfo.getByName(filename);
+			var file_data = await FileInfo.getByNameUserid(filename,userid);
 			if(file_data.status == "0") {
 				var file_entity = {
 					"name": filename,
