@@ -79,9 +79,10 @@ exports.ble_connect = async(ctx, next) => {
 };
 
 exports.ble_scan = async(ctx, next) => {
-	var codes = apiCode.upload_bleconnect.codes;
+	var codes = apiCode.upload_blescan.codes;
 	var result = new Object();
 	var userid = ctx.req.body.userid;
+	console.log(userid);
 
 	var isgo = true;
 	try {
@@ -99,7 +100,34 @@ exports.ble_scan = async(ctx, next) => {
 			isgo = false;
 		}
 		if(isgo) {
-			var data = await importbll.blescan_import(userid, filename);
+			var file_data = await FileInfo.getByNameUserid(filename,userid);
+			if(file_data.status == "0") {
+				var file_entity = {
+					"name": filename,
+					"userid": userid,
+					"type": 2,
+					"recordtime": new Date().getTime().toString()
+				};
+				var file_add_data = await FileInfo.add(file_entity);
+				if(file_add_data.status == 1) {
+					isgo = true;
+				} else {
+					result.status = codes.dberror;
+					result.details="上传文件添加文件记录错误";
+					isgo = false;
+				}
+			} else if(file_data.status == 1) {
+				result.status = codes.fileexist;
+				isgo = false;
+			} else {
+				result.status = codes.dberror;
+				result.details="上传文件验证数据哭错误";
+				isgo = false;
+			}
+		}
+		if(isgo) {
+			var data = await importbll.ble_scan_import(userid, filename);
+			console.log(data)
 			switch(data.status) {
 				case 0:
 					result.status = codes.success;

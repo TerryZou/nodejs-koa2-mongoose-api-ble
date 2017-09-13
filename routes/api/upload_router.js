@@ -8,6 +8,7 @@ var upload_controller = require('../../app/controllers/upload_controller');
 var storage = multer.diskStorage({
 	//文件保存路径
 	destination: function(req, file, cb) {
+		console.log(req.body.userid);
 		var path = process.cwd() + '/files/uploads/' + req.body.userid + '/';
 		if(!fs.existsSync(path)) {
 			fs.mkdirSync(path);
@@ -25,5 +26,5 @@ var upload = multer({
 	storage: storage
 }); //{ dest: '../../files/uploads/' }
 router.post('/ble_connect', upload.single('file'), upload_controller.ble_connect);
-
+router.post('/ble_scan', upload.single('file'), upload_controller.ble_scan);
 module.exports = router;

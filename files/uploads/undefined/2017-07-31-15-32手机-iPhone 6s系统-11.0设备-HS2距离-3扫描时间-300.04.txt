@@ -1,0 +1,241 @@
+{
+  "scan_time" : 300,
+  "flag" : "iphone6s",
+  "scanBeanList" : [
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -63,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486041787
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -63,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486053796
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -69,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486065858
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -65,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486077793
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -68,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486089827
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -64,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486101792
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -64,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486113800
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -64,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486125801
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -68,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486137829
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -70,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486149825
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -68,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486161760
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -69,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486173763
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -68,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486185747
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -68,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486197760
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -62,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486209741
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -70,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486221778
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -67,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486233771
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -64,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486245743
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -62,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486257749
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -64,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486269757
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -68,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486281759
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -64,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486293757
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -64,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486305770
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -68,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486317785
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -68,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486329779
+    },
+    {
+      "mac" : "80:30:dc:f1:1c:a7",
+      "name" : "HS2",
+      "RSSI" : -69,
+      "mobile" : "iPhone 6s系统-11.0",
+      "mi" : 3,
+      "flag" : "iphone6s",
+      "time" : 1501486341894
+    }
+  ],
+  "mi" : "3"
+}
