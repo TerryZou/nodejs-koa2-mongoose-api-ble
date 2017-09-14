@@ -28,6 +28,16 @@ exports.ble_connect_import = async(userid, filename) => {
 			result.status = 0;
 			if(jsondata.connectBeanList != undefined && jsondata.connectBeanList.length > 0) {
 				firstdata = jsondata.connectBeanList[0];
+				var res_data=new Object();
+				res_data["flag"]=firstdata.flag;
+				res_data["mi"]=firstdata.mi;
+				res_data["mac"]=firstdata.mac;
+				res_data["name"]=firstdata.name;
+				res_data["mobile"]=firstdata.mobile;
+				res_data["connect_num"]=jsondata.connect_num;
+				console.log("res_data");
+				console.log(res_data);
+				result.data=res_data;
 			} else {
 				result.status = 2;
 				isok = false;
@@ -262,6 +272,13 @@ exports.ble_scan_import = async(userid, filename) => {
 			
 			if(jsondata.scanBeanList != undefined && jsondata.scanBeanList.length > 0) {
 				firstdata = jsondata.scanBeanList[0];
+				var res_data=new Object();
+				res_data["flag"]=firstdata.flag;
+				res_data["mi"]=firstdata.mi;
+				res_data["mac"]=firstdata.mac;
+				res_data["name"]=firstdata.name;
+				res_data["mobile"]=firstdata.mobile;
+				result.data=res_data;
 			} else {
 				result.status = 2;
 				console.log("无数据");

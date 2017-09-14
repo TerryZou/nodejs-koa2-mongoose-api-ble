@@ -26,7 +26,7 @@ exports.ble_connect = async(ctx, next) => {
 			isgo = false;
 		}
 		if(isgo) {
-			var file_data = await FileInfo.getByNameUserid(filename,userid);
+			var file_data = await FileInfo.getByNameUserid(filename, userid);
 			if(file_data.status == "0") {
 				var file_entity = {
 					"name": filename,
@@ -39,7 +39,7 @@ exports.ble_connect = async(ctx, next) => {
 					isgo = true;
 				} else {
 					result.status = codes.dberror;
-					result.details="上传文件添加文件记录错误";
+					result.details = "上传文件添加文件记录错误";
 					isgo = false;
 				}
 			} else if(file_data.status == 1) {
@@ -47,7 +47,7 @@ exports.ble_connect = async(ctx, next) => {
 				isgo = false;
 			} else {
 				result.status = codes.dberror;
-				result.details="上传文件验证数据哭错误";
+				result.details = "上传文件验证数据哭错误";
 				isgo = false;
 			}
 		}
@@ -57,13 +57,14 @@ exports.ble_connect = async(ctx, next) => {
 			switch(data.status) {
 				case 0:
 					result.status = codes.success;
+					result.data = data.data;
 					break;
 				case 2:
 					result.status = codes.nodata;
 					break;
 				case 3:
 					result.status = codes.dberror;
-					result.details="数据导入数据库错误";
+					result.details = "数据导入数据库错误";
 					break;
 				case -1:
 					result.status = codes.error;
@@ -100,7 +101,7 @@ exports.ble_scan = async(ctx, next) => {
 			isgo = false;
 		}
 		if(isgo) {
-			var file_data = await FileInfo.getByNameUserid(filename,userid);
+			var file_data = await FileInfo.getByNameUserid(filename, userid);
 			if(file_data.status == "0") {
 				var file_entity = {
 					"name": filename,
@@ -113,7 +114,7 @@ exports.ble_scan = async(ctx, next) => {
 					isgo = true;
 				} else {
 					result.status = codes.dberror;
-					result.details="上传文件添加文件记录错误";
+					result.details = "上传文件添加文件记录错误";
 					isgo = false;
 				}
 			} else if(file_data.status == 1) {
@@ -121,16 +122,16 @@ exports.ble_scan = async(ctx, next) => {
 				isgo = false;
 			} else {
 				result.status = codes.dberror;
-				result.details="上传文件验证数据哭错误";
+				result.details = "上传文件验证数据哭错误";
 				isgo = false;
 			}
 		}
 		if(isgo) {
 			var data = await importbll.ble_scan_import(userid, filename);
-			console.log(data)
 			switch(data.status) {
 				case 0:
 					result.status = codes.success;
+					result.data = data.data;
 					break;
 				case 2:
 					result.status = codes.nodata;
