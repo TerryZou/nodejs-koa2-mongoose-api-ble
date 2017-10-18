@@ -89,7 +89,7 @@ const dict = {
 			}
 		}
 	},
-	//查询连接测试记录
+	//查询ble连接测试记录
 	ble_connect_query: {
 		code: 30201,
 		apiname: "ble_connect_query",
@@ -129,7 +129,7 @@ const dict = {
 			}
 		}
 	},
-	//导出连接测试记录
+	//导出ble连接测试记录
 	ble_connect_query_export: {
 		code: 30202,
 		apiname: "ble_connect_query_export",
@@ -177,7 +177,7 @@ const dict = {
 			}
 		}
 	},
-	//查询连接测试结论
+	//查询ble连接测试结论
 	ble_connect_result: {
 		code: 30301,
 		apiname: "ble_connect_result",
@@ -217,7 +217,7 @@ const dict = {
 			}
 		}
 	},
-	//导出连接测试结论
+	//导出ble连接测试结论
 	ble_connect_result_export: {
 		code: 303020,
 		apiname: "ble_connect_result_export",
@@ -265,7 +265,7 @@ const dict = {
 			}
 		}
 	},
-	//查询连接测试记录
+	//查询bt连接测试记录
 	bt_connect_query: {
 		code: 30501,
 		apiname: "bt_connect_query",
@@ -305,7 +305,7 @@ const dict = {
 			}
 		}
 	},
-	//导出连接测试记录
+	//导出bt连接测试记录
 	bt_connect_query_export: {
 		code: 30502,
 		apiname: "bt_connect_query_export",
@@ -353,7 +353,7 @@ const dict = {
 			}
 		}
 	},
-	//查询连接测试结论
+	//查询bt连接测试结论
 	bt_connect_result: {
 		code: 30601,
 		apiname: "bt_connect_result",
@@ -393,7 +393,7 @@ const dict = {
 			}
 		}
 	},
-	//导出连接测试结论
+	//导出bt连接测试结论
 	bt_connect_result_export: {
 		code: 306020,
 		apiname: "bt_connect_result_export",
@@ -1132,7 +1132,7 @@ const dict = {
 			}
 		}
 	},
-	//删除距离数据
+	//删除手机数据
 	ble_del_mobile: {
 		code: 50406,
 		apiname: "ble_del_mobile",
@@ -1389,7 +1389,7 @@ const dict = {
 			}
 		}
 	},
-	//ble扫面数据导入
+	//ble扫描数据导入
 	upload_blescan: {
 		code: 60201,
 		apiname: "upload_blescan",
